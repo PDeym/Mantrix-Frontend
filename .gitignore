@@ -13,6 +13,12 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
+# Core files
+.env
+src/modules/Module.ts
+src/modules/Store.ts
+.gitmodules
+
 # Editor directories and files
 .idea
 .vscode
