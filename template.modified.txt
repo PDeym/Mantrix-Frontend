@@ -1,0 +1,10 @@
+## Modified history from original template ##
+1. src\main.ts
+    a. import router from "./router"; to import router from "@/modules/pais-template/router";
+    b. import ApiService from "@/core/services/ApiService.ts"; to import ApiService from "./modules/pais-template/core/services/ApiService";
+2. src\App.vue
+
+3. src\store\modules\ConfigModule.ts
+    a. change layoutConfig path to: "@/modules/pais-template/core/config/DefaultLayoutConfig";
+4. src\store\index.ts
+    a

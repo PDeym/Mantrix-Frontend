@@ -8,13 +8,16 @@ import ConfigModule from "@/store/modules/ConfigModule";
 
 config.rawError = true;
 
+import ModuleStore from '@/modules/Store';
+
 const store = createStore({
-  modules: {
-    AuthModule,
-    BodyModule,
-    BreadcrumbsModule,
-    ConfigModule,
-  },
+    modules: {
+        AuthModule,
+        BodyModule,
+        BreadcrumbsModule,
+        ConfigModule,
+        ...ModuleStore
+    },
 });
 
 export default store;
