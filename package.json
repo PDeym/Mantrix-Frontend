@@ -1,5 +1,5 @@
 {
-  "name": "demo1",
+  "name": "pais-template",
   "version": "8.0.38",
   "private": true,
   "scripts": {
@@ -9,7 +9,7 @@
     "serve": "vue-cli-service serve"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.4",
+    "@fortawesome/fontawesome-free": "^6.1.1",
     "@fullcalendar/core": "^5.9.0",
     "@fullcalendar/daygrid": "^5.9.0",
     "@fullcalendar/interaction": "^5.9.0",
