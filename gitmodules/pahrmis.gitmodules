@@ -1,0 +1,25 @@
+[submodule "src/modules/pais-template"]
+	path = src/modules/pais-template
+	url = https://github.com/WebAppDevTech/PAIS_Template-v2.git
+	branch = main
+[submodule "src/modules/ucs"]
+	path = src/modules/ucs
+	url = https://github.com/WebAppDevTech/PAUCSv2.git
+	branch = main
+[submodule "src/modules/orderpub"]
+	path = src/modules/orderpub
+	url = https://github.com/WebAppDevTech/PAHRMIS-OrderPubv2.git
+	branch = develop
+[submodule "src/modules/cmis"]
+	path = src/modules/cmis
+	url = https://github.com/WebAppDevTech/PAHRMIS-CMISv2.git
+	branch = main
+[submodule "src/modules/mpis"]
+	path = src/modules/mpis
+	url = https://github.com/WebAppDevTech/PAHRMIS-MPISv2.git
+[submodule "src/modules/mpf"]
+	path = src/modules/mpf
+	url = https://github.com/WebAppDevTech/PAHRMIS-MPFv2.git
+[submodule "src/modules/diras"]
+	path = src/modules/diras
+	url = https://github.com/WebAppDevTech/DIRAS.git
