@@ -27,6 +27,17 @@ initApexCharts(app);
 initInlineSvg(app);
 initVeeValidate();
 
+// start:Modal configuration
+import VueFinalModal from 'vue-final-modal';
+import modal from '@/modules/pais-template/core/plugins/modal/index';
+app.use(modal)
+app.use(VueFinalModal(), {
+    componentName: 'VueFinalModal',
+    key: '$vfm',    
+    dynamicContainerName: 'ModalsContainer'
+});
+// end:Modal configuration
+
 app.use(i18n);
 
 app.mount("#app");
