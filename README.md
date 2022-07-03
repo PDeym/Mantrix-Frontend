@@ -31,7 +31,7 @@ please contact @baniagaeugene @henrillics @c0smic for approval
 2. Module.ts = location: src->modules->pais-template
 3. Store.ts = location: src->modules->pais-template
 
-**if you have submodules other than pais-template**
+**if you have submodules other than pais-template**<br>
 **you can also see the references of current configuration of submodules on :**
 4. .gitmodules = location: gitmodules/[projectsample].gitmodules
 
