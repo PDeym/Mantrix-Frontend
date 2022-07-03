@@ -1,2 +1,6 @@
 GLOBAL USED PLUGINS
 1. npm install vue-final-modal@next
+2. npm install moment --save
+3. npm install --save moment-range
+4. npm install maska
+5. npm install lodash --save
