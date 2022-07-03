@@ -16,13 +16,10 @@
 
 **after initializing submodule then add to .gitmodules**
 
-> ex: [submodule "src/modules/pais-template"]
-
->	path = src/modules/pais-template
-
->	url = http://10.50.4.9:8001/PAIS/vue-frontend.git
-
->	branch = master
+> ex: [submodule "src/modules/pais-template"]<br>
+>	path = src/modules/pais-template <br>
+>	url = http://10.50.4.9:8001/PAIS/vue-frontend.git <br> 
+>	branch = master <br>
 
 
 ## NOTE
