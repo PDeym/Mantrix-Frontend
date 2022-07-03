@@ -8,13 +8,13 @@
 4. npm run serve
 5. eat your favorite junkfood and wait while building
 
-**submodules is not automatically added**
+**Submodules is not automatically added**
 ## ADDING SUBMODULES ##
 **Clone and Init Submodule**
 - COMMAND: git clone http://10.50.4.9:8001/PAIS/vue-frontend.git src/modules/pais-template
 - COMMAND: git submodule init
 
-**After initializing submodule then add to .gitmodules**
+**After initializing submodule then add to [rootDirectory]/.gitmodules**
 
 > ex: [submodule "src/modules/pais-template"]<br>
 >	path = src/modules/pais-template <br>
