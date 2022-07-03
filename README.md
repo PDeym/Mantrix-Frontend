@@ -1,29 +1,31 @@
-# demo1
+# Metronic Template
 
-## Project setup
+## Installation
 
-```
-yarn install
-```
+1. clone metronic-template here git@github.com:WebAppDevTech/metronic-template.git
 
-### Compiles and hot-reloads for development
+*include submodules
+-CMS
+-UCS
+-MPIS
+-MPF
+-ORDDERPUB
+-PAIS-TEMPLATE
+2. npm install
+3. makesure all repos are checkout as main
+4. npm run serve
+5. eat your favorite junkfood and wait while building
 
-```
-yarn serve
-```
+## NOTE
+Before adding plugins and thirdparty shitties
+please contact @baniagaeugene @henrillics @c0smic for approval
 
-### Compiles and minifies for production
+## IMPORTANT: Create your own copy of files, please see the example [filename].example.[filetype]
+1. .env = location: rootFolder
+2. Module.ts = location: src->modules->pais-template
+3. Store.ts = location: src->modules->pais-template
 
-```
-yarn build
-```
+* if you have submodules other than pais-template
+* you can also see the references of current configuration of submodules on : 
+4. .gitmodules = location: gitmodules/[projectsample].gitmodules
 
-### Lints and fixes files
-
-```
-yarn lint
-```
-
-### Customize configuration
-
-See [Configuration Reference](https://cli.vuejs.org/config/).
