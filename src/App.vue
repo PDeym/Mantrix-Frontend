@@ -46,6 +46,7 @@ export default defineComponent({
 // Main demo style scss
 @import "assets/sass/plugins";
 @import "assets/sass/style";
+@import "modules/pais-template/assets/sass/style";
 
 // Dark mode demo style scss
 //@import "assets/sass/plugins.dark";
