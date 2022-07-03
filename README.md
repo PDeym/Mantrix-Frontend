@@ -13,7 +13,9 @@
 **Clone and Init Submodule**
 - COMMAND: git clone http://10.50.4.9:8001/PAIS/vue-frontend.git src/modules/pais-template
 - COMMAND: git submodule init
+
 **after initializing submodule then add to .gitmodules**
+
 > ex: [submodule "src/modules/pais-template"]
 >	path = src/modules/pais-template
 >	url = http://10.50.4.9:8001/PAIS/vue-frontend.git
