@@ -4,3 +4,5 @@ GLOBAL USED PLUGINS
 3. npm install --save moment-range
 4. npm install maska
 5. npm install lodash --save
+6. npm install jspdf --save
+7. npm install jspdf-autotable --save
