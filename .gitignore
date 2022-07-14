@@ -18,6 +18,7 @@ pnpm-debug.log*
 src/modules/Module.ts
 src/modules/Store.ts
 .gitmodules
+/keys
 
 # Editor directories and files
 .idea
