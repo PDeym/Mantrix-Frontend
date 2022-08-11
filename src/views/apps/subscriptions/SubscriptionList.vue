@@ -156,7 +156,7 @@
 
 <script lang="ts">
 import { defineComponent, ref, onMounted } from "vue";
-import KTDatatable from "@/components/kt-datatable/KTDataTable.vue";
+import KTDatatable from "@/components/kt-datatable/KtdataTable.vue";
 import { setCurrentPageBreadcrumbs } from "@/core/helpers/breadcrumb";
 import { Sort } from "@/components/kt-datatable/table-partials/models";
 import arraySort from "array-sort";

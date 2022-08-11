@@ -9,6 +9,8 @@ import ThemeModeModule from "@/store/modules/ThemeModeModule";
 
 config.rawError = true;
 
+import ModuleStore from '@/modules/Store';
+
 const store = createStore({
   modules: {
     AuthModule,
@@ -16,6 +18,7 @@ const store = createStore({
     BreadcrumbsModule,
     ConfigModule,
     ThemeModeModule,
+    ...ModuleStore
   },
 });
 

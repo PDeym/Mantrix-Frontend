@@ -220,7 +220,7 @@
 
 <script lang="ts">
 import { defineComponent, ref } from "vue";
-import Datatable from "@/components/kt-datatable/KTDataTable.vue";
+import Datatable from "@/components/kt-datatable/KtdataTable.vue";
 
 export default defineComponent({
   name: "kt-invoices",

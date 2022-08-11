@@ -8,3 +8,9 @@
     a. change layoutConfig path to: "@/modules/pais-template/core/config/DefaultLayoutConfig";
 4. src\store\index.ts
     a
+
+
+
+
+** added scss on [rootFolder]/src/assets/sass/layout/header
+all files there is from 8.1.1 html version of metronic

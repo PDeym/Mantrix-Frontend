@@ -173,7 +173,7 @@
 
 <script lang="ts">
 import { defineComponent, ref, onMounted } from "vue";
-import Datatable from "@/components/kt-datatable/KTDataTable.vue";
+import Datatable from "@/components/kt-datatable/KtdataTable.vue";
 import { Sort } from "@/components/kt-datatable/table-partials/models";
 import ExportCustomerModal from "@/components/modals/forms/ExportCustomerModal.vue";
 import AddCustomerModal from "@/components/modals/forms/AddCustomerModal.vue";
