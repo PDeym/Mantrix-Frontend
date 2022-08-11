@@ -4,6 +4,7 @@
 
 1. clone metronic-template here http://10.50.4.9:8001/metronic-template/vue.git
 2. npm install
+AFTER THIS STEP, PLEASE SEE ./install.txt to install submodules
 3. makesure all repos are checkout as main
 4. npm run serve
 5. eat your favorite junkfood and wait while building
