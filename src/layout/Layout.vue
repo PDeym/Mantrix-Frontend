@@ -66,7 +66,7 @@ import KTToolbar from "@/layout/toolbar/Toolbar.vue";
 import KTScrollTop from "@/layout/extras/ScrollTop.vue";
 import KTUserMenu from "@/layout/header/partials/ActivityDrawer.vue";
 import KTLoader from "@/components/Loader.vue";
-import KTCreateApp from "@/components/modals/wizards/CreateAppModal.vue";
+import KTCreateApp from "@/components/modals/wizards/create-app-modal/CreateAppModal.vue";
 import KTInviteFriendsModal from "@/components/modals/general/InviteFriendsModal.vue";
 import KTDemosDrawer from "@/layout/extras/DemosDrawer.vue";
 import KTHelpDrawer from "@/layout/extras/HelpDrawer.vue";

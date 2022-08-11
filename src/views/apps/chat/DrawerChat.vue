@@ -2,9 +2,9 @@
   <!--begin::Heading-->
   <div class="d-flex flex-wrap flex-stack mb-6">
     <!--begin::Title-->
-    <h3 class="fw-bolder my-2">
+    <h3 class="fw-bold my-2">
       My Contacts
-      <span class="fs-6 text-gray-400 fw-bold ms-1">(59)</span>
+      <span class="fs-6 text-gray-400 fw-semobold ms-1">(59)</span>
     </h3>
     <!--end::Title-->
 
@@ -159,7 +159,9 @@
 
   <!--begin::Pagination-->
   <div class="d-flex flex-stack flex-wrap pt-10">
-    <div class="fs-6 fw-bold text-gray-700">Showing 1 to 10 of 50 entries</div>
+    <div class="fs-6 fw-semobold text-gray-700">
+      Showing 1 to 10 of 50 entries
+    </div>
 
     <!--begin::Pages-->
     <ul class="pagination">

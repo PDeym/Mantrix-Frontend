@@ -59,8 +59,8 @@
                 <!--begin::Wrapper-->
                 <div class="d-flex flex-stack flex-grow-1">
                   <!--begin::Content-->
-                  <div class="fw-bold">
-                    <h4 class="text-gray-800 fw-bolder">Please Note!</h4>
+                  <div class="fw-semobold">
+                    <h4 class="text-gray-800 fw-bold">Please Note!</h4>
                     <div class="fs-6 text-gray-600">
                       Adding new API key may afftect to your
                       <a href="#">Affiliate Income</a>
@@ -74,7 +74,7 @@
               <!--begin::Input group-->
               <div class="mb-5 fv-row">
                 <!--begin::Label-->
-                <label class="required fs-5 fw-bold mb-2">API Name</label>
+                <label class="required fs-5 fw-semobold mb-2">API Name</label>
                 <!--end::Label-->
 
                 <!--begin::Input-->
@@ -97,7 +97,7 @@
               <!--begin::Input group-->
               <div class="d-flex flex-column mb-5 fv-row">
                 <!--begin::Label-->
-                <label class="required fs-5 fw-bold mb-2"
+                <label class="required fs-5 fw-semobold mb-2"
                   >Short Description</label
                 >
                 <!--end::Label-->
@@ -123,7 +123,7 @@
               <!--begin::Input group-->
               <div class="d-flex flex-column mb-10 fv-row">
                 <!--begin::Label-->
-                <label class="required fs-5 fw-bold mb-2">Category</label>
+                <label class="required fs-5 fw-semobold mb-2">Category</label>
                 <!--end::Label-->
 
                 <!--begin::Select-->
@@ -156,7 +156,7 @@
                 <!--begin::Heading-->
                 <div class="mb-3">
                   <!--begin::Label-->
-                  <label class="d-flex align-items-center fs-5 fw-bold">
+                  <label class="d-flex align-items-center fs-5 fw-semobold">
                     <span class="required">Specify Your API Method</span>
 
                     <i
@@ -168,7 +168,7 @@
                   <!--end::Label-->
 
                   <!--begin::Description-->
-                  <div class="fs-7 fw-bold text-gray-400">
+                  <div class="fs-7 fw-semobold text-gray-400">
                     If you need more info, please check budget planning
                   </div>
                   <!--end::Description-->
@@ -214,7 +214,7 @@
             <button
               type="reset"
               id="kt_modal_create_api_key_cancel"
-              class="btn btn-white me-3"
+              class="btn btn-light me-3"
             >
               Discard
             </button>

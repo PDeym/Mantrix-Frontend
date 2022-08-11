@@ -1,6 +1,6 @@
 <template>
   <!--begin::Wrapper-->
-  <div class="bg-white rounded shadow-sm p-10 p-lg-15 mx-auto">
+  <div class="bg-body rounded shadow-sm p-10 p-lg-15 mx-auto">
     <!--begin::Form-->
     <Form
       class="form w-100 fv-plugins-bootstrap5 fv-plugins-framework"
@@ -16,10 +16,10 @@
         <!--end::Title-->
 
         <!--begin::Link-->
-        <div class="text-gray-400 fw-bold fs-4">
+        <div class="text-gray-400 fw-semobold fs-4">
           Already have an account?
 
-          <router-link to="/sign-in" class="link-primary fw-bolder">
+          <router-link to="/sign-in" class="link-primary fw-bold">
             Sign in here
           </router-link>
         </div>
@@ -28,7 +28,7 @@
       <!--end::Heading-->
 
       <!--begin::Action-->
-      <button type="button" class="btn btn-light-primary fw-bolder w-100 mb-10">
+      <button type="button" class="btn btn-light-primary fw-bold w-100 mb-10">
         <img
           alt="Logo"
           src="media/svg/brand-logos/google-icon.svg"
@@ -41,7 +41,7 @@
       <!--begin::Separator-->
       <div class="d-flex align-items-center mb-10">
         <div class="border-bottom border-gray-300 mw-50 w-100"></div>
-        <span class="fw-bold text-gray-400 fs-7 mx-2">OR</span>
+        <span class="fw-semobold text-gray-400 fs-7 mx-2">OR</span>
         <div class="border-bottom border-gray-300 mw-50 w-100"></div>
       </div>
       <!--end::Separator-->
@@ -50,7 +50,7 @@
       <div class="row fv-row mb-7">
         <!--begin::Col-->
         <div class="col-xl-6">
-          <label class="form-label fw-bolder text-dark fs-6">First Name</label>
+          <label class="form-label fw-bold text-dark fs-6">First Name</label>
           <Field
             class="form-control form-control-lg form-control-solid"
             type="text"
@@ -68,7 +68,7 @@
 
         <!--begin::Col-->
         <div class="col-xl-6">
-          <label class="form-label fw-bolder text-dark fs-6">Last Name</label>
+          <label class="form-label fw-bold text-dark fs-6">Last Name</label>
           <Field
             class="form-control form-control-lg form-control-solid"
             type="text"
@@ -88,7 +88,7 @@
 
       <!--begin::Input group-->
       <div class="fv-row mb-7">
-        <label class="form-label fw-bolder text-dark fs-6">Email</label>
+        <label class="form-label fw-bold text-dark fs-6">Email</label>
         <Field
           class="form-control form-control-lg form-control-solid"
           type="email"
@@ -109,7 +109,7 @@
         <!--begin::Wrapper-->
         <div class="mb-1">
           <!--begin::Label-->
-          <label class="form-label fw-bolder text-dark fs-6"> Password </label>
+          <label class="form-label fw-bold text-dark fs-6"> Password </label>
           <!--end::Label-->
 
           <!--begin::Input wrapper-->
@@ -159,7 +159,7 @@
 
       <!--begin::Input group-->
       <div class="fv-row mb-5">
-        <label class="form-label fw-bolder text-dark fs-6"
+        <label class="form-label fw-bold text-dark fs-6"
           >Confirm Password</label
         >
         <Field
@@ -186,7 +186,7 @@
             name="toc"
             value="1"
           />
-          <span class="form-check-label fw-bold text-gray-700 fs-6">
+          <span class="form-check-label fw-semobold text-gray-700 fs-6">
             I Agree &
             <a href="#" class="ms-1 link-primary">Terms and conditions</a>.
           </span>
@@ -281,7 +281,7 @@ export default defineComponent({
           buttonsStyling: false,
           confirmButtonText: "Ok, got it!",
           customClass: {
-            confirmButton: "btn fw-bold btn-light-primary",
+            confirmButton: "btn fw-semobold btn-light-primary",
           },
         }).then(function () {
           // Go to page after successfully login
@@ -294,7 +294,7 @@ export default defineComponent({
           buttonsStyling: false,
           confirmButtonText: "Try again!",
           customClass: {
-            confirmButton: "btn fw-bold btn-light-danger",
+            confirmButton: "btn fw-semobold btn-light-danger",
           },
         });
       }

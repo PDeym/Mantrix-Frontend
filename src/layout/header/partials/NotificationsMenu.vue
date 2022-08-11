@@ -10,13 +10,15 @@
       style="background-image: url('media/misc/pattern-1.jpg')"
     >
       <!--begin::Title-->
-      <h3 class="text-white fw-bold px-9 mt-10 mb-6">
+      <h3 class="text-white fw-semobold px-9 mt-10 mb-6">
         Notifications <span class="fs-8 opacity-75 ps-3">24 reports</span>
       </h3>
       <!--end::Title-->
 
       <!--begin::Tabs-->
-      <ul class="nav nav-line-tabs nav-line-tabs-2x nav-stretch fw-bold px-9">
+      <ul
+        class="nav nav-line-tabs nav-line-tabs-2x nav-stretch fw-semobold px-9"
+      >
         <li class="nav-item">
           <a
             class="nav-link text-white opacity-75 opacity-state-100 pb-4"
@@ -76,7 +78,7 @@
                 <div class="mb-0 me-2">
                   <a
                     href="#"
-                    class="fs-6 text-gray-800 text-hover-primary fw-bolder"
+                    class="fs-6 text-gray-800 text-hover-primary fw-bold"
                     >{{ item.title }}</a
                   >
                   <div class="text-gray-400 fs-7">
@@ -120,11 +122,11 @@
           <!--begin::Section-->
           <div class="pt-10 pb-0">
             <!--begin::Title-->
-            <h3 class="text-dark text-center fw-bolder">Get Pro Access</h3>
+            <h3 class="text-dark text-center fw-bold">Get Pro Access</h3>
             <!--end::Title-->
 
             <!--begin::Text-->
-            <div class="text-center text-gray-600 fw-bold pt-1">
+            <div class="text-center text-gray-600 fw-semobold pt-1">
               Outlines keep you honest. They stoping you from amazing poorly
               about drive
             </div>
@@ -174,9 +176,11 @@
                 <!--end::Code-->
 
                 <!--begin::Title-->
-                <a href="#" class="text-gray-800 text-hover-primary fw-bold">{{
-                  item.message
-                }}</a>
+                <a
+                  href="#"
+                  class="text-gray-800 text-hover-primary fw-semobold"
+                  >{{ item.message }}</a
+                >
                 <!--end::Title-->
               </div>
               <!--end::Section-->

@@ -5,7 +5,7 @@
     <div class="card-header">
       <!--begin::Card title-->
       <div class="card-title">
-        <h2 class="fw-bolder">Products</h2>
+        <h2 class="fw-bold">Products</h2>
       </div>
       <!--begin::Card title-->
 
@@ -30,14 +30,12 @@
       <div class="table-responsive">
         <!--begin::Table-->
         <table
-          class="table align-middle table-row-dashed fs-6 fw-bold gy-4"
+          class="table align-middle table-row-dashed fs-6 fw-semobold gy-4"
           id="kt_subscription_products_table"
         >
           <!--begin::Table head-->
           <thead>
-            <tr
-              class="text-start text-muted fw-bolder fs-7 text-uppercase gs-0"
-            >
+            <tr class="text-start text-muted fw-bold fs-7 text-uppercase gs-0">
               <th class="min-w-300px">Product</th>
               <th class="min-w-100px">Qty</th>
               <th class="min-w-150px">Total</th>

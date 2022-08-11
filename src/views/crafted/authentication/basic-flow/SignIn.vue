@@ -1,6 +1,6 @@
 <template>
   <!--begin::Wrapper-->
-  <div class="w-lg-500px bg-white rounded shadow-sm p-10 p-lg-15 mx-auto">
+  <div class="w-lg-500px bg-body rounded shadow-sm p-10 p-lg-15 mx-auto">
     <!--begin::Form-->
     <Form
       class="form w-100"
@@ -15,10 +15,10 @@
         <!--end::Title-->
 
         <!--begin::Link-->
-        <div class="text-gray-400 fw-bold fs-4">
+        <div class="text-gray-400 fw-semobold fs-4">
           New Here?
 
-          <router-link to="/sign-up" class="link-primary fw-bolder">
+          <router-link to="/sign-up" class="link-primary fw-bold">
             Create an Account
           </router-link>
         </div>
@@ -36,11 +36,12 @@
       <!--begin::Input group-->
       <div class="fv-row mb-10">
         <!--begin::Label-->
-        <label class="form-label fs-6 fw-bolder text-dark">Email</label>
+        <label class="form-label fs-6 fw-bold text-dark">Email</label>
         <!--end::Label-->
 
         <!--begin::Input-->
         <Field
+          tabindex="1"
           class="form-control form-control-lg form-control-solid"
           type="text"
           name="email"
@@ -60,13 +61,11 @@
         <!--begin::Wrapper-->
         <div class="d-flex flex-stack mb-2">
           <!--begin::Label-->
-          <label class="form-label fw-bolder text-dark fs-6 mb-0"
-            >Password</label
-          >
+          <label class="form-label fw-bold text-dark fs-6 mb-0">Password</label>
           <!--end::Label-->
 
           <!--begin::Link-->
-          <router-link to="/password-reset" class="link-primary fs-6 fw-bolder">
+          <router-link to="/password-reset" class="link-primary fs-6 fw-bold">
             Forgot Password ?
           </router-link>
           <!--end::Link-->
@@ -75,6 +74,7 @@
 
         <!--begin::Input-->
         <Field
+          tabindex="2"
           class="form-control form-control-lg form-control-solid"
           type="password"
           name="password"
@@ -93,6 +93,7 @@
       <div class="text-center">
         <!--begin::Submit button-->
         <button
+          tabindex="3"
           type="submit"
           ref="submitButton"
           id="kt_sign_in_submit"
@@ -110,9 +111,7 @@
         <!--end::Submit button-->
 
         <!--begin::Separator-->
-        <div class="text-center text-muted text-uppercase fw-bolder mb-5">
-          or
-        </div>
+        <div class="text-center text-muted text-uppercase fw-bold mb-5">or</div>
         <!--end::Separator-->
 
         <!--begin::Google link-->
@@ -213,7 +212,7 @@ export default defineComponent({
           buttonsStyling: false,
           confirmButtonText: "Ok, got it!",
           customClass: {
-            confirmButton: "btn fw-bold btn-light-primary",
+            confirmButton: "btn fw-semobold btn-light-primary",
           },
         }).then(function () {
           // Go to page after successfully login
@@ -226,7 +225,7 @@ export default defineComponent({
           buttonsStyling: false,
           confirmButtonText: "Try again!",
           customClass: {
-            confirmButton: "btn fw-bold btn-light-danger",
+            confirmButton: "btn fw-semobold btn-light-danger",
           },
         });
       }

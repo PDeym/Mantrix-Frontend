@@ -19,10 +19,25 @@
     <div class="aside-logo flex-column-auto" id="kt_aside_logo">
       <!--begin::Logo-->
       <a href="#" v-if="asideTheme === 'dark'">
-        <img alt="Logo" :src="darkLogo" class="h-25px logo" />
+        <img
+          alt="Logo"
+          src="media/logos/default-dark.svg"
+          class="h-25px app-sidebar-logo-default"
+        />
       </a>
       <a href="#" v-if="asideTheme === 'light'">
-        <img alt="Logo" :src="lightLogo" class="h-25px logo" />
+        <img
+          v-if="themeMode === 'light'"
+          alt="Logo"
+          src="media/logos/default.svg"
+          class="theme-light-show h-25px app-sidebar-logo-default"
+        />
+        <img
+          v-else
+          alt="Logo"
+          src="media/logos/default-dark.svg"
+          class="theme-dark-show h-25px app-sidebar-logo-default"
+        />
       </a>
       <!--end::Logo-->
 
@@ -76,10 +91,11 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent, computed } from "vue";
 import { useI18n } from "vue-i18n/index";
 import KTMenu from "@/layout/aside/Menu.vue";
 import { asideTheme } from "@/core/helpers/config";
+import { useStore } from "vuex";
 
 export default defineComponent({
   name: "KTAside",
@@ -92,9 +108,15 @@ export default defineComponent({
   },
   setup() {
     const { t } = useI18n();
+    const store = useStore();
+
+    const themeMode = computed(() => {
+      return store.getters.getThemeMode;
+    });
 
     return {
       asideTheme,
+      themeMode,
       t,
     };
   },

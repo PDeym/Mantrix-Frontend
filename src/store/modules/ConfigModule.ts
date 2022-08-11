@@ -1,6 +1,6 @@
 import objectPath from "object-path";
 import merge from "deepmerge";
-import layoutConfig from "@/modules/pais-template/core/config/DefaultLayoutConfig";
+import layoutConfig from "@/core/config/DefaultLayoutConfig";
 import { Mutations } from "@/store/enums/StoreEnums";
 import { Mutation, Module, VuexModule } from "vuex-module-decorators";
 import LayoutConfigTypes from "@/core/config/LayoutConfigTypes";
@@ -12,8 +12,8 @@ interface StoreInfo {
 
 @Module
 export default class ConfigModule extends VuexModule implements StoreInfo {
-  config = layoutConfig;
-  initial = layoutConfig;
+  config: LayoutConfigTypes = layoutConfig;
+  initial: LayoutConfigTypes = layoutConfig;
 
   /**
    * Get config from layout config

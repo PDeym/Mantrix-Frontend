@@ -6,7 +6,7 @@
       <div class="flex-grow-1">
         <!--begin::Info-->
         <div class="d-flex align-items-center pe-2 mb-5">
-          <span class="text-muted fw-bolder fs-5 flex-grow-1">
+          <span class="text-muted fw-bold fs-5 flex-grow-1">
             {{ time }}
           </span>
 
@@ -19,7 +19,7 @@
         <!--end::Info-->
 
         <!--begin::Link-->
-        <a href="#" class="text-dark fw-bolder text-hover-primary fs-4">
+        <a href="#" class="text-dark fw-bold text-hover-primary fs-4">
           {{ title }}
         </a>
         <!--end::Link-->

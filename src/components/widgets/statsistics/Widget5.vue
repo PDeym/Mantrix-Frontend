@@ -7,11 +7,11 @@
         <inline-svg :src="svgIcon" />
       </span>
 
-      <div :class="`text-inverse-${color}`" class="fw-bolder fs-2 mb-2 mt-5">
+      <div :class="`text-inverse-${color}`" class="fw-bold fs-2 mb-2 mt-5">
         {{ title }}
       </div>
 
-      <div :class="`text-inverse-${color}`" class="fw-bold fs-7">
+      <div :class="`text-inverse-${color}`" class="fw-semobold fs-7">
         {{ description }}
       </div>
     </div>

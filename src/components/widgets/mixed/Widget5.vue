@@ -4,9 +4,9 @@
     <!--begin::Beader-->
     <div class="card-header border-0 py-5">
       <h3 class="card-title align-items-start flex-column">
-        <span class="card-label fw-bolder fs-3 mb-1">Trends</span>
+        <span class="card-label fw-bold fs-3 mb-1">Trends</span>
 
-        <span class="text-muted fw-bold fs-7">Latest trends</span>
+        <span class="text-muted fw-semobold fs-7">Latest trends</span>
       </h3>
 
       <div class="card-toolbar">
@@ -32,8 +32,9 @@
     <div class="card-body d-flex flex-column">
       <!--begin::Chart-->
       <apexchart
+        ref="chartRef"
         class="mixed-widget-5-chart card-rounded-top"
-        :options="chartOptions"
+        :options="chart"
         :series="series"
         type="area"
         :height="chartHeight"
@@ -60,12 +61,10 @@
 
             <!--begin::Title-->
             <div>
-              <a
-                href="#"
-                class="fs-6 text-gray-800 text-hover-primary fw-bolder"
+              <a href="#" class="fs-6 text-gray-800 text-hover-primary fw-bold"
                 >Top Authors</a
               >
-              <div class="fs-7 text-muted fw-bold mt-1">
+              <div class="fs-7 text-muted fw-semobold mt-1">
                 Ricky Hunt, Sandra Trepp
               </div>
             </div>
@@ -74,7 +73,7 @@
           <!--end::Section-->
 
           <!--begin::Label-->
-          <div class="badge badge-light fw-bold py-4 px-3">+82$</div>
+          <div class="badge badge-light fw-semobold py-4 px-3">+82$</div>
           <!--end::Label-->
         </div>
         <!--end::Item-->
@@ -97,19 +96,17 @@
 
             <!--begin::Title-->
             <div>
-              <a
-                href="#"
-                class="fs-6 text-gray-800 text-hover-primary fw-bolder"
+              <a href="#" class="fs-6 text-gray-800 text-hover-primary fw-bold"
                 >Top Sales</a
               >
-              <div class="fs-7 text-muted fw-bold mt-1">PitStop Emails</div>
+              <div class="fs-7 text-muted fw-semobold mt-1">PitStop Emails</div>
             </div>
             <!--end::Title-->
           </div>
           <!--end::Section-->
 
           <!--begin::Label-->
-          <div class="badge badge-light fw-bold py-4 px-3">+82$</div>
+          <div class="badge badge-light fw-semobold py-4 px-3">+82$</div>
           <!--end::Label-->
         </div>
         <!--end::Item-->
@@ -132,20 +129,18 @@
 
             <!--begin::Title-->
             <div class="py-1">
-              <a
-                href="#"
-                class="fs-6 text-gray-800 text-hover-primary fw-bolder"
+              <a href="#" class="fs-6 text-gray-800 text-hover-primary fw-bold"
                 >Top Engagement</a
               >
 
-              <div class="fs-7 text-muted fw-bold mt-1">KT.com</div>
+              <div class="fs-7 text-muted fw-semobold mt-1">KT.com</div>
             </div>
             <!--end::Title-->
           </div>
           <!--end::Section-->
 
           <!--begin::Label-->
-          <div class="badge badge-light fw-bold py-4 px-3">+82$</div>
+          <div class="badge badge-light fw-semobold py-4 px-3">+82$</div>
           <!--end::Label-->
         </div>
         <!--end::Item-->
@@ -158,9 +153,12 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref } from "vue";
+import { defineComponent, ref, computed, onBeforeMount, watch } from "vue";
 import Dropdown3 from "@/components/dropdown/Dropdown3.vue";
 import { getCSSVariableValue } from "@/assets/ts/_utils";
+import { ApexOptions } from "apexcharts";
+import VueApexCharts from "vue3-apexcharts";
+import { useStore } from "vuex";
 
 export default defineComponent({
   name: "widget-7",
@@ -173,132 +171,9 @@ export default defineComponent({
     chartHeight: String,
   },
   setup(props) {
-    const color = ref(props.chartColor);
-
-    const labelColor = getCSSVariableValue("--bs-" + "gray-800");
-    const strokeColor = getCSSVariableValue("--bs-" + "gray-300");
-    const baseColor = getCSSVariableValue("--bs-" + color.value);
-    const lightColor = getCSSVariableValue("--bs-light-" + color.value);
-
-    const chartOptions = {
-      chart: {
-        fontFamily: "inherit",
-        type: "area",
-        height: props.chartHeight,
-        toolbar: {
-          show: false,
-        },
-        zoom: {
-          enabled: false,
-        },
-        sparkline: {
-          enabled: true,
-        },
-      },
-      plotOptions: {},
-      legend: {
-        show: false,
-      },
-      dataLabels: {
-        enabled: false,
-      },
-      fill: {
-        type: "gradient",
-        opacity: 1,
-        gradient: {
-          type: "vertical",
-          shadeIntensity: 0.5,
-          gradientToColors: undefined,
-          inverseColors: true,
-          opacityFrom: 1,
-          opacityTo: 0.375,
-          stops: [25, 50, 100],
-          colorStops: [],
-        },
-      },
-      stroke: {
-        curve: "smooth",
-        show: true,
-        width: 3,
-        colors: [baseColor],
-      },
-      xaxis: {
-        categories: ["Feb", "Mar", "Apr", "May", "Jun", "Jul"],
-        axisBorder: {
-          show: false,
-        },
-        axisTicks: {
-          show: false,
-        },
-        labels: {
-          show: false,
-          style: {
-            colors: labelColor,
-            fontSize: "12px",
-          },
-        },
-        crosshairs: {
-          show: false,
-          position: "front",
-          stroke: {
-            color: strokeColor,
-            width: 1,
-            dashArray: 3,
-          },
-        },
-        tooltip: {
-          enabled: false,
-        },
-      },
-      yaxis: {
-        min: 0,
-        max: 65,
-        labels: {
-          show: false,
-          style: {
-            colors: labelColor,
-            fontSize: "12px",
-          },
-        },
-      },
-      states: {
-        normal: {
-          filter: {
-            type: "none",
-            value: 0,
-          },
-        },
-        hover: {
-          filter: {
-            type: "none",
-            value: 0,
-          },
-        },
-        active: {
-          allowMultipleDataPointsSelection: false,
-          filter: {
-            type: "none",
-            value: 0,
-          },
-        },
-      },
-      tooltip: {
-        style: {
-          fontSize: "12px",
-        },
-        y: {
-          formatter: function (val) {
-            return "$" + val + " thousands";
-          },
-        },
-      },
-      colors: [lightColor],
-      markers: {
-        colors: [lightColor],
-        strokeColor: [baseColor],
-        strokeWidth: 3,
-      },
-    };
+    const chartRef = ref<typeof VueApexCharts | null>(null);
+    let chart: ApexOptions = {};
+    const store = useStore();
 
     const series = [
       {
@@ -307,10 +182,155 @@ export default defineComponent({
       },
     ];
 
+    const themeMode = computed(() => {
+      return store.getters.getThemeMode;
+    });
+
+    onBeforeMount(() => {
+      Object.assign(chart, chartOptions(props.chartColor, props.chartHeight));
+    });
+
+    const refreshChart = () => {
+      if (!chartRef.value) {
+        return;
+      }
+
+      Object.assign(chart, chartOptions(props.chartColor, props.chartHeight));
+
+      chartRef.value.refresh();
+    };
+
+    watch(themeMode, () => {
+      refreshChart();
+    });
+
     return {
-      chartOptions,
+      chart,
       series,
+      chartRef,
     };
   },
 });
+
+const chartOptions = (color, height): ApexOptions => {
+  const labelColor = getCSSVariableValue("--kt-gray-800");
+  const strokeColor = getCSSVariableValue("--kt-gray-300");
+  const baseColor = getCSSVariableValue(`--kt-${color}`);
+  const lightColor = getCSSVariableValue(`--kt-${color}-light`);
+
+  return {
+    chart: {
+      fontFamily: "inherit",
+      type: "area",
+      height: height,
+      toolbar: {
+        show: false,
+      },
+      zoom: {
+        enabled: false,
+      },
+      sparkline: {
+        enabled: true,
+      },
+    },
+    plotOptions: {},
+    legend: {
+      show: false,
+    },
+    dataLabels: {
+      enabled: false,
+    },
+    fill: {
+      type: "solid",
+      opacity: 1,
+    },
+    stroke: {
+      curve: "smooth",
+      show: true,
+      width: 3,
+      colors: [baseColor],
+    },
+    xaxis: {
+      categories: ["Feb", "Mar", "Apr", "May", "Jun", "Jul"],
+      axisBorder: {
+        show: false,
+      },
+      axisTicks: {
+        show: false,
+      },
+      labels: {
+        show: false,
+        style: {
+          colors: labelColor,
+          fontSize: "12px",
+        },
+      },
+      crosshairs: {
+        show: false,
+        position: "front",
+        stroke: {
+          color: strokeColor,
+          width: 1,
+          dashArray: 3,
+        },
+      },
+      tooltip: {
+        enabled: true,
+        formatter: undefined,
+        offsetY: 0,
+        style: {
+          fontSize: "12px",
+        },
+      },
+    },
+    yaxis: {
+      min: 0,
+      max: 65,
+      labels: {
+        show: false,
+        style: {
+          colors: labelColor,
+          fontSize: "12px",
+        },
+      },
+    },
+    states: {
+      normal: {
+        filter: {
+          type: "none",
+          value: 0,
+        },
+      },
+      hover: {
+        filter: {
+          type: "none",
+          value: 0,
+        },
+      },
+      active: {
+        allowMultipleDataPointsSelection: false,
+        filter: {
+          type: "none",
+          value: 0,
+        },
+      },
+    },
+    tooltip: {
+      style: {
+        fontSize: "12px",
+      },
+      y: {
+        formatter: function (val) {
+          return "$" + val + " thousands";
+        },
+      },
+    },
+    colors: [lightColor],
+    markers: {
+      colors: [lightColor],
+      strokeColors: [baseColor],
+      strokeWidth: 3,
+    },
+  };
+};
 </script>

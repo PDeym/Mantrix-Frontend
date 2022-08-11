@@ -307,7 +307,7 @@ export default defineComponent({
         buttonsStyling: false,
         confirmButtonText: "Ok, got it!",
         customClass: {
-          confirmButton: "btn fw-bold btn-light-primary",
+          confirmButton: "btn fw-semobold btn-light-primary",
         },
       }).then(() => {
         window.location.reload();

@@ -14,6 +14,7 @@ $rotate-transition: transform 0.3s ease;
     .rotate-#{$value} {
         transition: $rotate-transition;
         backface-visibility: hidden;
+        will-change: transform;
 
         .collapsible:not(.collapsed)> & ,
         .show > &,
@@ -30,6 +31,7 @@ $rotate-transition: transform 0.3s ease;
     .rotate-n#{$value} {
         transition: $rotate-transition;
         backface-visibility: hidden;
+        will-change: transform;
 
         .collapsible:not(.collapsed)> &,
         .show > &,

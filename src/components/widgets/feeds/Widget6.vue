@@ -15,10 +15,10 @@
 
           <!--begin::Info-->
           <div class="d-flex flex-column">
-            <a href="#" class="text-gray-800 text-hover-primary fs-6 fw-bolder"
+            <a href="#" class="text-gray-800 text-hover-primary fs-6 fw-bold"
               >Mat Dillon</a
             >
-            <span class="text-gray-400 fw-bold">Last month</span>
+            <span class="text-gray-400 fw-semobold">Last month</span>
           </div>
           <!--end::Info-->
         </div>

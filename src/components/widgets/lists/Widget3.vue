@@ -3,7 +3,7 @@
   <div class="card" :class="widgetClasses">
     <!--begin::Header-->
     <div class="card-header border-0">
-      <h3 class="card-title fw-bolder text-dark">Todo</h3>
+      <h3 class="card-title fw-bold text-dark">Todo</h3>
 
       <div class="card-toolbar">
         <!--begin::Menu-->
@@ -47,19 +47,15 @@
 
           <!--begin::Description-->
           <div class="flex-grow-1">
-            <a
-              href="#"
-              class="text-gray-800 text-hover-primary fw-bolder fs-6"
-              >{{ item.title }}</a
-            >
+            <a href="#" class="text-gray-800 text-hover-primary fw-bold fs-6">{{
+              item.title
+            }}</a>
 
-            <span class="text-muted fw-bold d-block">{{ item.text }}</span>
+            <span class="text-muted fw-semobold d-block">{{ item.text }}</span>
           </div>
           <!--end::Description-->
 
-          <span
-            class="badge fs-8 fw-bolder"
-            :class="`badge-light-${item.color}`"
+          <span class="badge fs-8 fw-bold" :class="`badge-light-${item.color}`"
             >New</span
           >
         </div>

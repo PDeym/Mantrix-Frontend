@@ -1,6 +1,6 @@
 <template>
   <!--begin::Wrapper-->
-  <div class="w-lg-500px bg-white rounded shadow-sm p-10 p-lg-15 mx-auto">
+  <div class="w-lg-500px bg-body rounded shadow-sm p-10 p-lg-15 mx-auto">
     <!--begin::Form-->
     <Form
       class="form w-100 fv-plugins-bootstrap5 fv-plugins-framework"
@@ -15,7 +15,7 @@
         <!--end::Title-->
 
         <!--begin::Link-->
-        <div class="text-gray-400 fw-bold fs-4">
+        <div class="text-gray-400 fw-semobold fs-4">
           Enter your email to reset your password.
         </div>
         <!--end::Link-->
@@ -24,7 +24,7 @@
 
       <!--begin::Input group-->
       <div class="fv-row mb-10">
-        <label class="form-label fw-bolder text-gray-900 fs-6">Email</label>
+        <label class="form-label fw-bold text-gray-900 fs-6">Email</label>
         <Field
           class="form-control form-control-solid"
           type="email"
@@ -46,7 +46,7 @@
           type="submit"
           ref="submitButton"
           id="kt_password_reset_submit"
-          class="btn btn-lg btn-primary fw-bolder me-4"
+          class="btn btn-lg btn-primary fw-bold me-4"
         >
           <span class="indicator-label"> Submit </span>
           <span class="indicator-progress">
@@ -57,9 +57,7 @@
           </span>
         </button>
 
-        <router-link
-          to="/sign-up"
-          class="btn btn-lg btn-light-primary fw-bolder"
+        <router-link to="/sign-up" class="btn btn-lg btn-light-primary fw-bold"
           >Cancel</router-link
         >
       </div>
@@ -116,7 +114,7 @@ export default defineComponent({
           buttonsStyling: false,
           confirmButtonText: "Ok, got it!",
           customClass: {
-            confirmButton: "btn fw-bold btn-light-primary",
+            confirmButton: "btn fw-semobold btn-light-primary",
           },
         });
       } else {
@@ -126,7 +124,7 @@ export default defineComponent({
           buttonsStyling: false,
           confirmButtonText: "Try again!",
           customClass: {
-            confirmButton: "btn fw-bold btn-light-danger",
+            confirmButton: "btn fw-semobold btn-light-danger",
           },
         });
       }

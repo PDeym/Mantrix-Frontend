@@ -12,7 +12,7 @@
             <span
               v-else
               :class="`bg-light-${color} text-${color}`"
-              class="symbol-label fs-5 fw-bolder"
+              class="symbol-label fs-5 fw-bold"
               >{{ initials }}</span
             >
             <div
@@ -26,13 +26,13 @@
         <!--begin::Name-->
         <a
           href="#"
-          class="fs-4 text-gray-800 text-hover-primary fw-bolder mb-0"
+          class="fs-4 text-gray-800 text-hover-primary fw-bold mb-0"
           >{{ name }}</a
         >
         <!--end::Name-->
 
         <!--begin::Position-->
-        <div class="fw-bold text-gray-400 mb-6">{{ position }}</div>
+        <div class="fw-semobold text-gray-400 mb-6">{{ position }}</div>
         <!--end::Position-->
 
         <!--begin::Info-->
@@ -41,8 +41,8 @@
           <div
             class="border border-gray-300 border-dashed rounded min-w-125px py-3 px-4 mx-3 mb-3"
           >
-            <div class="fs-6 fw-bolder text-gray-700">{{ avgEarnings }}</div>
-            <div class="fw-bold text-gray-400">Avg. Earnings</div>
+            <div class="fs-6 fw-bold text-gray-700">{{ avgEarnings }}</div>
+            <div class="fw-semobold text-gray-400">Avg. Earnings</div>
           </div>
           <!--end::Stats-->
 
@@ -50,8 +50,8 @@
           <div
             class="border border-gray-300 border-dashed rounded min-w-125px py-3 mx-3 px-4 mb-3"
           >
-            <div class="fs-6 fw-bolder text-gray-700">{{ totalSales }}</div>
-            <div class="fw-bold text-gray-400">Total Sales</div>
+            <div class="fs-6 fw-bold text-gray-700">{{ totalSales }}</div>
+            <div class="fw-semobold text-gray-400">Total Sales</div>
           </div>
           <!--end::Stats-->
         </div>
@@ -59,7 +59,7 @@
 
         <!--begin::Link-->
         <button
-          class="btn btn-sm btn-light-primary fw-bolder"
+          class="btn btn-sm btn-light-primary fw-bold"
           data-kt-drawer-toggle="true"
           data-kt-drawer-target="#kt_drawer_chat"
           @click="openDrawer()"

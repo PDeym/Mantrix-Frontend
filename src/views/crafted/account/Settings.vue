@@ -12,7 +12,7 @@
     >
       <!--begin::Card title-->
       <div class="card-title m-0">
-        <h3 class="fw-bolder m-0">Profile Details</h3>
+        <h3 class="fw-bold m-0">Profile Details</h3>
       </div>
       <!--end::Card title-->
     </div>
@@ -33,7 +33,9 @@
           <!--begin::Input group-->
           <div class="row mb-6">
             <!--begin::Label-->
-            <label class="col-lg-4 col-form-label fw-bold fs-6">Avatar</label>
+            <label class="col-lg-4 col-form-label fw-semobold fs-6"
+              >Avatar</label
+            >
             <!--end::Label-->
 
             <!--begin::Col-->
@@ -53,7 +55,7 @@
 
                 <!--begin::Label-->
                 <label
-                  class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-white shadow"
+                  class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow"
                   data-kt-image-input-action="change"
                   data-bs-toggle="tooltip"
                   title="Change avatar"
@@ -69,7 +71,7 @@
 
                 <!--begin::Remove-->
                 <span
-                  class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-white shadow"
+                  class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow"
                   data-kt-image-input-action="remove"
                   data-bs-toggle="tooltip"
                   @click="removeImage()"
@@ -92,7 +94,7 @@
           <!--begin::Input group-->
           <div class="row mb-6">
             <!--begin::Label-->
-            <label class="col-lg-4 col-form-label required fw-bold fs-6"
+            <label class="col-lg-4 col-form-label required fw-semobold fs-6"
               >Full Name</label
             >
             <!--end::Label-->
@@ -144,7 +146,7 @@
           <!--begin::Input group-->
           <div class="row mb-6">
             <!--begin::Label-->
-            <label class="col-lg-4 col-form-label required fw-bold fs-6"
+            <label class="col-lg-4 col-form-label required fw-semobold fs-6"
               >Company</label
             >
             <!--end::Label-->
@@ -171,7 +173,7 @@
           <!--begin::Input group-->
           <div class="row mb-6">
             <!--begin::Label-->
-            <label class="col-lg-4 col-form-label fw-bold fs-6">
+            <label class="col-lg-4 col-form-label fw-semobold fs-6">
               <span class="required">Contact Phone</span>
 
               <i
@@ -204,7 +206,7 @@
           <!--begin::Input group-->
           <div class="row mb-6">
             <!--begin::Label-->
-            <label class="col-lg-4 col-form-label fw-bold fs-6"
+            <label class="col-lg-4 col-form-label fw-semobold fs-6"
               >Company Site</label
             >
             <!--end::Label-->
@@ -231,7 +233,7 @@
           <!--begin::Input group-->
           <div class="row mb-6">
             <!--begin::Label-->
-            <label class="col-lg-4 col-form-label fw-bold fs-6">
+            <label class="col-lg-4 col-form-label fw-semobold fs-6">
               <span class="required">Country</span>
 
               <i
@@ -247,7 +249,7 @@
               <Field
                 as="select"
                 name="country"
-                class="form-select form-select-solid form-select-lg fw-bold"
+                class="form-select form-select-solid form-select-lg fw-semobold"
                 v-model="profileDetails.country"
               >
                 <option value="AF">Afghanistan</option>
@@ -521,7 +523,7 @@
           <!--begin::Input group-->
           <div class="row mb-6">
             <!--begin::Label-->
-            <label class="col-lg-4 col-form-label required fw-bold fs-6"
+            <label class="col-lg-4 col-form-label required fw-semobold fs-6"
               >Language</label
             >
             <!--end::Label-->
@@ -603,7 +605,7 @@
           <!--begin::Input group-->
           <div class="row mb-6">
             <!--begin::Label-->
-            <label class="col-lg-4 col-form-label required fw-bold fs-6"
+            <label class="col-lg-4 col-form-label required fw-semobold fs-6"
               >Time Zone</label
             >
             <!--end::Label-->
@@ -1070,7 +1072,7 @@
           <!--begin::Input group-->
           <div class="row mb-6">
             <!--begin::Label-->
-            <label class="col-lg-4 col-form-label required fw-bold fs-6"
+            <label class="col-lg-4 col-form-label required fw-semobold fs-6"
               >Currency</label
             >
             <!--end::Label-->
@@ -1112,7 +1114,7 @@
           <!--begin::Input group-->
           <div class="row mb-6">
             <!--begin::Label-->
-            <label class="col-lg-4 col-form-label fw-bold fs-6"
+            <label class="col-lg-4 col-form-label fw-semobold fs-6"
               >Communication</label
             >
             <!--end::Label-->
@@ -1130,7 +1132,7 @@
                     name="communication[]"
                     type="checkbox"
                   />
-                  <span class="fw-bold ps-2 fs-6"> Email </span>
+                  <span class="fw-semobold ps-2 fs-6"> Email </span>
                 </label>
                 <!--end::Option-->
 
@@ -1141,7 +1143,7 @@
                     name="communication[]"
                     type="checkbox"
                   />
-                  <span class="fw-bold ps-2 fs-6"> Phone </span>
+                  <span class="fw-semobold ps-2 fs-6"> Phone </span>
                 </label>
                 <!--end::Option-->
               </div>
@@ -1154,7 +1156,7 @@
           <!--begin::Input group-->
           <div class="row mb-0">
             <!--begin::Label-->
-            <label class="col-lg-4 col-form-label fw-bold fs-6"
+            <label class="col-lg-4 col-form-label fw-semobold fs-6"
               >Allow Marketing</label
             >
             <!--begin::Label-->
@@ -1180,7 +1182,7 @@
         <div class="card-footer d-flex justify-content-end py-6 px-9">
           <button
             type="reset"
-            class="btn btn-white btn-active-light-primary me-2"
+            class="btn btn-light btn-active-light-primary me-2"
           >
             Discard
           </button>
@@ -1218,7 +1220,7 @@
       data-bs-target="#kt_account_signin_method"
     >
       <div class="card-title m-0">
-        <h3 class="fw-boldest m-0">Sign-in Method</h3>
+        <h3 class="fw-bolder m-0">Sign-in Method</h3>
       </div>
     </div>
     <!--end::Card header-->
@@ -1230,8 +1232,10 @@
         <!--begin::Email Address-->
         <div class="d-flex flex-wrap align-items-center mb-8">
           <div id="kt_signin_email" :class="{ 'd-none': emailFormDisplay }">
-            <div class="fs-4 fw-boldest mb-1">Email Address</div>
-            <div class="fs-6 fw-bold text-gray-600">support@keenthemes.com</div>
+            <div class="fs-4 fw-bolder mb-1">Email Address</div>
+            <div class="fs-6 fw-semobold text-gray-600">
+              support@keenthemes.com
+            </div>
           </div>
 
           <div
@@ -1252,12 +1256,12 @@
                   <div class="fv-row mb-0">
                     <label
                       for="emailaddress"
-                      class="form-label fs-6 fw-bolder mb-3"
+                      class="form-label fs-6 fw-bold mb-3"
                       >Enter New Email Address</label
                     >
                     <Field
                       type="email"
-                      class="form-control form-control-lg form-control-solid fw-bold fs-6"
+                      class="form-control form-control-lg form-control-solid fw-semobold fs-6"
                       id="emailaddress"
                       placeholder="Email Address"
                       name="emailaddress"
@@ -1274,12 +1278,12 @@
                   <div class="fv-row mb-0">
                     <label
                       for="confirmemailpassword"
-                      class="form-label fs-6 fw-bolder mb-3"
+                      class="form-label fs-6 fw-bold mb-3"
                       >Confirm Password</label
                     >
                     <Field
                       type="password"
-                      class="form-control form-control-lg form-control-solid fw-bold fs-6"
+                      class="form-control form-control-lg form-control-solid fw-semobold fs-6"
                       name="confirmemailpassword"
                       id="confirmemailpassword"
                     />
@@ -1324,7 +1328,7 @@
             class="ms-auto"
           >
             <button
-              class="btn btn-light fw-boldest px-6"
+              class="btn btn-light fw-bolder px-6"
               @click="emailFormDisplay = !emailFormDisplay"
             >
               Change Email
@@ -1339,15 +1343,15 @@
             id="kt_signin_password"
             :class="{ 'd-none': passwordFormDisplay }"
           >
-            <div class="fs-4 fw-boldest mb-1">Password</div>
-            <div class="fs-6 fw-bold text-gray-600">************</div>
+            <div class="fs-4 fw-bolder mb-1">Password</div>
+            <div class="fs-6 fw-semobold text-gray-600">************</div>
           </div>
           <div
             id="kt_signin_password_edit"
             class="flex-row-fluid"
             :class="{ 'd-none': !passwordFormDisplay }"
           >
-            <div class="fs-6 fw-bold text-gray-600 mb-4">
+            <div class="fs-6 fw-semobold text-gray-600 mb-4">
               Password must be at least 8 character and contain symbols
             </div>
 
@@ -1364,12 +1368,12 @@
                   <div class="fv-row mb-0">
                     <label
                       for="currentpassword"
-                      class="form-label fs-6 fw-bolder mb-3"
+                      class="form-label fs-6 fw-bold mb-3"
                       >Current Password</label
                     >
                     <Field
                       type="password"
-                      class="form-control form-control-lg form-control-solid fw-bold fs-6"
+                      class="form-control form-control-lg form-control-solid fw-semobold fs-6"
                       name="currentpassword"
                       id="currentpassword"
                     />
@@ -1384,12 +1388,12 @@
                   <div class="fv-row mb-0">
                     <label
                       for="newpassword"
-                      class="form-label fs-6 fw-bolder mb-3"
+                      class="form-label fs-6 fw-bold mb-3"
                       >New Password</label
                     >
                     <Field
                       type="password"
-                      class="form-control form-control-lg form-control-solid fw-bold fs-6"
+                      class="form-control form-control-lg form-control-solid fw-semobold fs-6"
                       name="newpassword"
                       id="newpassword"
                     />
@@ -1404,12 +1408,12 @@
                   <div class="fv-row mb-0">
                     <label
                       for="confirmpassword"
-                      class="form-label fs-6 fw-bolder mb-3"
+                      class="form-label fs-6 fw-bold mb-3"
                       >Confirm New Password</label
                     >
                     <Field
                       type="password"
-                      class="form-control form-control-lg form-control-solid fw-bold fs-6"
+                      class="form-control form-control-lg form-control-solid fw-semobold fs-6"
                       name="confirmpassword"
                       id="confirmpassword"
                     />
@@ -1455,7 +1459,7 @@
           >
             <button
               @click="passwordFormDisplay = !passwordFormDisplay"
-              class="btn btn-light fw-boldest"
+              class="btn btn-light fw-bolder"
             >
               Reset Password
             </button>
@@ -1481,7 +1485,7 @@
       aria-controls="kt_account_connected_accounts"
     >
       <div class="card-title m-0">
-        <h3 class="fw-bolder m-0">Connected Accounts</h3>
+        <h3 class="fw-bold m-0">Connected Accounts</h3>
       </div>
     </div>
     <!--end::Card header-->
@@ -1500,11 +1504,11 @@
           <!--begin::Wrapper-->
           <div class="d-flex flex-stack flex-grow-1">
             <!--begin::Content-->
-            <div class="fw-bold">
+            <div class="fw-semobold">
               <div class="fs-6 text-gray-600">
                 Two-factor authentication adds an extra layer of security to
                 your account. To log in, in you'll need to provide a 4 digit
-                amazing code. <a href="#" class="fw-bolder">Learn More</a>
+                amazing code. <a href="#" class="fw-bold">Learn More</a>
               </div>
             </div>
             <!--end::Content-->
@@ -1524,10 +1528,10 @@
               />
 
               <div class="d-flex flex-column">
-                <a href="#" class="fs-5 text-dark text-hover-primary fw-bolder"
+                <a href="#" class="fs-5 text-dark text-hover-primary fw-bold"
                   >Google</a
                 >
-                <div class="fs-6 fw-bold text-gray-400">
+                <div class="fs-6 fw-semobold text-gray-400">
                   Plan properly your workflow
                 </div>
               </div>
@@ -1558,10 +1562,10 @@
               />
 
               <div class="d-flex flex-column">
-                <a href="#" class="fs-5 text-dark text-hover-primary fw-bolder"
+                <a href="#" class="fs-5 text-dark text-hover-primary fw-bold"
                   >Github</a
                 >
-                <div class="fs-6 fw-bold text-gray-400">
+                <div class="fs-6 fw-semobold text-gray-400">
                   Keep eye on on your Repositories
                 </div>
               </div>
@@ -1592,10 +1596,10 @@
               />
 
               <div class="d-flex flex-column">
-                <a href="#" class="fs-5 text-dark text-hover-primary fw-bolder"
+                <a href="#" class="fs-5 text-dark text-hover-primary fw-bold"
                   >Slack</a
                 >
-                <div class="fs-6 fw-bold text-gray-400">
+                <div class="fs-6 fw-semobold text-gray-400">
                   Integrate Projects Discussions
                 </div>
               </div>
@@ -1619,7 +1623,7 @@
 
       <!--begin::Card footer-->
       <div class="card-footer d-flex justify-content-end py-6 px-9">
-        <button class="btn btn-white btn-active-light-primary me-2">
+        <button class="btn btn-light btn-active-light-primary me-2">
           Discard
         </button>
         <button
@@ -1654,7 +1658,7 @@
       aria-controls="kt_account_email_preferences"
     >
       <div class="card-title m-0">
-        <h3 class="fw-bolder m-0">Email Preferences</h3>
+        <h3 class="fw-bold m-0">Email Preferences</h3>
       </div>
     </div>
     <!--begin::Card header-->
@@ -1680,7 +1684,7 @@
 
             <!--begin::Label-->
             <span class="form-check-label d-flex flex-column align-items-start">
-              <span class="fw-bolder fs-5 mb-0">Successful Payments</span>
+              <span class="fw-bold fs-5 mb-0">Successful Payments</span>
               <span class="text-muted fs-6"
                 >Receive a notification for every successful payment.</span
               >
@@ -1708,7 +1712,7 @@
 
             <!--begin::Label-->
             <span class="form-check-label d-flex flex-column align-items-start">
-              <span class="fw-bolder fs-5 mb-0">Payouts</span>
+              <span class="fw-bold fs-5 mb-0">Payouts</span>
               <span class="text-muted fs-6"
                 >Receive a notification for every initiated payout.</span
               >
@@ -1735,7 +1739,7 @@
 
             <!--begin::Label-->
             <span class="form-check-label d-flex flex-column align-items-start">
-              <span class="fw-bolder fs-5 mb-0">Fee Collection</span>
+              <span class="fw-bold fs-5 mb-0">Fee Collection</span>
               <span class="text-muted fs-6"
                 >Receive a notification each time you collect a fee from
                 sales</span
@@ -1764,7 +1768,7 @@
 
             <!--begin::Label-->
             <span class="form-check-label d-flex flex-column align-items-start">
-              <span class="fw-bolder fs-5 mb-0">Customer Payment Dispute</span>
+              <span class="fw-bold fs-5 mb-0">Customer Payment Dispute</span>
               <span class="text-muted fs-6"
                 >Receive a notification if a payment is disputed by a customer
                 and for dispute purposes.</span
@@ -1792,7 +1796,7 @@
 
             <!--begin::Label-->
             <span class="form-check-label d-flex flex-column align-items-start">
-              <span class="fw-bolder fs-5 mb-0">Refund Alerts</span>
+              <span class="fw-bold fs-5 mb-0">Refund Alerts</span>
               <span class="text-muted fs-6"
                 >Receive a notification if a payment is stated as risk by the
                 Finance Department.</span
@@ -1821,7 +1825,7 @@
 
             <!--begin::Label-->
             <span class="form-check-label d-flex flex-column align-items-start">
-              <span class="fw-bolder fs-5 mb-0">Invoice Payments</span>
+              <span class="fw-bold fs-5 mb-0">Invoice Payments</span>
               <span class="text-muted fs-6"
                 >Receive a notification if a customer sends an incorrect amount
                 to pay their invoice.</span
@@ -1849,7 +1853,7 @@
 
             <!--begin::Label-->
             <span class="form-check-label d-flex flex-column align-items-start">
-              <span class="fw-bolder fs-5 mb-0">Webhook API Endpoints</span>
+              <span class="fw-bold fs-5 mb-0">Webhook API Endpoints</span>
               <span class="text-muted fs-6"
                 >Receive notifications for consistently failing webhook API
                 endpoints.</span
@@ -1866,7 +1870,7 @@
 
         <!--begin::Card footer-->
         <div class="card-footer d-flex justify-content-end py-6 px-9">
-          <button class="btn btn-white btn-active-light-primary me-2">
+          <button class="btn btn-light btn-active-light-primary me-2">
             Discard
           </button>
           <button
@@ -1903,7 +1907,7 @@
       aria-controls="kt_account_notifications"
     >
       <div class="card-title m-0">
-        <h3 class="fw-bolder m-0">Notifications</h3>
+        <h3 class="fw-bold m-0">Notifications</h3>
       </div>
     </div>
     <!--begin::Card header-->
@@ -1919,10 +1923,10 @@
             <table
               class="table table-row-dashed border-gray-300 align-middle gy-6"
             >
-              <tbody class="fs-6 fw-bold">
+              <tbody class="fs-6 fw-semobold">
                 <!--begin::Table row-->
                 <tr>
-                  <td class="min-w-250px fs-4 fw-bolder">Notifications</td>
+                  <td class="min-w-250px fs-4 fw-bold">Notifications</td>
                   <td class="w-125px">
                     <div class="form-check form-check-solid">
                       <input
@@ -2114,7 +2118,7 @@
 
         <!--begin::Card footer-->
         <div class="card-footer d-flex justify-content-end py-6 px-9">
-          <button class="btn btn-white btn-active-light-primary me-2">
+          <button class="btn btn-light btn-active-light-primary me-2">
             Discard
           </button>
           <button
@@ -2151,7 +2155,7 @@
       aria-controls="kt_account_deactivate"
     >
       <div class="card-title m-0">
-        <h3 class="fw-boldest m-0">Deactivate Account</h3>
+        <h3 class="fw-bolder m-0">Deactivate Account</h3>
       </div>
     </div>
     <!--end::Card header-->
@@ -2175,15 +2179,15 @@
             <!--begin::Wrapper-->
             <div class="d-flex flex-stack flex-grow-1">
               <!--begin::Content-->
-              <div class="fw-bold">
-                <h4 class="text-gray-800 fw-bolder">
+              <div class="fw-semobold">
+                <h4 class="text-gray-800 fw-bold">
                   You Are Deactivating Your Account
                 </h4>
 
                 <div class="fs-6 text-gray-600">
                   For extra security, this requires you to confirm your email or
                   phone number when you reset yousignr password. <br /><a
-                    class="fw-bolder"
+                    class="fw-bold"
                     href="#"
                     >Learn more</a
                   >
@@ -2203,7 +2207,9 @@
               value=""
               id="deactivate"
             />
-            <label class="form-check-label fw-bold ps-2 fs-6" for="deactivate"
+            <label
+              class="form-check-label fw-semobold ps-2 fs-6"
+              for="deactivate"
               >Confirm Account Deactivation</label
             >
           </div>
@@ -2217,7 +2223,7 @@
             id="kt_account_deactivate_account_submit"
             ref="submitButton5"
             type="submit"
-            class="btn btn-danger fw-bold"
+            class="btn btn-danger fw-semobold"
           >
             <span class="indicator-label"> Deactivate Account </span>
             <span class="indicator-progress">

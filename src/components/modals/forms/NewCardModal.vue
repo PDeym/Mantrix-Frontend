@@ -43,7 +43,7 @@
             <div class="d-flex flex-column mb-7 fv-row">
               <!--begin::Label-->
               <label
-                class="d-flex align-items-center fs-6 fw-bold form-label mb-2"
+                class="d-flex align-items-center fs-6 fw-semobold form-label mb-2"
               >
                 <span class="required">Name On Card</span>
                 <i
@@ -72,7 +72,7 @@
             <!--begin::Input group-->
             <div class="d-flex flex-column mb-7 fv-row">
               <!--begin::Label-->
-              <label class="required fs-6 fw-bold form-label mb-2"
+              <label class="required fs-6 fw-semobold form-label mb-2"
                 >Card Number</label
               >
               <!--end::Label-->
@@ -125,7 +125,7 @@
               <!--begin::Col-->
               <div class="col-md-8 fv-row">
                 <!--begin::Label-->
-                <label class="required fs-6 fw-bold form-label mb-2"
+                <label class="required fs-6 fw-semobold form-label mb-2"
                   >Expiration Date</label
                 >
                 <!--end::Label-->
@@ -190,7 +190,7 @@
               <div class="col-md-4 fv-row">
                 <!--begin::Label-->
                 <label
-                  class="d-flex align-items-center fs-6 fw-bold form-label mb-2"
+                  class="d-flex align-items-center fs-6 fw-semobold form-label mb-2"
                 >
                   <span class="required">CVV</span>
                   <i
@@ -242,10 +242,10 @@
             <div class="d-flex flex-stack">
               <!--begin::Label-->
               <div class="me-5">
-                <label class="fs-6 fw-bold form-label"
+                <label class="fs-6 fw-semobold form-label"
                   >Save Card for further billing?</label
                 >
-                <div class="fs-7 fw-bold text-gray-400">
+                <div class="fs-7 fw-semobold text-gray-400">
                   If you need more info, please check budget planning
                 </div>
               </div>
@@ -261,7 +261,7 @@
                   value="1"
                   checked="checked"
                 />
-                <span class="form-check-label fw-bold text-gray-400">
+                <span class="form-check-label fw-semobold text-gray-400">
                   Save Card
                 </span>
               </label>
@@ -274,7 +274,7 @@
               <button
                 type="reset"
                 id="kt_modal_new_card_cancel"
-                class="btn btn-white me-3"
+                class="btn btn-light me-3"
               >
                 Discard
               </button>

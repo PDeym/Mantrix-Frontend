@@ -2,9 +2,9 @@
   <!--begin::Followers toolbar-->
   <div class="d-flex flex-wrap flex-stack mb-6">
     <!--begin::Title-->
-    <h3 class="fw-bolder my-2">
+    <h3 class="fw-bold my-2">
       My Connections
-      <span class="fs-6 text-gray-400 fw-bold ms-1">(29)</span>
+      <span class="fs-6 text-gray-400 fw-semobold ms-1">(29)</span>
     </h3>
     <!--end::Title-->
 

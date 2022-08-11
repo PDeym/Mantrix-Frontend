@@ -20,7 +20,9 @@
       <!--begin::Timeline heading-->
       <div class="mb-5 pe-3">
         <!--begin::Title-->
-        <a href="#" class="fs-5 fw-bold text-gray-800 text-hover-primary mb-2"
+        <a
+          href="#"
+          class="fs-5 fw-semobold text-gray-800 text-hover-primary mb-2"
           >3 New Incoming Project Files:</a
         >
         <!--end::Title-->
@@ -59,9 +61,9 @@
             <!--end::Icon-->
 
             <!--begin::Info-->
-            <div class="ms-1 fw-bold">
+            <div class="ms-1 fw-semobold">
               <!--begin::Desc-->
-              <a href="#" class="fs-6 text-hover-primary fw-bolder"
+              <a href="#" class="fs-6 text-hover-primary fw-bold"
                 >Finance KPI App Guidelines</a
               >
               <!--end::Desc-->
@@ -81,9 +83,9 @@
             <!--end::Icon-->
 
             <!--begin::Info-->
-            <div class="ms-1 fw-bold">
+            <div class="ms-1 fw-semobold">
               <!--begin::Desc-->
-              <a href="#" class="fs-6 text-hover-primary fw-bolder"
+              <a href="#" class="fs-6 text-hover-primary fw-bold"
                 >Client UAT Testing Results</a
               >
               <!--end::Desc-->
@@ -103,9 +105,9 @@
             <!--end::Icon-->
 
             <!--begin::Info-->
-            <div class="ms-1 fw-bold">
+            <div class="ms-1 fw-semobold">
               <!--begin::Desc-->
-              <a href="#" class="fs-6 text-hover-primary fw-bolder"
+              <a href="#" class="fs-6 text-hover-primary fw-bold"
                 >Finance Reports</a
               >
               <!--end::Desc-->

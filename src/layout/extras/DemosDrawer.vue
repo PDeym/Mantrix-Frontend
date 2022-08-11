@@ -16,7 +16,7 @@
     <div class="card shadow-none w-100">
       <!--begin::Header-->
       <div class="card-header" id="kt_explore_header">
-        <h3 class="card-title fw-bolder text-gray-700">
+        <h3 class="card-title fw-bold text-gray-700">
           Explore {{ themeName }}
         </h3>
 
@@ -55,7 +55,7 @@
 
                 <a
                   href="https://themeforest.net/licenses/standard"
-                  class="fw-bold"
+                  class="fw-semobold"
                   target="_blank"
                 >
                   License FAQs
@@ -71,7 +71,9 @@
               <div class="d-flex flex-stack">
                 <div class="d-flex flex-column">
                   <div class="d-flex align-items-center mb-1">
-                    <div class="fs-6 fw-bold text-gray-800 fw-bold mb-0 me-1">
+                    <div
+                      class="fs-6 fw-semobold text-gray-800 fw-semobold mb-0 me-1"
+                    >
                       Regular License
                     </div>
 
@@ -91,8 +93,8 @@
                 </div>
 
                 <div class="text-nowrap">
-                  <span class="text-muted fs-7 fw-bold">$</span>
-                  <span class="text-dark fs-1 fw-bolder">39</span>
+                  <span class="text-muted fs-7 fw-semobold">$</span>
+                  <span class="text-dark fs-1 fw-bold">39</span>
                 </div>
               </div>
             </div>
@@ -105,7 +107,9 @@
               <div class="d-flex flex-stack">
                 <div class="d-flex flex-column">
                   <div class="d-flex align-items-center mb-1">
-                    <div class="fs-6 fw-bold text-gray-800 fw-bold mb-0 me-1">
+                    <div
+                      class="fs-6 fw-semobold text-gray-800 fw-semobold mb-0 me-1"
+                    >
                       Extended License
                     </div>
 
@@ -125,8 +129,8 @@
                 </div>
 
                 <div class="text-nowrap">
-                  <span class="text-muted fs-7 fw-bold">$</span>
-                  <span class="text-dark fs-1 fw-bolder">939</span>
+                  <span class="text-muted fs-7 fw-semobold">$</span>
+                  <span class="text-dark fs-1 fw-bold">939</span>
                 </div>
               </div>
             </div>
@@ -139,7 +143,9 @@
               <div class="d-flex flex-stack">
                 <div class="d-flex flex-column">
                   <div class="d-flex align-items-center mb-1">
-                    <div class="fs-6 fw-bold text-gray-800 fw-bold mb-0 me-1">
+                    <div
+                      class="fs-6 fw-semobold text-gray-800 fw-semobold mb-0 me-1"
+                    >
                       Custom License
                     </div>
                   </div>
@@ -171,7 +177,7 @@
 
             <!--begin::Demos-->
             <div class="mb-0">
-              <h3 class="fw-bolder text-center mb-6">
+              <h3 class="fw-bold text-center mb-6">
                 {{ themeName }} Vue Demos
               </h3>
 
@@ -207,7 +213,7 @@
                         >
                         <div
                           v-else
-                          class="badge badge-white px-6 py-4 fw-bold fs-base shadow"
+                          class="badge badge-white px-6 py-4 fw-semobold fs-base shadow"
                         >
                           Coming soon
                         </div>

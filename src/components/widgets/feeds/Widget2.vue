@@ -15,11 +15,13 @@
 
           <!--begin::Info-->
           <div class="d-flex flex-column">
-            <a href="#" class="text-gray-800 text-hover-primary fs-6 fw-bolder"
+            <a href="#" class="text-gray-800 text-hover-primary fs-6 fw-bold"
               >Nick Logan</a
             >
 
-            <span class="text-gray-400 fw-bold">PHP, SQLite, Artisan CLI</span>
+            <span class="text-gray-400 fw-semobold"
+              >PHP, SQLite, Artisan CLI</span
+            >
           </div>
           <!--end::Info-->
         </div>

@@ -9,7 +9,7 @@
           <inline-svg src="media/icons/duotune/general/gen014.svg" />
         </span>
 
-        <h3 class="fw-bolder m-0 text-gray-800">Jan 23, 2021</h3>
+        <h3 class="fw-bold m-0 text-gray-800">Jan 23, 2021</h3>
       </div>
       <!--end::Title-->
 
@@ -17,7 +17,7 @@
       <div class="card-toolbar m-0">
         <!--begin::Tab nav-->
         <ul
-          class="nav nav-tabs nav-line-tabs nav-stretch fs-6 border-0 fw-bolder"
+          class="nav nav-tabs nav-line-tabs nav-stretch fs-6 border-0 fw-bold"
           role="tablist"
         >
           <li class="nav-item" role="presentation">

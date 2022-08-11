@@ -4,9 +4,11 @@
     <!--begin::Header-->
     <div class="card-header border-0 pt-5">
       <h3 class="card-title align-items-start flex-column">
-        <span class="card-label fw-bolder fs-3 mb-1">Recent Orders</span>
+        <span class="card-label fw-bold fs-3 mb-1">Recent Orders</span>
 
-        <span class="text-muted fw-bold fs-7">More than 500+ new orders</span>
+        <span class="text-muted fw-semobold fs-7"
+          >More than 500+ new orders</span
+        >
       </h3>
 
       <!--begin::Toolbar-->
@@ -30,7 +32,12 @@
     <!--begin::Body-->
     <div class="card-body">
       <!--begin::Chart-->
-      <apexchart type="bar" :options="options" :series="series"></apexchart>
+      <apexchart
+        ref="chartRef"
+        type="bar"
+        :options="chart"
+        :series="series"
+      ></apexchart>
       <!--end::Chart-->
     </div>
     <!--end::Body-->
@@ -39,8 +46,11 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent, ref, computed, watch, onBeforeMount } from "vue";
+import { useStore } from "vuex";
+import { ApexOptions } from "apexcharts";
 import { getCSSVariableValue } from "@/assets/ts/_utils";
+import VueApexCharts from "vue3-apexcharts";
 
 export default defineComponent({
   name: "widget-1",
@@ -49,117 +59,9 @@ export default defineComponent({
   },
   components: {},
   setup() {
-    const labelColor = getCSSVariableValue("--bs-gray-500");
-    const borderColor = getCSSVariableValue("--bs-gray-200");
-
-    const baseColor = getCSSVariableValue("--bs-primary");
-    const baseLightColor = getCSSVariableValue("--bs-light-primary");
-    const secondaryColor = getCSSVariableValue("--bs-info");
-
-    const options = {
-      chart: {
-        fontFamily: "inherit",
-        stacked: true,
-        height: 350,
-        toolbar: {
-          show: false,
-        },
-      },
-      plotOptions: {
-        bar: {
-          stacked: true,
-          horizontal: false,
-          endingShape: "rounded",
-          columnWidth: ["12%"],
-        },
-      },
-      legend: {
-        show: false,
-      },
-      dataLabels: {
-        enabled: false,
-      },
-      stroke: {
-        curve: "smooth",
-        show: true,
-        width: 2,
-        colors: ["transparent"],
-      },
-      xaxis: {
-        categories: ["Feb", "Mar", "Apr", "May", "Jun", "Jul"],
-        axisBorder: {
-          show: false,
-        },
-        axisTicks: {
-          show: false,
-        },
-        labels: {
-          style: {
-            colors: labelColor,
-            fontSize: "12px",
-          },
-        },
-      },
-      yaxis: {
-        max: 120,
-        labels: {
-          style: {
-            colors: labelColor,
-            fontSize: "12px",
-          },
-        },
-      },
-      fill: {
-        opacity: 1,
-      },
-      states: {
-        normal: {
-          filter: {
-            type: "none",
-            value: 0,
-          },
-        },
-        hover: {
-          filter: {
-            type: "none",
-            value: 0,
-          },
-        },
-        active: {
-          allowMultipleDataPointsSelection: false,
-          filter: {
-            type: "none",
-            value: 0,
-          },
-        },
-      },
-      tooltip: {
-        style: {
-          fontSize: "12px",
-        },
-        y: {
-          formatter: function (val) {
-            return "$" + val + " thousands";
-          },
-        },
-      },
-      colors: [baseColor, secondaryColor, baseLightColor],
-      grid: {
-        borderColor: borderColor,
-        strokeDashArray: 4,
-        yaxis: {
-          lines: {
-            show: true,
-          },
-        },
-        padding: {
-          top: 0,
-          right: 0,
-          bottom: 0,
-          left: 0,
-        },
-      },
-    };
+    const chartRef = ref<typeof VueApexCharts | null>(null);
+    let chart: ApexOptions = {};
+    const store = useStore();
 
     const series = [
       {
@@ -181,10 +83,146 @@ export default defineComponent({
       },
     ];
 
+    const themeMode = computed(() => {
+      return store.getters.getThemeMode;
+    });
+
+    onBeforeMount(() => {
+      Object.assign(chart, chartOptions());
+    });
+
+    const refreshChart = () => {
+      if (!chartRef.value) {
+        return;
+      }
+
+      Object.assign(chart, chartOptions());
+
+      chartRef.value.refresh();
+    };
+
+    watch(themeMode, () => {
+      refreshChart();
+    });
+
     return {
-      options,
+      chart,
       series,
+      chartRef,
     };
   },
 });
+
+const chartOptions = (): ApexOptions => {
+  const labelColor = getCSSVariableValue("--kt-gray-500");
+  const borderColor = getCSSVariableValue("--kt-gray-200");
+
+  const baseColor = getCSSVariableValue("--kt-primary");
+  const baseLightColor = getCSSVariableValue("--kt-primary-light");
+  const secondaryColor = getCSSVariableValue("--kt-info");
+
+  return {
+    chart: {
+      fontFamily: "inherit",
+      stacked: true,
+      height: 350,
+      toolbar: {
+        show: false,
+      },
+    },
+    plotOptions: {
+      bar: {
+        horizontal: false,
+        endingShape: "rounded",
+        columnWidth: "12%",
+      },
+    },
+    legend: {
+      show: false,
+    },
+    dataLabels: {
+      enabled: false,
+    },
+    stroke: {
+      curve: "smooth",
+      show: true,
+      width: 2,
+      colors: ["transparent"],
+    },
+    xaxis: {
+      categories: ["Feb", "Mar", "Apr", "May", "Jun", "Jul"],
+      axisBorder: {
+        show: false,
+      },
+      axisTicks: {
+        show: false,
+      },
+      labels: {
+        style: {
+          colors: labelColor,
+          fontSize: "12px",
+        },
+      },
+    },
+    yaxis: {
+      max: 120,
+      labels: {
+        style: {
+          colors: labelColor,
+          fontSize: "12px",
+        },
+      },
+    },
+    fill: {
+      opacity: 1,
+    },
+    states: {
+      normal: {
+        filter: {
+          type: "none",
+          value: 0,
+        },
+      },
+      hover: {
+        filter: {
+          type: "none",
+          value: 0,
+        },
+      },
+      active: {
+        allowMultipleDataPointsSelection: false,
+        filter: {
+          type: "none",
+          value: 0,
+        },
+      },
+    },
+    tooltip: {
+      style: {
+        fontSize: "12px",
+      },
+      y: {
+        formatter: function (val) {
+          return "$" + val + " thousands";
+        },
+      },
+    },
+    colors: [baseColor, secondaryColor, baseLightColor],
+    grid: {
+      borderColor: borderColor,
+      strokeDashArray: 4,
+      yaxis: {
+        lines: {
+          show: true,
+        },
+      },
+      padding: {
+        top: 0,
+        right: 0,
+        bottom: 0,
+        left: 0,
+      },
+    },
+  };
+};
 </script>

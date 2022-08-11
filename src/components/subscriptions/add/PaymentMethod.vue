@@ -5,7 +5,7 @@
   >
     <div class="card-header">
       <div class="card-title">
-        <h2 class="fw-bolder">Payment Method</h2>
+        <h2 class="fw-bold">Payment Method</h2>
       </div>
 
       <div class="card-toolbar">
@@ -47,7 +47,7 @@
               />
 
               <div class="me-3">
-                <div class="d-flex align-items-center fw-bolder">
+                <div class="d-flex align-items-center fw-bold">
                   Mastercard
                   <div class="badge badge-light-primary ms-5">Primary</div>
                 </div>
@@ -74,7 +74,7 @@
           >
             <div class="d-flex flex-wrap py-5">
               <div class="flex-equal me-5">
-                <table class="table table-flush fw-bold gy-1">
+                <table class="table table-flush fw-semobold gy-1">
                   <tbody>
                     <tr>
                       <td class="text-muted min-w-125px w-125px">Name</td>
@@ -105,7 +105,7 @@
               </div>
 
               <div class="flex-equal">
-                <table class="table table-flush fw-bold gy-1">
+                <table class="table table-flush fw-semobold gy-1">
                   <tbody>
                     <tr>
                       <td class="text-muted min-w-125px w-125px">
@@ -180,7 +180,7 @@
               />
 
               <div class="me-3">
-                <div class="d-flex align-items-center fw-bolder">Visa</div>
+                <div class="d-flex align-items-center fw-bold">Visa</div>
                 <div class="text-muted">Expires Feb 2022</div>
               </div>
             </div>
@@ -199,7 +199,7 @@
           <div id="kt_create_new_payment_method_2" class="collapse fs-6 ps-10">
             <div class="d-flex flex-wrap py-5">
               <div class="flex-equal me-5">
-                <table class="table table-flush fw-bold gy-1">
+                <table class="table table-flush fw-semobold gy-1">
                   <tbody>
                     <tr>
                       <td class="text-muted min-w-125px w-125px">Name</td>
@@ -230,7 +230,7 @@
               </div>
 
               <div class="flex-equal">
-                <table class="table table-flush fw-bold gy-1">
+                <table class="table table-flush fw-semobold gy-1">
                   <tbody>
                     <tr>
                       <td class="text-muted min-w-125px w-125px">
@@ -306,7 +306,7 @@
               />
 
               <div class="me-3">
-                <div class="d-flex align-items-center fw-bolder">
+                <div class="d-flex align-items-center fw-bold">
                   American Express
                   <div class="badge badge-light-danger ms-5">Expired</div>
                 </div>
@@ -328,7 +328,7 @@
           <div id="kt_create_new_payment_method_3" class="collapse fs-6 ps-10">
             <div class="d-flex flex-wrap py-5">
               <div class="flex-equal me-5">
-                <table class="table table-flush fw-bold gy-1">
+                <table class="table table-flush fw-semobold gy-1">
                   <tbody>
                     <tr>
                       <td class="text-muted min-w-125px w-125px">Name</td>
@@ -361,7 +361,7 @@
               </div>
 
               <div class="flex-equal">
-                <table class="table table-flush fw-bold gy-1">
+                <table class="table table-flush fw-semobold gy-1">
                   <tbody>
                     <tr>
                       <td class="text-muted min-w-125px w-125px">

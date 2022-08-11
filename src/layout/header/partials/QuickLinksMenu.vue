@@ -10,7 +10,7 @@
       style="background-image: url('media/misc/pattern-1.jpg')"
     >
       <!--begin::Title-->
-      <h3 class="text-white fw-bold mb-3">Quick Links</h3>
+      <h3 class="text-white fw-semobold mb-3">Quick Links</h3>
       <!--end::Title-->
 
       <!--begin::Status-->
@@ -30,7 +30,7 @@
           <span class="svg-icon svg-icon-3x svg-icon-success mb-2">
             <inline-svg src="media/icons/duotune/finance/fin009.svg" />
           </span>
-          <span class="fs-5 fw-bold text-gray-800 mb-0">Accounting</span>
+          <span class="fs-5 fw-semobold text-gray-800 mb-0">Accounting</span>
           <span class="fs-7 text-gray-400">eCommerce</span>
         </a>
       </div>
@@ -45,7 +45,9 @@
           <span class="svg-icon svg-icon-3x svg-icon-success mb-2">
             <inline-svg src="media/icons/duotune/communication/com010.svg" />
           </span>
-          <span class="fs-5 fw-bold text-gray-800 mb-0">Administration</span>
+          <span class="fs-5 fw-semobold text-gray-800 mb-0"
+            >Administration</span
+          >
           <span class="fs-7 text-gray-400">Console</span>
         </a>
       </div>
@@ -60,7 +62,7 @@
           <span class="svg-icon svg-icon-3x svg-icon-success mb-2">
             <inline-svg src="media/icons/duotune/abstract/abs042.svg" />
           </span>
-          <span class="fs-5 fw-bold text-gray-800 mb-0">Projects</span>
+          <span class="fs-5 fw-semobold text-gray-800 mb-0">Projects</span>
           <span class="fs-7 text-gray-400">Pending Tasks</span>
         </a>
       </div>
@@ -75,7 +77,7 @@
           <span class="svg-icon svg-icon-3x svg-icon-success mb-2">
             <inline-svg src="media/icons/duotune/finance/fin006.svg" />
           </span>
-          <span class="fs-5 fw-bold text-gray-800 mb-0">Customers</span>
+          <span class="fs-5 fw-semobold text-gray-800 mb-0">Customers</span>
           <span class="fs-7 text-gray-400">Latest cases</span>
         </a>
       </div>

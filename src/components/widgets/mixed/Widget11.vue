@@ -3,7 +3,7 @@
   <div :class="widgetClasses" class="card">
     <!--begin::Header-->
     <div :class="`bg-${widgetColor}`" class="card-header border-0 py-5">
-      <h3 class="card-title fw-bolder text-white">Sales Progress</h3>
+      <h3 class="card-title fw-bold text-white">Sales Progress</h3>
 
       <div class="card-toolbar">
         <!--begin::Menu-->
@@ -28,9 +28,10 @@
     <div class="card-body p-0">
       <!--begin::Chart-->
       <apexchart
+        ref="chartRef"
         :class="`bg-${widgetColor}`"
         class="mixed-widget-12-chart card-rounded-bottom"
-        :options="chartOptions"
+        :options="chart"
         :series="series"
         height="200"
         type="bar"
@@ -44,14 +45,14 @@
           <!--begin::Col-->
           <div class="col mx-5">
             <div class="fs-6 text-gray-400">Avarage Sale</div>
-            <div class="fs-2 fw-bolder text-gray-800">$650</div>
+            <div class="fs-2 fw-bold text-gray-800">$650</div>
           </div>
           <!--end::Col-->
 
           <!--begin::Col-->
           <div class="col mx-5">
             <div class="fs-6 text-gray-400">Comissions</div>
-            <div class="fs-2 fw-bolder text-gray-800">$29,500</div>
+            <div class="fs-2 fw-bold text-gray-800">$29,500</div>
           </div>
           <!--end::Col-->
         </div>
@@ -62,14 +63,14 @@
           <!--begin::Col-->
           <div class="col mx-5">
             <div class="fs-6 text-gray-400">Revenue</div>
-            <div class="fs-2 fw-bolder text-gray-800">$55,000</div>
+            <div class="fs-2 fw-bold text-gray-800">$55,000</div>
           </div>
           <!--end::Col-->
 
           <!--begin::Col-->
           <div class="col mx-5">
             <div class="fs-6 text-gray-400">Expenses</div>
-            <div class="fs-2 fw-bolder text-gray-800">$1,130,600</div>
+            <div class="fs-2 fw-bold text-gray-800">$1,130,600</div>
           </div>
           <!--end::Col-->
         </div>
@@ -83,8 +84,11 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent, ref, onBeforeMount, computed, watch } from "vue";
 import { getCSSVariableValue } from "@/assets/ts/_utils";
+import VueApexCharts from "vue3-apexcharts";
+import { ApexOptions } from "apexcharts";
+import { useStore } from "vuex";
 import Dropdown3 from "@/components/dropdown/Dropdown3.vue";
 
 export default defineComponent({
@@ -98,119 +102,11 @@ export default defineComponent({
     Dropdown3,
   },
   setup(props) {
-    const labelColor = getCSSVariableValue("--bs-gray-500");
-    const borderColor = getCSSVariableValue("--bs-gray-200");
+    const chartRef = ref<typeof VueApexCharts | null>(null);
+    let chart: ApexOptions = {};
+    const store = useStore();
 
-    const chartOptions = {
-      chart: {
-        fontFamily: "inherit",
-        type: "bar",
-        height: props.chartHeight,
-        toolbar: {
-          show: false,
-        },
-        sparkline: {
-          enabled: true,
-        },
-      },
-      plotOptions: {
-        bar: {
-          horizontal: false,
-          columnWidth: "30%",
-          borderRadius: 5,
-        },
-      },
-      legend: {
-        show: false,
-      },
-      dataLabels: {
-        enabled: false,
-      },
-      stroke: {
-        show: true,
-        width: 1,
-        colors: ["transparent"],
-      },
-      xaxis: {
-        categories: ["Feb", "Mar", "Apr", "May", "Jun", "Jul"],
-        axisBorder: {
-          show: false,
-        },
-        axisTicks: {
-          show: false,
-        },
-        labels: {
-          style: {
-            colors: labelColor,
-            fontSize: "12px",
-          },
-        },
-      },
-      yaxis: {
-        min: 0,
-        max: 100,
-        labels: {
-          style: {
-            colors: labelColor,
-            fontSize: "12px",
-          },
-        },
-      },
-      fill: {
-        type: ["solid", "solid"],
-        opacity: [0.25, 1],
-      },
-      states: {
-        normal: {
-          filter: {
-            type: "none",
-            value: 0,
-          },
-        },
-        hover: {
-          filter: {
-            type: "none",
-            value: 0,
-          },
-        },
-        active: {
-          allowMultipleDataPointsSelection: false,
-          filter: {
-            type: "none",
-            value: 0,
-          },
-        },
-      },
-      tooltip: {
-        style: {
-          fontSize: "12px",
-        },
-        y: {
-          formatter: function (val) {
-            return "$" + val + " thousands";
-          },
-        },
-        marker: {
-          show: false,
-        },
-      },
-      colors: ["#ffffff", "#ffffff"],
-      grid: {
-        borderColor: borderColor,
-        strokeDashArray: 4,
-        yaxis: {
-          lines: {
-            show: true,
-          },
-        },
-        padding: {
-          left: 20,
-          right: 20,
-        },
-      },
-    };
-
-    const series = [
+    const series = ref([
       {
         name: "Net Profit",
         data: [35, 65, 75, 55, 45, 60, 55],
@@ -219,12 +115,149 @@ export default defineComponent({
         name: "Revenue",
         data: [40, 70, 80, 60, 50, 65, 60],
       },
-    ];
+    ]);
+
+    const themeMode = computed(() => {
+      return store.getters.getThemeMode;
+    });
+
+    onBeforeMount(() => {
+      Object.assign(chart, chartOptions(props.chartHeight));
+    });
+
+    const refreshChart = () => {
+      if (!chartRef.value) {
+        return;
+      }
+
+      Object.assign(chart, chartOptions(props.chartHeight));
+
+      chartRef.value.refresh();
+    };
+
+    watch(themeMode, () => {
+      refreshChart();
+    });
 
     return {
+      chart,
       series,
-      chartOptions,
+      chartRef,
+      refreshChart,
     };
   },
 });
+
+const chartOptions = (chartHeight): ApexOptions => {
+  const labelColor = getCSSVariableValue("--kt-gray-500");
+  const borderColor = getCSSVariableValue("--kt-gray-200");
+
+  return {
+    chart: {
+      fontFamily: "inherit",
+      type: "bar",
+      height: chartHeight,
+      toolbar: {
+        show: false,
+      },
+      sparkline: {
+        enabled: true,
+      },
+    },
+    plotOptions: {
+      bar: {
+        horizontal: false,
+        columnWidth: "30%",
+      },
+    },
+    legend: {
+      show: false,
+    },
+    dataLabels: {
+      enabled: false,
+    },
+    stroke: {
+      show: true,
+      width: 1,
+      colors: ["transparent"],
+    },
+    xaxis: {
+      categories: ["Feb", "Mar", "Apr", "May", "Jun", "Jul"],
+      axisBorder: {
+        show: false,
+      },
+      axisTicks: {
+        show: false,
+      },
+      labels: {
+        style: {
+          colors: labelColor,
+          fontSize: "12px",
+        },
+      },
+    },
+    yaxis: {
+      min: 0,
+      max: 100,
+      labels: {
+        style: {
+          colors: labelColor,
+          fontSize: "12px",
+        },
+      },
+    },
+    fill: {
+      type: ["solid", "solid"],
+      opacity: [0.25, 1],
+    },
+    states: {
+      normal: {
+        filter: {
+          type: "none",
+          value: 0,
+        },
+      },
+      hover: {
+        filter: {
+          type: "none",
+          value: 0,
+        },
+      },
+      active: {
+        allowMultipleDataPointsSelection: false,
+        filter: {
+          type: "none",
+          value: 0,
+        },
+      },
+    },
+    tooltip: {
+      style: {
+        fontSize: "12px",
+      },
+      y: {
+        formatter: function (val) {
+          return "$" + val + " thousands";
+        },
+      },
+      marker: {
+        show: false,
+      },
+    },
+    colors: ["#ffffff", "#ffffff"],
+    grid: {
+      borderColor: borderColor,
+      strokeDashArray: 4,
+      yaxis: {
+        lines: {
+          show: true,
+        },
+      },
+      padding: {
+        left: 20,
+        right: 20,
+      },
+    },
+  };
+};
 </script>

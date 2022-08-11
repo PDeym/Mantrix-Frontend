@@ -15,7 +15,7 @@
           <!--end::Image-->
 
           <!--begin::Title-->
-          <div class="fs-5 fw-bolder mb-2">
+          <div class="fs-5 fw-bold mb-2">
             {{ fileTitle }}
           </div>
           <!--end::Title-->
@@ -23,7 +23,7 @@
         <!--end::Name-->
 
         <!--begin::Description-->
-        <div class="fs-7 fw-bold text-gray-400 mt-auto">
+        <div class="fs-7 fw-semobold text-gray-400 mt-auto">
           {{ createdAt }}
         </div>
         <!--end::Description-->

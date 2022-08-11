@@ -4,18 +4,18 @@
     <div class="d-flex flex-column flex-column-fluid text-center p-10 py-lg-15">
       <!--begin::Logo-->
       <router-link to="/dashboard" class="mb-10 pt-lg-10">
-        <img alt="Logo" src="media/logos/logo-1.svg" class="h-40px mb-5" />
+        <img alt="Logo" src="media/logos/default.svg" class="h-40px mb-5" />
       </router-link>
       <!--end::Logo-->
 
       <!--begin::Wrapper-->
       <div class="pt-lg-10 mb-10">
         <!--begin::Logo-->
-        <h1 class="fw-bolder fs-4x text-gray-800 mb-10">System Error</h1>
+        <h1 class="fw-bold fs-4x text-gray-800 mb-10">System Error</h1>
         <!--end::Logo-->
 
         <!--begin::Message-->
-        <div class="fw-bold fs-3 text-muted mb-15">
+        <div class="fw-semobold fs-3 text-muted mb-15">
           Something went wrong! <br />
           Please try again later.
         </div>
@@ -23,7 +23,7 @@
 
         <!--begin::Action-->
         <div class="text-center">
-          <router-link to="/dashboard" class="btn btn-lg btn-primary fw-bolder"
+          <router-link to="/dashboard" class="btn btn-lg btn-primary fw-bold"
             >Go to homepage</router-link
           >
         </div>
@@ -45,7 +45,7 @@
     <!--begin::Footer-->
     <div class="d-flex flex-center flex-column-auto p-10">
       <!--begin::Links-->
-      <div class="d-flex align-items-center fw-bold fs-6">
+      <div class="d-flex align-items-center fw-semobold fs-6">
         <a
           href="https://keenthemes.com"
           class="text-muted text-hover-primary px-2"

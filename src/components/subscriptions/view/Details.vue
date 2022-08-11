@@ -5,7 +5,7 @@
     <div class="card-header">
       <!--begin::Card title-->
       <div class="card-title">
-        <h2 class="fw-bolder">Product Details</h2>
+        <h2 class="fw-bold">Product Details</h2>
       </div>
       <!--begin::Card title-->
 
@@ -32,7 +32,7 @@
           <!--begin::Row-->
           <div class="flex-equal me-5">
             <!--begin::Details-->
-            <table class="table fs-6 fw-bold gs-0 gy-2 gx-2 m-0">
+            <table class="table fs-6 fw-semobold gs-0 gy-2 gx-2 m-0">
               <!--begin::Row-->
               <tr>
                 <td class="text-gray-400 min-w-175px w-175px">Bill to:</td>
@@ -77,7 +77,7 @@
           <!--begin::Row-->
           <div class="flex-equal">
             <!--begin::Details-->
-            <table class="table fs-6 fw-bold gs-0 gy-2 gx-2 m-0">
+            <table class="table fs-6 fw-semobold gs-0 gy-2 gx-2 m-0">
               <!--begin::Row-->
               <tr>
                 <td class="text-gray-400 min-w-175px w-175px">
@@ -134,7 +134,7 @@
             <thead>
               <!--begin::Table row-->
               <tr
-                class="border-bottom border-gray-200 text-start text-gray-400 fw-bolder fs-7 text-uppercase gs-0"
+                class="border-bottom border-gray-200 text-start text-gray-400 fw-bold fs-7 text-uppercase gs-0"
               >
                 <th class="min-w-150px">Product</th>
                 <th class="min-w-125px">Subscription ID</th>
@@ -147,7 +147,7 @@
             <!--end::Table head-->
 
             <!--begin::Table body-->
-            <tbody class="fw-bold text-gray-800">
+            <tbody class="fw-semobold text-gray-800">
               <tr>
                 <td>
                   <label class="w-150px">Basic Bundle</label>

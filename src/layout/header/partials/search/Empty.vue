@@ -10,7 +10,7 @@
     <!--end::Icon-->
 
     <!--begin::Message-->
-    <div class="pb-15 fw-bold">
+    <div class="pb-15 fw-semobold">
       <h3 class="text-gray-600 fs-5 mb-2">No result found</h3>
       <div class="text-muted fs-7">Please try again with a different query</div>
     </div>

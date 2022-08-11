@@ -6,45 +6,11 @@ import {
   getObjectPropertyValueByKey,
   stringSnakeToCamel,
   getCSS,
+  DataUtil,
   ElementAnimateUtil,
   ElementStyleUtil,
   EventHandlerUtil,
-} from '../_utils/index';
-
-export class StickyStore {
-  static store: Map<string, StickyComponent> = new Map()
-
-  public static set(instanceId: string, stickyComponentObj: StickyComponent): void {
-    if (StickyStore.has(instanceId)) {
-      return
-    }
-
-    StickyStore.store.set(instanceId, stickyComponentObj);
-  }
-
-  public static get(instanceId: string): StickyComponent | undefined {
-    if (!StickyStore.has(instanceId)) {
-      return
-    }
-    return StickyStore.store.get(instanceId);
-  }
-
-  public static remove(instanceId: string): void {
-    if (!StickyStore.has(instanceId)) {
-      return
-    }
-
-    StickyStore.store.delete(instanceId)
-  }
-
-  public static has(instanceId: string): boolean {
-    return StickyStore.store.has(instanceId);
-  }
-
-  public static getAllInstances() {
-    return StickyStore.store;
-  }
-}
+} from '../_utils/index'
 
 export interface StickyOptions {
   offset: number
@@ -86,87 +52,84 @@ class StickyComponent {
     // Initial Launch
     this.scroll()
 
-    StickyStore.set(this.element.id, this)
+    DataUtil.set(this.element, 'sticky', this)
   }
 
   private scroll = () => {
-    let offset: any = this.getOption('offset');
-    let releaseOffset: any = this.getOption('release-offset');
-    let reverse: any = this.getOption('reverse');
-    let st: any;
-    let diff: any;
+    let offset = this.getOption('offset')
+    let reverse = this.getOption('reverse')
 
     // Exit if false
-    if ( offset === false ) {
-      return;
+    if (offset === false) {
+      return
     }
 
-    offset = parseInt(offset);
-    releaseOffset = releaseOffset ? parseInt(releaseOffset) : 0;
-    st = getScrollTop();
-    diff = document.documentElement.scrollHeight - window.innerHeight - getScrollTop();
-
-    if ( reverse === true ) {  // Release on reverse scroll mode
-      if ( st > offset && (releaseOffset === 0 || releaseOffset < diff)) {
-        if (document.body.hasAttribute(this.attributeName) === false) {
-          this.enable();
-          document.body.setAttribute(this.attributeName, 'on');
-        }
-
-        if ( this.eventTriggerState === true ) {
-          EventHandlerUtil.trigger(this.element, 'kt.sticky.on');
-          EventHandlerUtil.trigger(this.element, 'kt.sticky.change');
-
-          this.eventTriggerState = false;
-        }
-      } else { // Back scroll mode
-        if (document.body.hasAttribute(this.attributeName) === true) {
-          this.disable();
-          document.body.removeAttribute(this.attributeName);
-        }
-
-        if ( this.eventTriggerState === false ) {
-          EventHandlerUtil.trigger(this.element, 'kt.sticky.off');
-          EventHandlerUtil.trigger(this.element, 'kt.sticky.change');
-          this.eventTriggerState = true;
-        }
-      }
-
-      this.lastScrollTop = st;
-    } else { // Classic scroll mode
-      if ( st>offset && (releaseOffset === 0 || releaseOffset < diff)) {
-        if (document.body.hasAttribute(this.attributeName) === false) {
-          this.enable();
-          document.body.setAttribute(this.attributeName, 'on');
-        }
-
-        if ( this.eventTriggerState === true ) {
-          EventHandlerUtil.trigger(this.element, 'kt.sticky.on');
-          EventHandlerUtil.trigger(this.element, 'kt.sticky.change');
-          this.eventTriggerState = false;
-        }
-      } else { // back scroll mode
-        if (document.body.hasAttribute(this.attributeName) === true) {
-          this.disable();
-          document.body.removeAttribute(this.attributeName);
-        }
-
-        if ( this.eventTriggerState === false ) {
-          EventHandlerUtil.trigger(this.element, 'kt.sticky.off');
-          EventHandlerUtil.trigger(this.element, 'kt.sticky.change');
-          this.eventTriggerState = true;
-        }
-      }
+    let offsetNum = 0
+    if (typeof offset === 'string') {
+      offsetNum = parseInt(offset)
     }
 
-    if (releaseOffset > 0) {
-      if (diff<releaseOffset) {
-        this.element.setAttribute('data-kt-sticky-released', 'true');
+    const st = getScrollTop()
+
+    // Reverse scroll mode
+    if (reverse === true) {
+      // Release on reverse scroll mode
+      if (st > offsetNum && this.lastScrollTop < st) {
+        if (document.body.hasAttribute(this.attributeName) === false) {
+          this.enable()
+          document.body.setAttribute(this.attributeName, 'on')
+        }
+
+        if (this.eventTriggerState === true) {
+          EventHandlerUtil.trigger(this.element, 'kt.sticky.on')
+          EventHandlerUtil.trigger(this.element, 'kt.sticky.change')
+
+          this.eventTriggerState = false
+        }
       } else {
-        this.element.removeAttribute('data-kt-sticky-released');
+        // Back scroll mode
+        if (document.body.hasAttribute(this.attributeName)) {
+          this.disable()
+          document.body.removeAttribute(this.attributeName)
+        }
+
+        if (this.eventTriggerState === false) {
+          EventHandlerUtil.trigger(this.element, 'kt.sticky.off')
+          EventHandlerUtil.trigger(this.element, 'kt.sticky.change')
+
+          this.eventTriggerState = true
+        }
       }
+
+      this.lastScrollTop = st
+      return
     }
 
+    // Classic scroll mode
+    if (st > offsetNum) {
+      if (document.body.hasAttribute(this.attributeName) === false) {
+        this.enable()
+        document.body.setAttribute(this.attributeName, 'on')
+      }
+
+      if (this.eventTriggerState === true) {
+        EventHandlerUtil.trigger(this.element, 'kt.sticky.on')
+        EventHandlerUtil.trigger(this.element, 'kt.sticky.change')
+        this.eventTriggerState = false
+      }
+    } else {
+      // back scroll mode
+      if (document.body.hasAttribute(this.attributeName) === true) {
+        this.disable()
+        document.body.removeAttribute(this.attributeName)
+      }
+
+      if (this.eventTriggerState === false) {
+        EventHandlerUtil.trigger(this.element, 'kt.sticky.off')
+        EventHandlerUtil.trigger(this.element, 'kt.sticky.change')
+        this.eventTriggerState = true
+      }
+    }
   }
 
   private getOption = (name: string) => {
@@ -260,8 +223,8 @@ class StickyComponent {
     return EventHandlerUtil.one(this.element, name, callback)
   }
 
-  public off = (name: string) => {
-    return EventHandlerUtil.off(this.element, name)
+  public off = (name: string, handlerId: string) => {
+    return EventHandlerUtil.off(this.element, name, handlerId)
   }
 
   public trigger = (name: string) => {
@@ -270,12 +233,15 @@ class StickyComponent {
 
   // Static methods
   public static hasInstace(element: HTMLElement) {
-    return StickyStore.has(element.id)
+    return DataUtil.has(element, 'sticky')
   }
 
-  public static getInstance(element: HTMLElement) {
+  public static getInstance(element: HTMLElement): StickyComponent | undefined {
     if (element !== null && StickyComponent.hasInstace(element)) {
-      return StickyStore.get(element.id)
+      const data = DataUtil.get(element, 'sticky')
+      if (data) {
+        return data as StickyComponent
+      }
     }
   }
 
@@ -287,9 +253,6 @@ class StickyComponent {
       let sticky = StickyComponent.getInstance(item)
       if (!sticky) {
         sticky = new StickyComponent(item, defaultStickyOptions)
-      } else {
-        sticky.element = item;
-        sticky.update();
       }
     })
   }

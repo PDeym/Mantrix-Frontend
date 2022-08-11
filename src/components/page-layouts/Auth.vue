@@ -6,8 +6,19 @@
     <!--begin::Content-->
     <div class="d-flex flex-center flex-column flex-column-fluid p-10 pb-lg-20">
       <!--begin::Logo-->
-      <a href="#" class="mb-12">
-        <img alt="Logo" src="media/logos/logo-1.svg" class="h-45px" />
+      <a href="#" v-if="themeMode === 'dark'" class="mb-12">
+        <img
+          alt="Logo"
+          src="media/logos/default-dark.svg"
+          class="h-45px app-sidebar-logo-default"
+        />
+      </a>
+      <a href="#" v-if="themeMode === 'light'" class="mb-12">
+        <img
+          alt="Logo"
+          src="media/logos/default.svg"
+          class="theme-dark-show h-45px"
+        />
       </a>
       <!--end::Logo-->
 
@@ -18,7 +29,7 @@
     <!--begin::Footer-->
     <div class="d-flex flex-center flex-column-auto p-10">
       <!--begin::Links-->
-      <div class="d-flex align-items-center fw-bold fs-6">
+      <div class="d-flex align-items-center fw-semobold fs-6">
         <a href="#" class="text-muted text-hover-primary px-2">About</a>
 
         <a href="#" class="text-muted text-hover-primary px-2">Contact</a>
@@ -32,7 +43,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted, onUnmounted } from "vue";
+import { defineComponent, onMounted, onUnmounted, computed } from "vue";
 import { useStore } from "vuex";
 import { Actions } from "@/store/enums/StoreEnums";
 import { getIllustrationsPath } from "@/core/helpers/assets";
@@ -42,6 +53,10 @@ export default defineComponent({
   components: {},
   setup() {
     const store = useStore();
+
+    const themeMode = computed(() => {
+      return store.getters.getThemeMode;
+    });
 
     onMounted(() => {
       store.dispatch(Actions.ADD_BODY_CLASSNAME, "bg-body");
@@ -53,6 +68,7 @@ export default defineComponent({
 
     return {
       getIllustrationsPath,
+      themeMode,
     };
   },
 });

@@ -4,9 +4,9 @@
     <!--begin::Header-->
     <div class="card-header border-0 pt-5">
       <h3 class="card-title align-items-start flex-column">
-        <span class="card-label fw-bolder fs-3 mb-1">Latest Orders</span>
+        <span class="card-label fw-bold fs-3 mb-1">Latest Orders</span>
 
-        <span class="text-muted mt-1 fw-bold fs-7"
+        <span class="text-muted mt-1 fw-semobold fs-7"
           >More than 100 new orders</span
         >
       </h3>
@@ -14,7 +14,7 @@
         <ul class="nav">
           <li class="nav-item">
             <a
-              class="nav-link btn btn-sm btn-color-muted btn-active btn-active-light-primary active fw-bolder px-4 me-1"
+              class="nav-link btn btn-sm btn-color-muted btn-active btn-active-light-primary active fw-bold px-4 me-1"
               data-bs-toggle="tab"
               href="#kt_table_widget_7_tab_1"
               >Month</a
@@ -23,7 +23,7 @@
 
           <li class="nav-item">
             <a
-              class="nav-link btn btn-sm btn-color-muted btn-active btn-active-light-primary fw-bolder px-4 me-1"
+              class="nav-link btn btn-sm btn-color-muted btn-active btn-active-light-primary fw-bold px-4 me-1"
               data-bs-toggle="tab"
               href="#kt_table_widget_7_tab_2"
               >Week</a
@@ -32,7 +32,7 @@
 
           <li class="nav-item">
             <a
-              class="nav-link btn btn-sm btn-color-muted btn-active btn-active-light-primary fw-bolder px-4"
+              class="nav-link btn btn-sm btn-color-muted btn-active btn-active-light-primary fw-bold px-4"
               data-bs-toggle="tab"
               href="#kt_table_widget_7_tab_3"
               >Day</a
@@ -90,26 +90,26 @@
                       <td>
                         <a
                           href="#"
-                          class="text-dark fw-bolder text-hover-primary mb-1 fs-6"
+                          class="text-dark fw-bold text-hover-primary mb-1 fs-6"
                           >{{ item1.info.title }}</a
                         >
-                        <span class="text-muted fw-bold d-block fs-7">{{
+                        <span class="text-muted fw-semobold d-block fs-7">{{
                           item1.info.description
                         }}</span>
                       </td>
                       <td class="text-end">
-                        <span class="text-muted fw-bold d-block fs-8"
+                        <span class="text-muted fw-semobold d-block fs-8"
                           >Ordered</span
                         >
 
-                        <span class="text-dark fw-bolder d-block fs-7">{{
+                        <span class="text-dark fw-bold d-block fs-7">{{
                           item1.date
                         }}</span>
                       </td>
                       <td class="text-end">
                         <span
                           :class="`badge-light-${item1.badge.color}`"
-                          class="badge fs-7 fw-bolder"
+                          class="badge fs-7 fw-bold"
                           >{{ item1.badge.label }}</span
                         >
                       </td>

@@ -15,10 +15,10 @@
 
           <!--begin::Info-->
           <div class="d-flex flex-column">
-            <a href="#" class="text-gray-800 text-hover-primary fs-6 fw-bolder"
+            <a href="#" class="text-gray-800 text-hover-primary fs-6 fw-bold"
               >Carles Nilson</a
             >
-            <span class="text-gray-400 fw-bold">Yestarday at 5:06 PM</span>
+            <span class="text-gray-400 fw-semobold">Yestarday at 5:06 PM</span>
           </div>
           <!--end::Info-->
         </div>
@@ -93,17 +93,15 @@
           <div class="d-flex flex-column flex-row-fluid">
             <!--begin::Info-->
             <div class="d-flex align-items-center flex-wrap mb-1">
-              <a
-                href="#"
-                class="text-gray-800 text-hover-primary fw-bolder me-2"
+              <a href="#" class="text-gray-800 text-hover-primary fw-bold me-2"
                 >Alice Danchik</a
               >
 
-              <span class="text-gray-400 fw-bold fs-7">1 day</span>
+              <span class="text-gray-400 fw-semobold fs-7">1 day</span>
 
               <a
                 href="#"
-                class="ms-auto text-gray-400 text-hover-primary fw-bold fs-7"
+                class="ms-auto text-gray-400 text-hover-primary fw-semobold fs-7"
                 >Reply</a
               >
             </div>
@@ -132,17 +130,15 @@
           <div class="d-flex flex-column flex-row-fluid">
             <!--begin::Info-->
             <div class="d-flex align-items-center flex-wrap mb-1">
-              <a
-                href="#"
-                class="text-gray-800 text-hover-primary fw-bolder me-2"
+              <a href="#" class="text-gray-800 text-hover-primary fw-bold me-2"
                 >Harris Bold</a
               >
 
-              <span class="text-gray-400 fw-bold fs-7">2 days</span>
+              <span class="text-gray-400 fw-semobold fs-7">2 days</span>
 
               <a
                 href="#"
-                class="ms-auto text-gray-400 text-hover-primary fw-bold fs-7"
+                class="ms-auto text-gray-400 text-hover-primary fw-semobold fs-7"
                 >Reply</a
               >
             </div>

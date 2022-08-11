@@ -19,7 +19,7 @@
         >
           <!--begin::Logo-->
           <router-link to="/dashboard" class="mb-10 mb-lg-20">
-            <img alt="Logo" src="media/logos/logo-1.svg" class="h-40px" />
+            <img alt="Logo" src="media/logos/default.svg" class="h-40px" />
           </router-link>
           <!--end::Logo-->
 
@@ -42,7 +42,7 @@
               <div class="stepper-label">
                 <h3 class="stepper-title">Account Type</h3>
 
-                <div class="stepper-desc fw-bold">
+                <div class="stepper-desc fw-semobold">
                   Setup Your Account Details
                 </div>
               </div>
@@ -66,7 +66,7 @@
               <!--begin::Label-->
               <div class="stepper-label">
                 <h3 class="stepper-title">Account Settings</h3>
-                <div class="stepper-desc fw-bold">
+                <div class="stepper-desc fw-semobold">
                   Setup Your Account Settings
                 </div>
               </div>
@@ -90,7 +90,7 @@
               <!--begin::Label-->
               <div class="stepper-label">
                 <h3 class="stepper-title">Business Info</h3>
-                <div class="stepper-desc fw-bold">
+                <div class="stepper-desc fw-semobold">
                   Your Business Related Info
                 </div>
               </div>
@@ -114,7 +114,9 @@
               <!--begin::Label-->
               <div class="stepper-label">
                 <h3 class="stepper-title">Billing Details</h3>
-                <div class="stepper-desc fw-bold">Set Your Payment Methods</div>
+                <div class="stepper-desc fw-semobold">
+                  Set Your Payment Methods
+                </div>
               </div>
               <!--end::Label-->
             </div>
@@ -136,7 +138,7 @@
               <!--begin::Label-->
               <div class="stepper-label">
                 <h3 class="stepper-title">Completed</h3>
-                <div class="stepper-desc fw-bold">Woah, we are here</div>
+                <div class="stepper-desc fw-semobold">Woah, we are here</div>
               </div>
               <!--end::Label-->
             </div>
@@ -261,7 +263,7 @@
       <!--begin::Footer-->
       <div class="d-flex flex-center flex-wrap fs-6 p-5 pb-0">
         <!--begin::Links-->
-        <div class="d-flex flex-center fw-bold fs-6">
+        <div class="d-flex flex-center fw-semobold fs-6">
           <a href="#" class="text-muted text-hover-primary px-2" target="_blank"
             >About</a
           >
@@ -455,7 +457,7 @@ export default defineComponent({
         buttonsStyling: false,
         confirmButtonText: "Ok, got it!",
         customClass: {
-          confirmButton: "btn fw-bold btn-light-primary",
+          confirmButton: "btn fw-semobold btn-light-primary",
         },
       }).then(() => {
         window.location.reload();

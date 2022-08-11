@@ -12,6 +12,7 @@ enum Actions {
   UPDATE_USER = "updateUser",
   FORGOT_PASSWORD = "forgotPassword",
   SET_BREADCRUMB_ACTION = "setBreadcrumbAction",
+  SET_THEME_MODE_ACTION = "setThemeModeAction",
 }
 
 enum Mutations {
@@ -27,6 +28,7 @@ enum Mutations {
   RESET_LAYOUT_CONFIG = "resetLayoutConfig",
   OVERRIDE_LAYOUT_CONFIG = "overrideLayoutConfig",
   OVERRIDE_PAGE_LAYOUT_CONFIG = "overridePageLayoutConfig",
+  SET_THEME_MODE_MUTATION = "setThemeModeMutation",
 }
 
 export { Actions, Mutations };

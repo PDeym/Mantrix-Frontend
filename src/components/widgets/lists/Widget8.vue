@@ -4,9 +4,9 @@
     <!--begin::Header-->
     <div class="card-header align-items-center border-0 mt-4">
       <h3 class="card-title align-items-start flex-column">
-        <span class="fw-bolder text-dark">Latest Products</span>
+        <span class="fw-bold text-dark">Latest Products</span>
 
-        <span class="text-muted mt-1 fw-bold fs-7">Gifts and more</span>
+        <span class="text-muted mt-1 fw-semobold fs-7">Gifts and more</span>
       </h3>
 
       <div class="card-toolbar">
@@ -53,11 +53,11 @@
             <div class="flex-grow-1 my-lg-0 my-2 me-2">
               <a
                 href="#"
-                class="text-gray-800 fw-bolder text-hover-primary fs-6"
+                class="text-gray-800 fw-bold text-hover-primary fs-6"
                 >{{ item.title }}</a
               >
 
-              <span class="text-muted fw-bold d-block pt-1">{{
+              <span class="text-muted fw-semobold d-block pt-1">{{
                 item.desc
               }}</span>
             </div>
@@ -68,7 +68,7 @@
               <div class="me-6">
                 <i class="fa fa-star-half-alt me-1 text-warning fs-5"></i>
 
-                <span class="text-gray-800 fw-bolder">{{ item.rate }}</span>
+                <span class="text-gray-800 fw-bold">{{ item.rate }}</span>
               </div>
 
               <a href="#" class="btn btn-icon btn-light btn-sm border-0">

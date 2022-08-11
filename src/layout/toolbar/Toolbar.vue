@@ -19,7 +19,7 @@
         class="page-title d-flex align-items-center flex-wrap me-3 mb-5 mb-lg-0"
       >
         <!--begin::Title-->
-        <h1 class="d-flex align-items-center text-dark fw-bolder my-1 fs-3">
+        <h1 class="d-flex align-items-center text-dark fw-bold my-1 fs-3">
           {{ title }}
         </h1>
         <!--end::Title-->
@@ -32,7 +32,7 @@
         <!--begin::Breadcrumb-->
         <ul
           v-if="breadcrumbs"
-          class="breadcrumb breadcrumb-separatorless fw-bold fs-7 my-1"
+          class="breadcrumb breadcrumb-separatorless fw-semobold fs-7 my-1"
         >
           <li class="breadcrumb-item pe-3">
             <router-link to="/dashboard" class="text-muted text-hover-primary">
@@ -65,7 +65,7 @@
           <!--begin::Menu-->
           <a
             href="#"
-            class="btn btn-sm btn-flex btn-light btn-active-primary fw-bolder"
+            class="btn btn-sm btn-flex btn-light btn-active-primary fw-bold"
             data-kt-menu-trigger="click"
             data-kt-menu-placement="bottom-end"
             data-kt-menu-flip="top-end"

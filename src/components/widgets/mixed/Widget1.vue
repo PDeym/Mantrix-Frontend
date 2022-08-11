@@ -10,7 +10,7 @@
       >
         <!--begin::Heading-->
         <div class="d-flex flex-stack">
-          <h3 class="m-0 text-white fw-bolder fs-3">Sales Summary</h3>
+          <h3 class="m-0 text-white fw-bold fs-3">Sales Summary</h3>
 
           <div class="ms-1">
             <!--begin::Menu-->
@@ -34,8 +34,8 @@
 
         <!--begin::Balance-->
         <div class="d-flex text-center flex-column text-white pt-8">
-          <span class="fw-bold fs-7">You Balance</span>
-          <span class="fw-bolder fs-2x pt-1">$37,562.00</span>
+          <span class="fw-semobold fs-7">You Balance</span>
+          <span class="fw-bold fs-2x pt-1">$37,562.00</span>
         </div>
         <!--end::Balance-->
       </div>
@@ -43,7 +43,7 @@
 
       <!--begin::Items-->
       <div
-        class="shadow-xs card-rounded mx-9 mb-9 px-6 py-9 position-relative z-index-1 bg-white"
+        class="bg-body shadow-sm card-rounded mx-9 mb-9 px-6 py-9 position-relative z-index-1"
         style="margin-top: -100px"
       >
         <template v-for="(item, index) in items" :key="index">
@@ -68,10 +68,10 @@
               <div class="mb-1 pe-3 flex-grow-1">
                 <a
                   href="#"
-                  class="fs-5 text-gray-800 text-hover-primary fw-bolder"
+                  class="fs-5 text-gray-800 text-hover-primary fw-bold"
                   >{{ item.title }}</a
                 >
-                <div class="text-gray-400 fw-bold fs-7">
+                <div class="text-gray-400 fw-semobold fs-7">
                   {{ item.description }}
                 </div>
               </div>
@@ -79,7 +79,7 @@
 
               <!--begin::Label-->
               <div class="d-flex align-items-center">
-                <div class="fw-bolder fs-5 text-gray-800 pe-1">
+                <div class="fw-bold fs-5 text-gray-800 pe-1">
                   {{ item.stats }}
                 </div>
 

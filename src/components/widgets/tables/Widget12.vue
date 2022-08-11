@@ -4,9 +4,11 @@
     <!--begin::Header-->
     <div class="card-header border-0 pt-5">
       <h3 class="card-title align-items-start flex-column">
-        <span class="card-label fw-bolder fs-3 mb-1">Member Statistics</span>
+        <span class="card-label fw-bold fs-3 mb-1">Member Statistics</span>
 
-        <span class="text-muted mt-1 fw-bold fs-7">Over 500 new members</span>
+        <span class="text-muted mt-1 fw-semobold fs-7"
+          >Over 500 new members</span
+        >
       </h3>
       <div class="card-toolbar">
         <!--begin::Menu-->
@@ -35,7 +37,7 @@
         <table class="table align-middle gs-0 gy-4">
           <!--begin::Table head-->
           <thead>
-            <tr class="fw-bolder text-muted bg-light">
+            <tr class="fw-bold text-muted bg-light">
               <th class="ps-4 min-w-300px rounded-start">Agent</th>
               <th class="min-w-125px">Earnings</th>
               <th class="min-w-125px">Comission</th>
@@ -65,11 +67,11 @@
                     <div class="d-flex justify-content-start flex-column">
                       <a
                         href="#"
-                        class="text-dark fw-bolder text-hover-primary mb-1 fs-6"
+                        class="text-dark fw-bold text-hover-primary mb-1 fs-6"
                         >{{ item.agent.name }}</a
                       >
                       <span
-                        class="text-muted fw-bold text-muted d-block fs-7"
+                        class="text-muted fw-semobold text-muted d-block fs-7"
                         >{{ item.agent.skills }}</span
                       >
                     </div>
@@ -79,10 +81,10 @@
                 <td>
                   <a
                     href="#"
-                    class="text-dark fw-bolder text-hover-primary d-block mb-1 fs-6"
+                    class="text-dark fw-bold text-hover-primary d-block mb-1 fs-6"
                     >{{ item.earnings.value }}</a
                   >
-                  <span class="text-muted fw-bold text-muted d-block fs-7"
+                  <span class="text-muted fw-semobold text-muted d-block fs-7"
                     >{{ item.earnings.remarks }}></span
                   >
                 </td>
@@ -90,23 +92,25 @@
                 <td>
                   <a
                     href="#"
-                    class="text-dark fw-bolder text-hover-primary d-block mb-1 fs-6"
+                    class="text-dark fw-bold text-hover-primary d-block mb-1 fs-6"
                     >{{ item.comission.value }}</a
                   >
-                  <span class="text-muted fw-bold text-muted d-block fs-7">{{
-                    item.comission.remarks
-                  }}</span>
+                  <span
+                    class="text-muted fw-semobold text-muted d-block fs-7"
+                    >{{ item.comission.remarks }}</span
+                  >
                 </td>
 
                 <td>
                   <a
                     href="#"
-                    class="text-dark fw-bolder text-hover-primary d-block mb-1 fs-6"
+                    class="text-dark fw-bold text-hover-primary d-block mb-1 fs-6"
                     >{{ item.company.name }}</a
                   >
-                  <span class="text-muted fw-bold text-muted d-block fs-7">{{
-                    item.company.fields
-                  }}</span>
+                  <span
+                    class="text-muted fw-semobold text-muted d-block fs-7"
+                    >{{ item.company.fields }}</span
+                  >
                 </td>
 
                 <td>
@@ -122,7 +126,7 @@
                   </div>
 
                   <span
-                    class="text-muted fw-bold text-muted d-block fs-7 mt-1"
+                    class="text-muted fw-semobold text-muted d-block fs-7 mt-1"
                     >{{ item.rating.remarks }}</span
                   >
                 </td>

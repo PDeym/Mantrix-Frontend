@@ -20,7 +20,7 @@
       <!--begin::Timeline heading-->
       <div class="pe-3 mb-5">
         <!--begin::Title-->
-        <div class="fs-5 fw-bold mb-2">
+        <div class="fs-5 fw-semobold mb-2">
           3 new application design concepts added:
         </div>
         <!--end::Title-->

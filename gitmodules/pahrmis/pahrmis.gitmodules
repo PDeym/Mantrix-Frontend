@@ -1,6 +1,6 @@
 [submodule "src/modules/pais-template"]
 	path = src/modules/pais-template
-	url = https://github.com/WebAppDevTech/PAIS_Template-v2.git
+	url = url = http://10.50.4.9:8001/PAIS/vue-frontend.git
 	branch = main
 [submodule "src/modules/ucs"]
 	path = src/modules/ucs

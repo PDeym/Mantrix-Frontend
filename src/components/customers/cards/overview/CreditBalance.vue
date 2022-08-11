@@ -5,7 +5,7 @@
     <div class="card-header border-0">
       <!--begin::Card title-->
       <div class="card-title">
-        <h2 class="fw-bolder">Credit Balance</h2>
+        <h2 class="fw-bold">Credit Balance</h2>
       </div>
       <!--end::Card title-->
 
@@ -29,8 +29,8 @@
 
     <!--begin::Card body-->
     <div class="card-body pt-0">
-      <div class="fw-bolder fs-2">
-        $32,487.57 <span class="text-muted fs-4 fw-bold">USD</span>
+      <div class="fw-bold fs-2">
+        $32,487.57 <span class="text-muted fs-4 fw-semobold">USD</span>
         <div class="fs-7 fw-normal text-muted">
           Balance will increase the amount due on the customer's next invoice.
         </div>

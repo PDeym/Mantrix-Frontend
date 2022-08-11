@@ -6,7 +6,7 @@
   >
     <!--begin::Header-->
     <div class="px-7 py-5">
-      <div class="fs-5 text-dark fw-bolder">Filter Options</div>
+      <div class="fs-5 text-dark fw-bold">Filter Options</div>
     </div>
     <!--end::Header-->
 
@@ -19,7 +19,7 @@
       <!--begin::Input group-->
       <div class="mb-10">
         <!--begin::Label-->
-        <label class="form-label fw-bold">Status:</label>
+        <label class="form-label fw-semobold">Status:</label>
         <!--end::Label-->
 
         <!--begin::Input-->
@@ -41,7 +41,7 @@
       <!--begin::Input group-->
       <div class="mb-10">
         <!--begin::Label-->
-        <label class="form-label fw-bold">Member Type:</label>
+        <label class="form-label fw-semobold">Member Type:</label>
         <!--end::Label-->
 
         <!--begin::Options-->
@@ -81,7 +81,7 @@
       <!--begin::Input group-->
       <div class="mb-10">
         <!--begin::Label-->
-        <label class="form-label fw-bold">Notifications:</label>
+        <label class="form-label fw-semobold">Notifications:</label>
         <!--end::Label-->
 
         <!--begin::Switch-->
@@ -106,7 +106,7 @@
       <div class="d-flex justify-content-end">
         <button
           type="reset"
-          class="btn btn-sm btn-white btn-active-light-primary me-2"
+          class="btn btn-sm btn-light btn-active-light-primary me-2"
           data-kt-menu-dismiss="true"
         >
           Reset

@@ -16,9 +16,9 @@
         </div>
         <!--end::Symbol-->
         <!--begin::Title-->
-        <div class="d-flex flex-column justify-content-start fw-bold">
-          <span class="fs-6 fw-bold">Karina Clark</span>
-          <span class="fs-7 fw-bold text-muted">Marketing Manager</span>
+        <div class="d-flex flex-column justify-content-start fw-semobold">
+          <span class="fs-6 fw-semobold">Karina Clark</span>
+          <span class="fs-7 fw-semobold text-muted">Marketing Manager</span>
         </div>
         <!--end::Title-->
       </a>
@@ -34,9 +34,9 @@
         </div>
         <!--end::Symbol-->
         <!--begin::Title-->
-        <div class="d-flex flex-column justify-content-start fw-bold">
-          <span class="fs-6 fw-bold">Olivia Bold</span>
-          <span class="fs-7 fw-bold text-muted">Software Engineer</span>
+        <div class="d-flex flex-column justify-content-start fw-semobold">
+          <span class="fs-6 fw-semobold">Olivia Bold</span>
+          <span class="fs-7 fw-semobold text-muted">Software Engineer</span>
         </div>
         <!--end::Title-->
       </a>
@@ -52,9 +52,9 @@
         </div>
         <!--end::Symbol-->
         <!--begin::Title-->
-        <div class="d-flex flex-column justify-content-start fw-bold">
-          <span class="fs-6 fw-bold">Ana Clark</span>
-          <span class="fs-7 fw-bold text-muted">UI/UX Designer</span>
+        <div class="d-flex flex-column justify-content-start fw-semobold">
+          <span class="fs-6 fw-semobold">Ana Clark</span>
+          <span class="fs-7 fw-semobold text-muted">UI/UX Designer</span>
         </div>
         <!--end::Title-->
       </a>
@@ -70,9 +70,9 @@
         </div>
         <!--end::Symbol-->
         <!--begin::Title-->
-        <div class="d-flex flex-column justify-content-start fw-bold">
-          <span class="fs-6 fw-bold">Nick Pitola</span>
-          <span class="fs-7 fw-bold text-muted">Art Director</span>
+        <div class="d-flex flex-column justify-content-start fw-semobold">
+          <span class="fs-6 fw-semobold">Nick Pitola</span>
+          <span class="fs-7 fw-semobold text-muted">Art Director</span>
         </div>
         <!--end::Title-->
       </a>
@@ -88,9 +88,9 @@
         </div>
         <!--end::Symbol-->
         <!--begin::Title-->
-        <div class="d-flex flex-column justify-content-start fw-bold">
-          <span class="fs-6 fw-bold">Edward Kulnic</span>
-          <span class="fs-7 fw-bold text-muted">System Administrator</span>
+        <div class="d-flex flex-column justify-content-start fw-semobold">
+          <span class="fs-6 fw-semobold">Edward Kulnic</span>
+          <span class="fs-7 fw-semobold text-muted">System Administrator</span>
         </div>
         <!--end::Title-->
       </a>
@@ -115,9 +115,9 @@
         </div>
         <!--end::Symbol-->
         <!--begin::Title-->
-        <div class="d-flex flex-column justify-content-start fw-bold">
-          <span class="fs-6 fw-bold">Company Rbranding</span>
-          <span class="fs-7 fw-bold text-muted">UI Design</span>
+        <div class="d-flex flex-column justify-content-start fw-semobold">
+          <span class="fs-6 fw-semobold">Company Rbranding</span>
+          <span class="fs-7 fw-semobold text-muted">UI Design</span>
         </div>
         <!--end::Title-->
       </a>
@@ -139,9 +139,9 @@
         </div>
         <!--end::Symbol-->
         <!--begin::Title-->
-        <div class="d-flex flex-column justify-content-start fw-bold">
-          <span class="fs-6 fw-bold">Company Re-branding</span>
-          <span class="fs-7 fw-bold text-muted">Web Development</span>
+        <div class="d-flex flex-column justify-content-start fw-semobold">
+          <span class="fs-6 fw-semobold">Company Re-branding</span>
+          <span class="fs-7 fw-semobold text-muted">Web Development</span>
         </div>
         <!--end::Title-->
       </a>
@@ -163,9 +163,9 @@
         </div>
         <!--end::Symbol-->
         <!--begin::Title-->
-        <div class="d-flex flex-column justify-content-start fw-bold">
-          <span class="fs-6 fw-bold">Business Analytics App</span>
-          <span class="fs-7 fw-bold text-muted">Administration</span>
+        <div class="d-flex flex-column justify-content-start fw-semobold">
+          <span class="fs-6 fw-semobold">Business Analytics App</span>
+          <span class="fs-7 fw-semobold text-muted">Administration</span>
         </div>
         <!--end::Title-->
       </a>
@@ -187,9 +187,9 @@
         </div>
         <!--end::Symbol-->
         <!--begin::Title-->
-        <div class="d-flex flex-column justify-content-start fw-bold">
-          <span class="fs-6 fw-bold">EcoLeaf App Launch</span>
-          <span class="fs-7 fw-bold text-muted">Marketing</span>
+        <div class="d-flex flex-column justify-content-start fw-semobold">
+          <span class="fs-6 fw-semobold">EcoLeaf App Launch</span>
+          <span class="fs-7 fw-semobold text-muted">Marketing</span>
         </div>
         <!--end::Title-->
       </a>
@@ -211,9 +211,9 @@
         </div>
         <!--end::Symbol-->
         <!--begin::Title-->
-        <div class="d-flex flex-column justify-content-start fw-bold">
-          <span class="fs-6 fw-bold">Tower Group Website</span>
-          <span class="fs-7 fw-bold text-muted">Google Adwords</span>
+        <div class="d-flex flex-column justify-content-start fw-semobold">
+          <span class="fs-6 fw-semobold">Tower Group Website</span>
+          <span class="fs-7 fw-semobold text-muted">Google Adwords</span>
         </div>
         <!--end::Title-->
       </a>
@@ -237,8 +237,8 @@
         <!--end::Symbol-->
         <!--begin::Title-->
         <div class="d-flex flex-column">
-          <span class="fs-6 fw-bold">Si-Fi Project by AU Themes</span>
-          <span class="fs-7 fw-bold text-muted">#45670</span>
+          <span class="fs-6 fw-semobold">Si-Fi Project by AU Themes</span>
+          <span class="fs-7 fw-semobold text-muted">#45670</span>
         </div>
         <!--end::Title-->
       </a>
@@ -259,8 +259,8 @@
         <!--end::Symbol-->
         <!--begin::Title-->
         <div class="d-flex flex-column">
-          <span class="fs-6 fw-bold">Shopix Mobile App Planning</span>
-          <span class="fs-7 fw-bold text-muted">#45690</span>
+          <span class="fs-6 fw-semobold">Shopix Mobile App Planning</span>
+          <span class="fs-7 fw-semobold text-muted">#45690</span>
         </div>
         <!--end::Title-->
       </a>
@@ -281,8 +281,10 @@
         <!--end::Symbol-->
         <!--begin::Title-->
         <div class="d-flex flex-column">
-          <span class="fs-6 fw-bold">Finance Monitoring SAAS Discussion</span>
-          <span class="fs-7 fw-bold text-muted">#21090</span>
+          <span class="fs-6 fw-semobold"
+            >Finance Monitoring SAAS Discussion</span
+          >
+          <span class="fs-7 fw-semobold text-muted">#21090</span>
         </div>
         <!--end::Title-->
       </a>
@@ -303,8 +305,8 @@
         <!--end::Symbol-->
         <!--begin::Title-->
         <div class="d-flex flex-column">
-          <span class="fs-6 fw-bold">Dashboard Analitics Launch</span>
-          <span class="fs-7 fw-bold text-muted">#34560</span>
+          <span class="fs-6 fw-semobold">Dashboard Analitics Launch</span>
+          <span class="fs-7 fw-semobold text-muted">#34560</span>
         </div>
         <!--end::Title-->
       </a>

@@ -4,13 +4,13 @@
     <!--begin::Heading-->
     <div class="pb-8 pb-lg-10">
       <!--begin::Title-->
-      <h2 class="fw-bolder text-dark">Your Are Done!</h2>
+      <h2 class="fw-bold text-dark">Your Are Done!</h2>
       <!--end::Title-->
 
       <!--begin::Notice-->
-      <div class="text-gray-400 fw-bold fs-6">
+      <div class="text-gray-400 fw-semobold fs-6">
         If you need more info, please
-        <router-link to="/sign-in" class="link-primary fw-bolder"
+        <router-link to="/sign-in" class="link-primary fw-bold"
           >Sign In</router-link
         >.
       </div>
@@ -40,11 +40,11 @@
         <!--begin::Wrapper-->
         <div class="d-flex flex-stack flex-grow-1">
           <!--begin::Content-->
-          <div class="fw-bold">
-            <h4 class="text-gray-800 fw-bolder">We need your attention!</h4>
+          <div class="fw-semobold">
+            <h4 class="text-gray-800 fw-bold">We need your attention!</h4>
             <div class="fs-6 text-gray-600">
               To start using great tools, please, please
-              <a href="#" class="fw-bolder">Create Team Platform</a>
+              <a href="#" class="fw-bold">Create Team Platform</a>
             </div>
           </div>
           <!--end::Content-->

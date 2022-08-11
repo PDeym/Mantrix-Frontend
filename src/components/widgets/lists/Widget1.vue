@@ -4,8 +4,8 @@
     <!--begin::Header-->
     <div class="card-header border-0 pt-5">
       <h3 class="card-title align-items-start flex-column">
-        <span class="card-label fw-bolder text-dark">Tasks Overview</span>
-        <span class="text-muted mt-1 fw-bold fs-7">Pending 10 tasks</span>
+        <span class="card-label fw-bold text-dark">Tasks Overview</span>
+        <span class="text-muted mt-1 fw-semobold fs-7">Pending 10 tasks</span>
       </h3>
 
       <div class="card-toolbar">
@@ -50,11 +50,11 @@
 
           <!--begin::Text-->
           <div class="d-flex flex-column">
-            <a href="#" class="text-dark text-hover-primary fs-6 fw-bolder">{{
+            <a href="#" class="text-dark text-hover-primary fs-6 fw-bold">{{
               item.title
             }}</a>
 
-            <span class="text-muted fw-bold">{{ item.description }}</span>
+            <span class="text-muted fw-semobold">{{ item.description }}</span>
           </div>
           <!--end::Text-->
         </div>

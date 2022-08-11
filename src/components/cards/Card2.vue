@@ -12,7 +12,10 @@
         <!--end::Icon-->
 
         <!--begin::Title-->
-        <a href="#" class="fs-4 fw-bold text-hover-primary text-gray-600 m-0">
+        <a
+          href="#"
+          class="fs-4 fw-semobold text-hover-primary text-gray-600 m-0"
+        >
           {{ title }}
         </a>
         <!--end::Title-->
@@ -44,7 +47,7 @@
     <!--begin::Card body-->
     <div class="card-body d-flex flex-column px-9 pt-6 pb-8">
       <!--begin::Heading-->
-      <div class="fs-2tx fw-bolder mb-3">
+      <div class="fs-2tx fw-bold mb-3">
         {{ content }}
       </div>
       <!--end::Heading-->
@@ -56,13 +59,13 @@
         </span>
 
         <!--begin::Number-->
-        <div :class="`text-${color}`" class="fw-bolder me-2">
+        <div :class="`text-${color}`" class="fw-bold me-2">
           {{ footerData }}
         </div>
         <!--end::Number-->
 
         <!--begin::Label-->
-        <div class="fw-bold text-gray-400">
+        <div class="fw-semobold text-gray-400">
           {{ footerText }}
         </div>
         <!--end::Label-->
@@ -70,7 +73,7 @@
       <!--end::Stats-->
 
       <!--begin::Indicator-->
-      <div class="d-flex align-items-center fw-bold">
+      <div class="d-flex align-items-center fw-semobold">
         <span class="badge bg-light text-gray-700 px-3 py-2 me-2">
           {{ indicatorValue }}
         </span>

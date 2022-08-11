@@ -29,7 +29,7 @@
               <div class="d-flex align-items-center mb-2">
                 <a
                   href="#"
-                  class="text-gray-800 text-hover-primary fs-2 fw-bolder me-1"
+                  class="text-gray-800 text-hover-primary fs-2 fw-bold me-1"
                   >Max Smith</a
                 >
                 <a href="#">
@@ -40,7 +40,7 @@
 
                 <a
                   href="#"
-                  class="btn btn-sm btn-light-success fw-bolder ms-2 fs-8 py-1 px-3"
+                  class="btn btn-sm btn-light-success fw-bold ms-2 fs-8 py-1 px-3"
                   data-bs-toggle="modal"
                   data-bs-target="#kt_modal_upgrade_plan"
                   >Upgrade to Pro</a
@@ -49,7 +49,7 @@
               <!--end::Name-->
 
               <!--begin::Info-->
-              <div class="d-flex flex-wrap fw-bold fs-6 mb-4 pe-2">
+              <div class="d-flex flex-wrap fw-semobold fs-6 mb-4 pe-2">
                 <a
                   href="#"
                   class="d-flex align-items-center text-gray-400 text-hover-primary me-5 mb-2"
@@ -141,7 +141,7 @@
                       <inline-svg src="media/icons/duotune/arrows/arr066.svg" />
                     </span>
                     <div
-                      class="fs-2 fw-bolder"
+                      class="fs-2 fw-bold"
                       data-kt-countup="true"
                       data-kt-countup-value="4500"
                       data-kt-countup-prefix="$"
@@ -152,7 +152,7 @@
                   <!--end::Number-->
 
                   <!--begin::Label-->
-                  <div class="fw-bold fs-6 text-gray-400">Earnings</div>
+                  <div class="fw-semobold fs-6 text-gray-400">Earnings</div>
                   <!--end::Label-->
                 </div>
                 <!--end::Stat-->
@@ -167,7 +167,7 @@
                       <inline-svg src="media/icons/duotune/arrows/arr065.svg" />
                     </span>
                     <div
-                      class="fs-2 fw-bolder"
+                      class="fs-2 fw-bold"
                       data-kt-countup="true"
                       data-kt-countup-value="75"
                     >
@@ -177,7 +177,7 @@
                   <!--end::Number-->
 
                   <!--begin::Label-->
-                  <div class="fw-bold fs-6 text-gray-400">Projects</div>
+                  <div class="fw-semobold fs-6 text-gray-400">Projects</div>
                   <!--end::Label-->
                 </div>
                 <!--end::Stat-->
@@ -192,7 +192,7 @@
                       <inline-svg src="media/icons/duotune/arrows/arr066.svg" />
                     </span>
                     <div
-                      class="fs-2 fw-bolder"
+                      class="fs-2 fw-bold"
                       data-kt-countup="true"
                       data-kt-countup-value="60"
                       data-kt-countup-prefix="%"
@@ -203,7 +203,7 @@
                   <!--end::Number-->
 
                   <!--begin::Label-->
-                  <div class="fw-bold fs-6 text-gray-400">Success Rate</div>
+                  <div class="fw-semobold fs-6 text-gray-400">Success Rate</div>
                   <!--end::Label-->
                 </div>
                 <!--end::Stat-->
@@ -217,10 +217,10 @@
               class="d-flex align-items-center w-200px w-sm-300px flex-column mt-3"
             >
               <div class="d-flex justify-content-between w-100 mt-auto mb-2">
-                <span class="fw-bold fs-6 text-gray-400"
+                <span class="fw-semobold fs-6 text-gray-400"
                   >Profile Compleation</span
                 >
-                <span class="fw-bolder fs-6">50%</span>
+                <span class="fw-bold fs-6">50%</span>
               </div>
 
               <div class="h-5px mx-3 w-100 bg-light mb-3">
@@ -245,7 +245,7 @@
       <!--begin::Navs-->
       <div class="d-flex overflow-auto h-55px">
         <ul
-          class="nav nav-stretch nav-line-tabs nav-line-tabs-2x border-transparent fs-5 fw-bolder flex-nowrap"
+          class="nav nav-stretch nav-line-tabs nav-line-tabs-2x border-transparent fs-5 fw-bold flex-nowrap"
         >
           <!--begin::Nav item-->
           <li class="nav-item">

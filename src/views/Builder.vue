@@ -20,7 +20,7 @@
 
       <!--begin::Description-->
       <div class="ms-6">
-        <p class="list-unstyled text-gray-600 fw-bold fs-6 p-0 m-0">
+        <p class="list-unstyled text-gray-600 fw-semobold fs-6 p-0 m-0">
           The layout builder is to assist your set and configure your preferred
           project layout specifications and preview it in real time and export
           the HTML template with its includable partials of this demo. The
@@ -38,7 +38,7 @@
     <!--begin::Header-->
     <div class="card-header card-header-stretch">
       <ul
-        class="nav nav-stretch nav-line-tabs fw-bold border-0"
+        class="nav nav-stretch nav-line-tabs fw-semobold border-0"
         role="tablist"
         id="kt_layout_builder_tabs"
         ref="kt_layout_builder_tabs"
@@ -192,7 +192,7 @@
                             id="sketchy-1"
                           />
                         </span>
-                        <span class="fs-4 fw-bolder">Sketchy</span>
+                        <span class="fs-4 fw-bold">Sketchy</span>
                       </span>
                       <span
                         style="
@@ -220,7 +220,7 @@
                             id="sigma-1"
                           />
                         </span>
-                        <span class="fs-4 fw-bolder">Sigma</span>
+                        <span class="fs-4 fw-bold">Sigma</span>
                       </span>
                       <span
                         style="
@@ -248,7 +248,7 @@
                             id="dozzy-1"
                           />
                         </span>
-                        <span class="fs-4 fw-bolder">Dozzy</span>
+                        <span class="fs-4 fw-bold">Dozzy</span>
                       </span>
                       <span
                         style="
@@ -276,7 +276,7 @@
                             id="unitedpalms-1"
                           />
                         </span>
-                        <span class="fs-4 fw-bolder">United Palms</span>
+                        <span class="fs-4 fw-bold">United Palms</span>
                       </span>
                       <span
                         style="
@@ -569,7 +569,7 @@
               @click="reset($event)"
               type="button"
               id="kt_layout_builder_reset"
-              class="btn btn-active-light btn-color-muted fw-bold"
+              class="btn btn-active-light btn-color-muted fw-semobold"
             >
               Reset
             </button>
@@ -586,7 +586,7 @@
     <!--begin::Card Body-->
     <div class="card-body p-10 p-lg-15">
       <!--begin::Heading-->
-      <h1 class="anchor fw-bolder mb-5" id="overview">Generated config</h1>
+      <h1 class="anchor fw-bold mb-5" id="overview">Generated config</h1>
       <!--end::Heading-->
       <div class="py-5">
         This config is used as a <b>{{ themeName }}</b> layout config, you can

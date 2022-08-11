@@ -20,7 +20,7 @@
       <div class="table-responsive">
         <!--begin::Table-->
         <table
-          class="table align-middle table-row-dashed fs-6 text-gray-600 fw-bold gy-5"
+          class="table align-middle table-row-dashed fs-6 text-gray-600 fw-semobold gy-5"
           id="kt_table_customers_events"
         >
           <!--begin::Table body-->
@@ -32,7 +32,7 @@
                 Invoice
                 <a
                   href="#"
-                  class="fw-bolder text-gray-800 text-hover-primary me-1"
+                  class="fw-bold text-gray-800 text-hover-primary me-1"
                   >7786-3830</a
                 >status has changed from
                 <span class="badge badge-light-primary me-1">In Transit</span>to
@@ -53,7 +53,7 @@
                 Invoice
                 <a
                   href="#"
-                  class="fw-bolder text-gray-800 text-hover-primary me-1"
+                  class="fw-bold text-gray-800 text-hover-primary me-1"
                   >9357-7929</a
                 >status has changed from
                 <span class="badge badge-light-info me-1">In Progress</span>to
@@ -73,10 +73,10 @@
               <td class="min-w-400px">
                 <a
                   href="#"
-                  class="fw-bolder text-gray-800 text-hover-primary me-1"
+                  class="fw-bold text-gray-800 text-hover-primary me-1"
                   >Brian Cox</a
                 >has made payment to
-                <a href="#" class="fw-bolder text-gray-800 text-hover-primary"
+                <a href="#" class="fw-bold text-gray-800 text-hover-primary"
                   >7277-8716</a
                 >
               </td>
@@ -94,10 +94,10 @@
               <td class="min-w-400px">
                 <a
                   href="#"
-                  class="fw-bolder text-gray-800 text-hover-primary me-1"
+                  class="fw-bold text-gray-800 text-hover-primary me-1"
                   >Melody Macy</a
                 >has made payment to
-                <a href="#" class="fw-bolder text-gray-800 text-hover-primary"
+                <a href="#" class="fw-bold text-gray-800 text-hover-primary"
                   >2516-2975</a
                 >
               </td>
@@ -116,7 +116,7 @@
                 Invoice
                 <a
                   href="#"
-                  class="fw-bolder text-gray-800 text-hover-primary me-1"
+                  class="fw-bold text-gray-800 text-hover-primary me-1"
                   >4464-4371</a
                 >is <span class="badge badge-light-info">In Progress</span>
               </td>

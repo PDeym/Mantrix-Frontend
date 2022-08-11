@@ -6,11 +6,13 @@ import {
   DrawerComponent,
   SwapperComponent,
 } from "@/assets/ts/components";
+import { ThemeModeComponent } from "@/assets/ts/layout";
 
 /**
  * @description Initialize KeenThemes custom components
  */
 const initializeComponents = () => {
+  ThemeModeComponent.init();
   setTimeout(() => {
     ToggleComponent.bootstrap();
     StickyComponent.bootstrap();
@@ -25,6 +27,7 @@ const initializeComponents = () => {
  * @description Reinitialize KeenThemes custom components
  */
 const reinitializeComponents = () => {
+  ThemeModeComponent.init();
   setTimeout(() => {
     ToggleComponent.reinitialization();
     StickyComponent.reInitialization();

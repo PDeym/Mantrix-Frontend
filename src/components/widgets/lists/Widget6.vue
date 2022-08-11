@@ -3,7 +3,7 @@
   <div class="card" :class="widgetClasses">
     <!--begin::Header-->
     <div class="card-header border-0">
-      <h3 class="card-title fw-bolder text-dark">Notifications</h3>
+      <h3 class="card-title fw-bold text-dark">Notifications</h3>
 
       <div class="card-toolbar">
         <!--begin::Menu-->
@@ -45,18 +45,16 @@
 
           <!--begin::Title-->
           <div class="flex-grow-1 me-2">
-            <a
-              href="#"
-              class="fw-bolder text-gray-800 text-hover-primary fs-6"
-              >{{ item.title }}</a
-            >
+            <a href="#" class="fw-bold text-gray-800 text-hover-primary fs-6">{{
+              item.title
+            }}</a>
 
-            <span class="text-muted fw-bold d-block">{{ item.text }}</span>
+            <span class="text-muted fw-semobold d-block">{{ item.text }}</span>
           </div>
           <!--end::Title-->
 
           <!--begin::Lable-->
-          <span :class="`text-${item.color}`" class="fw-bolder py-1">{{
+          <span :class="`text-${item.color}`" class="fw-bold py-1">{{
             item.number
           }}</span>
           <!--end::Lable-->

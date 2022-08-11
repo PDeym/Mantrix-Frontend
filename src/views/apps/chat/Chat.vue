@@ -55,7 +55,7 @@
                     <span
                       v-else
                       :class="`bg-light-${item.color} text-${item.color}`"
-                      class="symbol-label fs-6 fw-bolder"
+                      class="symbol-label fs-6 fw-bold"
                       >{{ item.name.charAt(0) }}</span
                     >
                     <div
@@ -68,10 +68,12 @@
                   <div class="ms-5">
                     <a
                       href="#"
-                      class="fs-5 fw-bolder text-gray-900 text-hover-primary mb-2"
+                      class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2"
                       >{{ item.name }}</a
                     >
-                    <div class="fw-bold text-gray-400">{{ item.email }}</div>
+                    <div class="fw-semobold text-gray-400">
+                      {{ item.email }}
+                    </div>
                   </div>
                   <!--end::Details-->
                 </div>
@@ -138,7 +140,7 @@
                   data-bs-target="#kt_modal_view_users"
                 >
                   <span
-                    class="symbol-label fs-8 fw-bolder"
+                    class="symbol-label fs-8 fw-bold"
                     data-bs-toggle="tooltip"
                     data-bs-trigger="hover"
                     title=""
@@ -151,7 +153,7 @@
               <template v-else>
                 <a
                   href="#"
-                  class="fs-4 fw-bolder text-gray-900 text-hover-primary me-1 mb-2 lh-1"
+                  class="fs-4 fw-bold text-gray-900 text-hover-primary me-1 mb-2 lh-1"
                   >Brian Cox</a
                 >
 
@@ -160,7 +162,7 @@
                   <span
                     class="badge badge-success badge-circle w-10px h-10px me-1"
                   ></span>
-                  <span class="fs-7 fw-bold text-gray-400">Active</span>
+                  <span class="fs-7 fw-semobold text-gray-400">Active</span>
                 </div>
                 <!--end::Info-->
               </template>

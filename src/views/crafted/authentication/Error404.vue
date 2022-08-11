@@ -9,7 +9,7 @@
     <!--end::Illustration-->
 
     <!--begin::Message-->
-    <h1 class="fw-bold mb-10" style="color: #a3a3c7">
+    <h1 class="fw-semobold mb-10" style="color: #a3a3c7">
       Seems there is nothing here
     </h1>
     <!--end::Message-->

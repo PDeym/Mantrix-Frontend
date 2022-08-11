@@ -4,7 +4,7 @@
     <div class="card-header border-0">
       <!--begin::Card title-->
       <div class="card-title">
-        <h2 class="fw-bolder mb-0">Payment Methods</h2>
+        <h2 class="fw-bold mb-0">Payment Methods</h2>
       </div>
       <!--end::Card title-->
       <!--begin::Card toolbar-->
@@ -56,7 +56,7 @@
             <!--begin::Summary-->
             <div class="me-3">
               <div class="d-flex align-items-center">
-                <div class="text-gray-800 fw-bolder">Mastercard</div>
+                <div class="text-gray-800 fw-bold">Mastercard</div>
                 <div class="badge badge-light-primary ms-5">Primary</div>
               </div>
               <div class="text-muted">Expires Dec 2024</div>
@@ -116,7 +116,7 @@
             </a>
             <!--begin::Menu-->
             <div
-              class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-bold w-150px py-3"
+              class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semobold w-150px py-3"
               data-kt-menu="true"
             >
               <!--begin::Menu item-->
@@ -147,7 +147,7 @@
           <div class="d-flex flex-wrap py-5">
             <!--begin::Col-->
             <div class="flex-equal me-5">
-              <table class="table table-flush fw-bold gy-1">
+              <table class="table table-flush fw-semobold gy-1">
                 <tbody>
                   <tr>
                     <td class="text-muted min-w-125px w-125px">Name</td>
@@ -179,7 +179,7 @@
             <!--end::Col-->
             <!--begin::Col-->
             <div class="flex-equal">
-              <table class="table table-flush fw-bold gy-1">
+              <table class="table table-flush fw-semobold gy-1">
                 <tbody>
                   <tr>
                     <td class="text-muted min-w-125px w-125px">
@@ -260,7 +260,7 @@
             <!--begin::Summary-->
             <div class="me-3">
               <div class="d-flex align-items-center">
-                <div class="text-gray-800 fw-bolder">Visa</div>
+                <div class="text-gray-800 fw-bold">Visa</div>
               </div>
               <div class="text-muted">Expires Feb 2022</div>
             </div>
@@ -318,7 +318,7 @@
             </a>
             <!--begin::Menu-->
             <div
-              class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-bold w-150px py-3"
+              class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semobold w-150px py-3"
               data-kt-menu="true"
             >
               <!--begin::Menu item-->
@@ -349,7 +349,7 @@
           <div class="d-flex flex-wrap py-5">
             <!--begin::Col-->
             <div class="flex-equal me-5">
-              <table class="table table-flush fw-bold gy-1">
+              <table class="table table-flush fw-semobold gy-1">
                 <tbody>
                   <tr>
                     <td class="text-muted min-w-125px w-125px">Name</td>
@@ -381,7 +381,7 @@
             <!--end::Col-->
             <!--begin::Col-->
             <div class="flex-equal">
-              <table class="table table-flush fw-bold gy-1">
+              <table class="table table-flush fw-semobold gy-1">
                 <tbody>
                   <tr>
                     <td class="text-muted min-w-125px w-125px">
@@ -463,7 +463,7 @@
             <!--begin::Summary-->
             <div class="me-3">
               <div class="d-flex align-items-center">
-                <div class="text-gray-800 fw-bolder">American Express</div>
+                <div class="text-gray-800 fw-bold">American Express</div>
                 <div class="badge badge-light-danger ms-5">Expired</div>
               </div>
               <div class="text-muted">Expires Aug 2021</div>
@@ -522,7 +522,7 @@
             </a>
             <!--begin::Menu-->
             <div
-              class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-bold w-150px py-3"
+              class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semobold w-150px py-3"
               data-kt-menu="true"
             >
               <!--begin::Menu item-->
@@ -552,7 +552,7 @@
           <div class="d-flex flex-wrap py-5">
             <!--begin::Col-->
             <div class="flex-equal me-5">
-              <table class="table table-flush fw-bold gy-1">
+              <table class="table table-flush fw-semobold gy-1">
                 <tbody>
                   <tr>
                     <td class="text-muted min-w-125px w-125px">Name</td>
@@ -584,7 +584,7 @@
             <!--end::Col-->
             <!--begin::Col-->
             <div class="flex-equal">
-              <table class="table table-flush fw-bold gy-1">
+              <table class="table table-flush fw-semobold gy-1">
                 <tbody>
                   <tr>
                     <td class="text-muted min-w-125px w-125px">

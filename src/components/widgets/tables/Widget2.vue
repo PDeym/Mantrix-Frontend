@@ -4,9 +4,9 @@
     <!--begin::Header-->
     <div class="card-header border-0 pt-5">
       <h3 class="card-title align-items-start flex-column">
-        <span class="card-label fw-bolder fs-3 mb-1">Latest Arrivals</span>
+        <span class="card-label fw-bold fs-3 mb-1">Latest Arrivals</span>
 
-        <span class="text-muted mt-1 fw-bold fs-7"
+        <span class="text-muted mt-1 fw-semobold fs-7"
           >More than 100 new products</span
         >
       </h3>
@@ -65,10 +65,10 @@
                 <td>
                   <a
                     href="#"
-                    class="text-dark fw-bolder text-hover-primary mb-1 fs-6"
+                    class="text-dark fw-bold text-hover-primary mb-1 fs-6"
                     >{{ item.info.title }}</a
                   >
-                  <span class="text-muted fw-bold d-block fs-7">{{
+                  <span class="text-muted fw-semobold d-block fs-7">{{
                     item.info.description
                   }}</span>
                 </td>
@@ -79,13 +79,13 @@
                   >
                     <span
                       :class="`badge-light-${item1.color}`"
-                      class="badge fw-bold me-1"
+                      class="badge fw-semobold me-1"
                       >{{ item1.label }}</span
                     >
                   </template>
                 </td>
                 <td class="text-end">
-                  <span class="text-muted fw-bold">
+                  <span class="text-muted fw-semobold">
                     {{ item.remarks }}
                   </span>
                 </td>

@@ -7,122 +7,133 @@
   >
     <!--begin::Aside-->
     <div
-      class="d-flex justify-content-center bg-white rounded justify-content-xl-start flex-row-auto w-100 w-xl-300px w-xxl-400px me-9"
+      class="card d-flex justify-content-center justify-content-xl-start flex-row-auto w-100 w-xl-300px w-xxl-400px me-9"
     >
       <!--begin::Wrapper-->
-      <div class="px-6 px-lg-10 px-xxl-15 py-20">
+      <div class="card-body px-6 px-lg-10 px-xxl-15 py-20">
         <!--begin::Nav-->
         <div class="stepper-nav">
           <!--begin::Step 1-->
           <div class="stepper-item current" data-kt-stepper-element="nav">
+            <div class="stepper-wrapper">
+              <!--begin::Icon-->
+              <div class="stepper-icon w-40px h-40px">
+                <i class="stepper-check fas fa-check"></i>
+                <span class="stepper-number">1</span>
+              </div>
+              <!--end::Icon-->
+
+              <!--begin::Label-->
+              <div class="stepper-label">
+                <h3 class="stepper-title">Account Type</h3>
+
+                <div class="stepper-desc fw-semobold">
+                  Setup Your Account Details
+                </div>
+              </div>
+              <!--end::Label-->
+            </div>
+
             <!--begin::Line-->
-            <div class="stepper-line w-40px"></div>
+            <div class="stepper-line h-40px"></div>
             <!--end::Line-->
-
-            <!--begin::Icon-->
-            <div class="stepper-icon w-40px h-40px">
-              <i class="stepper-check fas fa-check"></i>
-              <span class="stepper-number">1</span>
-            </div>
-            <!--end::Icon-->
-
-            <!--begin::Label-->
-            <div class="stepper-label">
-              <h3 class="stepper-title">Account Type</h3>
-
-              <div class="stepper-desc fw-bold">Setup Your Account Details</div>
-            </div>
-            <!--end::Label-->
           </div>
           <!--end::Step 1-->
 
           <!--begin::Step 2-->
           <div class="stepper-item" data-kt-stepper-element="nav">
-            <!--begin::Line-->
-            <div class="stepper-line w-40px"></div>
-            <!--end::Line-->
-
-            <!--begin::Icon-->
-            <div class="stepper-icon w-40px h-40px">
-              <i class="stepper-check fas fa-check"></i>
-              <span class="stepper-number">2</span>
-            </div>
-            <!--end::Icon-->
-
-            <!--begin::Label-->
-            <div class="stepper-label">
-              <h3 class="stepper-title">Account Settings</h3>
-              <div class="stepper-desc fw-bold">
-                Setup Your Account Settings
+            <div class="stepper-wrapper">
+              <!--begin::Icon-->
+              <div class="stepper-icon w-40px h-40px">
+                <i class="stepper-check fas fa-check"></i>
+                <span class="stepper-number">2</span>
               </div>
+              <!--end::Icon-->
+
+              <!--begin::Label-->
+              <div class="stepper-label">
+                <h3 class="stepper-title">Account Settings</h3>
+                <div class="stepper-desc fw-semobold">
+                  Setup Your Account Settings
+                </div>
+              </div>
+              <!--end::Label-->
             </div>
-            <!--end::Label-->
+            <!--begin::Line-->
+            <div class="stepper-line h-40px"></div>
+            <!--end::Line-->
           </div>
           <!--end::Step 2-->
 
           <!--begin::Step 3-->
           <div class="stepper-item" data-kt-stepper-element="nav">
+            <div class="stepper-wrapper">
+              <!--begin::Icon-->
+              <div class="stepper-icon w-40px h-40px">
+                <i class="stepper-check fas fa-check"></i>
+                <span class="stepper-number">3</span>
+              </div>
+              <!--end::Icon-->
+
+              <!--begin::Label-->
+              <div class="stepper-label">
+                <h3 class="stepper-title">Business Info</h3>
+                <div class="stepper-desc fw-semobold">
+                  Your Business Related Info
+                </div>
+              </div>
+              <!--end::Label-->
+            </div>
+
             <!--begin::Line-->
-            <div class="stepper-line w-40px"></div>
+            <div class="stepper-line h-40px"></div>
             <!--end::Line-->
-
-            <!--begin::Icon-->
-            <div class="stepper-icon w-40px h-40px">
-              <i class="stepper-check fas fa-check"></i>
-              <span class="stepper-number">3</span>
-            </div>
-            <!--end::Icon-->
-
-            <!--begin::Label-->
-            <div class="stepper-label">
-              <h3 class="stepper-title">Business Info</h3>
-              <div class="stepper-desc fw-bold">Your Business Related Info</div>
-            </div>
-            <!--end::Label-->
           </div>
           <!--end::Step 3-->
 
           <!--begin::Step 4-->
           <div class="stepper-item" data-kt-stepper-element="nav">
+            <div class="stepper-wrapper">
+              <!--begin::Icon-->
+              <div class="stepper-icon w-40px h-40px">
+                <i class="stepper-check fas fa-check"></i>
+                <span class="stepper-number">4</span>
+              </div>
+              <!--end::Icon-->
+
+              <!--begin::Label-->
+              <div class="stepper-label">
+                <h3 class="stepper-title">Billing Details</h3>
+                <div class="stepper-desc fw-semobold">
+                  Set Your Payment Methods
+                </div>
+              </div>
+              <!--end::Label-->
+            </div>
+
             <!--begin::Line-->
-            <div class="stepper-line w-40px"></div>
+            <div class="stepper-line h-40px"></div>
             <!--end::Line-->
-
-            <!--begin::Icon-->
-            <div class="stepper-icon w-40px h-40px">
-              <i class="stepper-check fas fa-check"></i>
-              <span class="stepper-number">4</span>
-            </div>
-            <!--end::Icon-->
-
-            <!--begin::Label-->
-            <div class="stepper-label">
-              <h3 class="stepper-title">Billing Details</h3>
-              <div class="stepper-desc fw-bold">Set Your Payment Methods</div>
-            </div>
-            <!--end::Label-->
           </div>
           <!--end::Step 4-->
 
           <!--begin::Step 5-->
           <div class="stepper-item" data-kt-stepper-element="nav">
-            <!--begin::Line-->
-            <div class="stepper-line w-40px"></div>
-            <!--end::Line-->
+            <div class="stepper-wrapper">
+              <!--begin::Icon-->
+              <div class="stepper-icon w-40px h-40px">
+                <i class="stepper-check fas fa-check"></i>
+                <span class="stepper-number">5</span>
+              </div>
+              <!--end::Icon-->
 
-            <!--begin::Icon-->
-            <div class="stepper-icon w-40px h-40px">
-              <i class="stepper-check fas fa-check"></i>
-              <span class="stepper-number">5</span>
+              <!--begin::Label-->
+              <div class="stepper-label">
+                <h3 class="stepper-title">Completed</h3>
+                <div class="stepper-desc fw-semobold">Woah, we are here</div>
+              </div>
+              <!--end::Label-->
             </div>
-            <!--end::Icon-->
-
-            <!--begin::Label-->
-            <div class="stepper-label">
-              <h3 class="stepper-title">Completed</h3>
-              <div class="stepper-desc fw-bold">Woah, we are here</div>
-            </div>
-            <!--end::Label-->
           </div>
           <!--end::Step 5-->
         </div>
@@ -133,7 +144,7 @@
     <!--begin::Aside-->
 
     <!--begin::Content-->
-    <div class="d-flex flex-row-fluid flex-center bg-white rounded">
+    <div class="card d-flex flex-row-fluid flex-center">
       <!--begin::Form-->
       <form
         class="py-20 w-100 w-xl-700px px-9"
@@ -392,7 +403,7 @@ export default defineComponent({
         buttonsStyling: false,
         confirmButtonText: "Ok, got it!",
         customClass: {
-          confirmButton: "btn fw-bold btn-light-primary",
+          confirmButton: "btn fw-semobold btn-light-primary",
         },
       }).then(() => {
         window.location.reload();

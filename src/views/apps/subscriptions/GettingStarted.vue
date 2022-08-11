@@ -6,11 +6,11 @@
       <!--begin::Wrapper-->
       <div class="card-px text-center py-20 my-10">
         <!--begin::Title-->
-        <h2 class="fs-2x fw-bolder mb-10">Welcome!</h2>
+        <h2 class="fs-2x fw-bold mb-10">Welcome!</h2>
         <!--end::Title-->
 
         <!--begin::Description-->
-        <p class="text-gray-400 fs-4 fw-bold mb-10">
+        <p class="text-gray-400 fs-4 fw-semobold mb-10">
           There are no subscriptions added yet.<br />
           Kickstart your business by adding a your first subscription
         </p>

@@ -20,7 +20,7 @@
       <!--begin::Timeline heading-->
       <div class="pe-3 mb-5">
         <!--begin::Title-->
-        <div class="fs-5 fw-bold mb-2">
+        <div class="fs-5 fw-semobold mb-2">
           There are 2 new tasks for you in “AirPlus Mobile APp” project:
         </div>
         <!--end::Title-->
@@ -56,7 +56,7 @@
           <!--begin::Title-->
           <a
             href="#"
-            class="fs-5 text-dark text-hover-primary fw-bold w-375px min-w-200px"
+            class="fs-5 text-dark text-hover-primary fw-semobold w-375px min-w-200px"
             >Meeting with customer</a
           >
           <!--end::Title-->
@@ -86,7 +86,7 @@
             <!--begin::User-->
             <div class="symbol symbol-circle symbol-25px">
               <div
-                class="symbol-label fs-8 fw-bold bg-primary text-inverse-primary"
+                class="symbol-label fs-8 fw-semobold bg-primary text-inverse-primary"
               >
                 A
               </div>
@@ -116,7 +116,7 @@
           <!--begin::Title-->
           <a
             href="#"
-            class="fs-5 text-dark text-hover-primary fw-bold w-375px min-w-200px"
+            class="fs-5 text-dark text-hover-primary fw-semobold w-375px min-w-200px"
             >Project Delivery Preparation</a
           >
           <!--end::Title-->
@@ -142,7 +142,7 @@
             <!--begin::User-->
             <div class="symbol symbol-circle symbol-25px">
               <div
-                class="symbol-label fs-8 fw-bold bg-success text-inverse-primary"
+                class="symbol-label fs-8 fw-semobold bg-success text-inverse-primary"
               >
                 B
               </div>

@@ -34,16 +34,16 @@
             <!--end::Title-->
 
             <!--begin::Description-->
-            <div class="text-gray-400 fw-bold fs-5">
+            <div class="text-gray-400 fw-semobold fs-5">
               If you need more info, please check out
-              <a href="#" class="link-primary fw-bolder">FAQ Page</a>.
+              <a href="#" class="link-primary fw-bold">FAQ Page</a>.
             </div>
             <!--end::Description-->
           </div>
           <!--end::Heading-->
 
           <!--begin::Google Contacts Invite-->
-          <div class="btn btn-light-primary fw-bolder w-100 mb-8">
+          <div class="btn btn-light-primary fw-bold w-100 mb-8">
             <img
               alt="Logo"
               src="media/svg/brand-logos/google-icon.svg"
@@ -56,7 +56,7 @@
           <!--begin::Separator-->
           <div class="separator d-flex flex-center mb-8">
             <span
-              class="text-uppercase bg-white fs-7 fw-bold text-gray-400 px-3"
+              class="text-uppercase bg-body fs-7 fw-semobold text-gray-400 px-3"
               >or</span
             >
           </div>
@@ -74,7 +74,7 @@
           <!--begin::Users-->
           <div class="mb-10">
             <!--begin::Heading-->
-            <div class="fs-6 fw-bold mb-2">Your Invitations</div>
+            <div class="fs-6 fw-semobold mb-2">Your Invitations</div>
             <!--end::Heading-->
 
             <!--begin::List-->
@@ -92,7 +92,7 @@
                       <span
                         v-else
                         :class="`bg-light-${user.state} text-${user.state}`"
-                        class="symbol-label fw-bold"
+                        class="symbol-label fw-semobold"
                       >
                         {{ user.name.charAt(0) }}
                       </span>
@@ -103,11 +103,13 @@
                     <div class="ms-5">
                       <a
                         href="#"
-                        class="fs-5 fw-bolder text-gray-900 text-hover-primary mb-2"
+                        class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2"
                         >{{ user.name }}</a
                       >
 
-                      <div class="fw-bold text-gray-400">{{ user.email }}</div>
+                      <div class="fw-semobold text-gray-400">
+                        {{ user.email }}
+                      </div>
                     </div>
                     <!--end::Details-->
                   </div>
@@ -138,7 +140,7 @@
           <!--begin::Notice-->
           <div class="d-flex flex-stack">
             <!--begin::Label-->
-            <div class="me-5 fw-bold">
+            <div class="me-5 fw-semobold">
               <label class="fs-6">Adding Users by Team Members</label>
               <div class="fs-7 text-gray-400">
                 If you need more info, please check budget planning
@@ -157,7 +159,7 @@
                 checked="checked"
               />
 
-              <span class="form-check-label fw-bold text-gray-400">
+              <span class="form-check-label fw-semobold text-gray-400">
                 Allowed
               </span>
             </label>

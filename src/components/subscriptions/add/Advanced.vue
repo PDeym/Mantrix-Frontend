@@ -5,7 +5,7 @@
     <div class="card-header">
       <!--begin::Card title-->
       <div class="card-title">
-        <h2 class="fw-bolder">Advanced Options</h2>
+        <h2 class="fw-bold">Advanced Options</h2>
       </div>
       <!--begin::Card title-->
     </div>
@@ -16,7 +16,7 @@
       <!--begin::Custom fields-->
       <div class="d-flex flex-column mb-15 fv-row">
         <!--begin::Label-->
-        <div class="fs-5 fw-bolder form-label mb-3">
+        <div class="fs-5 fw-bold form-label mb-3">
           Custom fields
 
           <i
@@ -34,12 +34,12 @@
           <!--begin::Table-->
           <table
             id="kt_create_new_custom_fields"
-            class="table align-middle table-row-dashed fw-bold fs-6 gy-5"
+            class="table align-middle table-row-dashed fw-semobold fs-6 gy-5"
           >
             <!--begin::Table head-->
             <thead>
               <tr
-                class="text-start text-muted fw-bolder fs-7 text-uppercase gs-0"
+                class="text-start text-muted fw-bold fs-7 text-uppercase gs-0"
               >
                 <th class="pt-0">Field Name</th>
                 <th class="pt-0">Field Value</th>
@@ -103,7 +103,7 @@
       <!--begin::Invoice footer-->
       <div class="d-flex flex-column mb-10 fv-row">
         <!--begin::Label-->
-        <div class="fs-5 fw-bolder form-label mb-3">
+        <div class="fs-5 fw-bold form-label mb-3">
           Invoice footer
 
           <i
@@ -130,7 +130,7 @@
         class="d-flex flex-column mb-5 fv-row rounded-3 p-7 border border-dashed border-gray-300"
       >
         <!--begin::Label-->
-        <div class="fs-5 fw-bolder form-label mb-3">
+        <div class="fs-5 fw-bold form-label mb-3">
           Usage treshold
 
           <i
@@ -162,7 +162,7 @@
         class="d-flex flex-column fv-row rounded-3 p-7 border border-dashed border-gray-300"
       >
         <!--begin::Label-->
-        <div class="fs-5 fw-bolder form-label mb-3">
+        <div class="fs-5 fw-bold form-label mb-3">
           Pro-rate billing
 
           <i

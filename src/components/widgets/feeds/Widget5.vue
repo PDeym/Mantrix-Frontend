@@ -15,11 +15,11 @@
 
           <!--begin::Info-->
           <div class="d-flex flex-column">
-            <a href="#" class="text-gray-800 text-hover-primary fs-6 fw-bolder"
+            <a href="#" class="text-gray-800 text-hover-primary fs-6 fw-bold"
               >Sam Logan</a
             >
 
-            <span class="text-gray-400 fw-bold">Mango, Java, Python</span>
+            <span class="text-gray-400 fw-semobold">Mango, Java, Python</span>
           </div>
           <!--end::Info-->
         </div>

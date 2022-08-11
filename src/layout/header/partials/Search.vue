@@ -122,7 +122,7 @@
 
         <form v-if="state === 'advanced-options'" class="pt-1">
           <!--begin::Heading-->
-          <h3 class="fw-bold text-dark mb-7">Advanced Search</h3>
+          <h3 class="fw-semobold text-dark mb-7">Advanced Search</h3>
           <!--end::Heading-->
 
           <!--begin::Input group-->
@@ -328,19 +328,19 @@
           <div class="d-flex justify-content-end">
             <button
               @click="state = 'main'"
-              class="btn btn-sm btn-white fw-bolder btn-active-light-primary me-2"
+              class="btn btn-sm btn-light fw-bold btn-active-light-primary me-2"
             >
               Cancel
             </button>
 
-            <a href="#" class="btn btn-sm fw-bolder btn-primary">Search</a>
+            <a href="#" class="btn btn-sm fw-bold btn-primary">Search</a>
           </div>
           <!--end::Actions-->
         </form>
 
         <form v-if="state === 'preferences'" class="pt-1">
           <!--begin::Heading-->
-          <h3 class="fw-bold text-dark mb-7">Search Preferences</h3>
+          <h3 class="fw-semobold text-dark mb-7">Search Preferences</h3>
           <!--end::Heading-->
 
           <!--begin::Input group-->
@@ -349,7 +349,7 @@
               class="form-check form-switch form-switch-sm form-check-custom form-check-solid flex-stack"
             >
               <span
-                class="form-check-label text-gray-700 fs-6 fw-bold ms-0 me-2"
+                class="form-check-label text-gray-700 fs-6 fw-semobold ms-0 me-2"
               >
                 Projects
               </span>
@@ -370,7 +370,7 @@
               class="form-check form-switch form-switch-sm form-check-custom form-check-solid flex-stack"
             >
               <span
-                class="form-check-label text-gray-700 fs-6 fw-bold ms-0 me-2"
+                class="form-check-label text-gray-700 fs-6 fw-semobold ms-0 me-2"
               >
                 Targets
               </span>
@@ -390,7 +390,7 @@
               class="form-check form-switch form-switch-sm form-check-custom form-check-solid flex-stack"
             >
               <span
-                class="form-check-label text-gray-700 fs-6 fw-bold ms-0 me-2"
+                class="form-check-label text-gray-700 fs-6 fw-semobold ms-0 me-2"
               >
                 Affiliate Programs
               </span>
@@ -405,7 +405,7 @@
               class="form-check form-switch form-switch-sm form-check-custom form-check-solid flex-stack"
             >
               <span
-                class="form-check-label text-gray-700 fs-6 fw-bold ms-0 me-2"
+                class="form-check-label text-gray-700 fs-6 fw-semobold ms-0 me-2"
               >
                 Referrals
               </span>
@@ -425,7 +425,7 @@
               class="form-check form-switch form-switch-sm form-check-custom form-check-solid flex-stack"
             >
               <span
-                class="form-check-label text-gray-700 fs-6 fw-bold ms-0 me-2"
+                class="form-check-label text-gray-700 fs-6 fw-semobold ms-0 me-2"
               >
                 Users
               </span>
@@ -438,13 +438,11 @@
           <div class="d-flex justify-content-end pt-7">
             <div
               @click="state = 'main'"
-              class="btn btn-sm btn-white fw-bolder btn-active-light-primary me-2"
+              class="btn btn-sm btn-light fw-bold btn-active-light-primary me-2"
             >
               Cancel
             </div>
-            <button class="btn btn-sm fw-bolder btn-primary">
-              Save Changes
-            </button>
+            <button class="btn btn-sm fw-bold btn-primary">Save Changes</button>
           </div>
           <!--end::Actions-->
         </form>
@@ -478,7 +476,6 @@ export default defineComponent({
     const inputRef = ref<HTMLInputElement | null>(null);
 
     const searching = (e) => {
-      console.log(e.target.value);
       if (e.target.value.length > 1) {
         if (e.target.value.length > 5) {
           load("empty");

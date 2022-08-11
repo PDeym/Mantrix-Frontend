@@ -16,7 +16,9 @@
     <div class="card shadow-none rounded-0 w-100">
       <!--begin::Header-->
       <div class="card-header" id="kt_help_header">
-        <h5 class="card-title fw-bold text-gray-600">Learn & Get Inspired</h5>
+        <h5 class="card-title fw-semobold text-gray-600">
+          Learn & Get Inspired
+        </h5>
 
         <div class="card-toolbar">
           <button
@@ -49,7 +51,7 @@
             class="rounded border border-dashed border-gray-300 p-6 p-lg-8 mb-10"
           >
             <!--begin::Heading-->
-            <h2 class="fw-bolder mb-5">
+            <h2 class="fw-bold mb-5">
               Support at
               <a href="https://devs.keenthemes.com" class=""
                 >devs.keenthemes.com</a
@@ -57,7 +59,7 @@
             </h2>
             <!--end::Heading-->
             <!--begin::Description-->
-            <div class="fs-5 fw-bold mb-5">
+            <div class="fs-5 fw-semobold mb-5">
               <span class="text-gray-500"
                 >Join our developers community to find answer to your question
                 and help others.</span
@@ -98,12 +100,12 @@
                 <!--begin::Title-->
                 <a
                   href="https://preview.keenthemes.com/metronic8/vue/docs/#/build"
-                  class="text-dark text-hover-primary fw-bolder fs-6 fs-lg-4 mb-1"
+                  class="text-dark text-hover-primary fw-bold fs-6 fs-lg-4 mb-1"
                   >Documentation &amp; Videos</a
                 >
                 <!--end::Title-->
                 <!--begin::Description-->
-                <div class="text-muted fw-bold fs-7 fs-lg-6">
+                <div class="text-muted fw-semobold fs-7 fs-lg-6">
                   From guides and video tutorials, to live demos and code
                   examples to get started.
                 </div>
@@ -137,12 +139,12 @@
                 <!--begin::Title-->
                 <a
                   href="https://preview.keenthemes.com/metronic8/vue/docs/#/utilities"
-                  class="text-dark text-hover-primary fw-bolder fs-6 fs-lg-4 mb-1"
+                  class="text-dark text-hover-primary fw-bold fs-6 fs-lg-4 mb-1"
                   >Plugins &amp; Components</a
                 >
                 <!--end::Title-->
                 <!--begin::Description-->
-                <div class="text-muted fw-bold fs-7 fs-lg-6">
+                <div class="text-muted fw-semobold fs-7 fs-lg-6">
                   Check out our 300+ in-house components and customized
                   3rd-party plugins.
                 </div>
@@ -174,12 +176,12 @@
                 <!--begin::Title-->
                 <router-link
                   to="/builder"
-                  class="text-dark text-hover-primary fw-bolder fs-6 fs-lg-4 mb-1"
+                  class="text-dark text-hover-primary fw-bold fs-6 fs-lg-4 mb-1"
                   >Layout Builder</router-link
                 >
                 <!--end::Title-->
                 <!--begin::Description-->
-                <div class="text-muted fw-bold fs-7 fs-lg-6">
+                <div class="text-muted fw-semobold fs-7 fs-lg-6">
                   Dynamically modify and preview layout
                 </div>
                 <!--end::Description-->
@@ -212,12 +214,12 @@
                 <!--begin::Title-->
                 <a
                   href="https://preview.keenthemes.com/metronic8/vue/docs/#/changelog"
-                  class="text-dark text-hover-primary fw-bolder fs-6 fs-lg-4 mb-1"
+                  class="text-dark text-hover-primary fw-bold fs-6 fs-lg-4 mb-1"
                   >What's New</a
                 >
                 <!--end::Title-->
                 <!--begin::Description-->
-                <div class="text-muted fw-bold fs-7 fs-lg-6">
+                <div class="text-muted fw-semobold fs-7 fs-lg-6">
                   Latest features and improvements added with our users feedback
                   in mind.
                 </div>

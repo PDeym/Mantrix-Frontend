@@ -1,7 +1,7 @@
 <template>
   <div class="mb-4">
     <!--begin::Heading-->
-    <div class="d-flex flex-stack fw-bold mb-4">
+    <div class="d-flex flex-stack fw-semobold mb-4">
       <!--begin::Label-->
       <span class="text-muted fs-6 me-2">Recently Searched:</span>
       <!--end::Label-->
@@ -22,10 +22,10 @@
         <!--end::Symbol-->
         <!--begin::Title-->
         <div class="d-flex flex-column">
-          <a href="#" class="fs-6 text-gray-800 text-hover-primary fw-bold"
+          <a href="#" class="fs-6 text-gray-800 text-hover-primary fw-semobold"
             >BoomApp by Keenthemes</a
           >
-          <span class="fs-7 text-muted fw-bold">#45789</span>
+          <span class="fs-7 text-muted fw-semobold">#45789</span>
         </div>
         <!--end::Title-->
       </div>
@@ -43,10 +43,10 @@
         <!--end::Symbol-->
         <!--begin::Title-->
         <div class="d-flex flex-column">
-          <a href="#" class="fs-6 text-gray-800 text-hover-primary fw-bold"
+          <a href="#" class="fs-6 text-gray-800 text-hover-primary fw-semobold"
             >"Kept API Project Meeting</a
           >
-          <span class="fs-7 text-muted fw-bold">#84050</span>
+          <span class="fs-7 text-muted fw-semobold">#84050</span>
         </div>
         <!--end::Title-->
       </div>
@@ -64,10 +64,10 @@
         <!--end::Symbol-->
         <!--begin::Title-->
         <div class="d-flex flex-column">
-          <a href="#" class="fs-6 text-gray-800 text-hover-primary fw-bold"
+          <a href="#" class="fs-6 text-gray-800 text-hover-primary fw-semobold"
             >"KPI Monitoring App Launch</a
           >
-          <span class="fs-7 text-muted fw-bold">#84250</span>
+          <span class="fs-7 text-muted fw-semobold">#84250</span>
         </div>
         <!--end::Title-->
       </div>
@@ -85,10 +85,10 @@
         <!--end::Symbol-->
         <!--begin::Title-->
         <div class="d-flex flex-column">
-          <a href="#" class="fs-6 text-gray-800 text-hover-primary fw-bold"
+          <a href="#" class="fs-6 text-gray-800 text-hover-primary fw-semobold"
             >Project Reference FAQ</a
           >
-          <span class="fs-7 text-muted fw-bold">#67945</span>
+          <span class="fs-7 text-muted fw-semobold">#67945</span>
         </div>
         <!--end::Title-->
       </div>
@@ -106,10 +106,10 @@
         <!--end::Symbol-->
         <!--begin::Title-->
         <div class="d-flex flex-column">
-          <a href="#" class="fs-6 text-gray-800 text-hover-primary fw-bold"
+          <a href="#" class="fs-6 text-gray-800 text-hover-primary fw-semobold"
             >"FitPro App Development</a
           >
-          <span class="fs-7 text-muted fw-bold">#84250</span>
+          <span class="fs-7 text-muted fw-semobold">#84250</span>
         </div>
         <!--end::Title-->
       </div>
@@ -127,10 +127,10 @@
         <!--end::Symbol-->
         <!--begin::Title-->
         <div class="d-flex flex-column">
-          <a href="#" class="fs-6 text-gray-800 text-hover-primary fw-bold"
+          <a href="#" class="fs-6 text-gray-800 text-hover-primary fw-semobold"
             >Shopix Mobile App</a
           >
-          <span class="fs-7 text-muted fw-bold">#45690</span>
+          <span class="fs-7 text-muted fw-semobold">#45690</span>
         </div>
         <!--end::Title-->
       </div>
@@ -148,10 +148,10 @@
         <!--end::Symbol-->
         <!--begin::Title-->
         <div class="d-flex flex-column">
-          <a href="#" class="fs-6 text-gray-800 text-hover-primary fw-bold"
+          <a href="#" class="fs-6 text-gray-800 text-hover-primary fw-semobold"
             >"Landing UI Design" Launch</a
           >
-          <span class="fs-7 text-muted fw-bold">#24005</span>
+          <span class="fs-7 text-muted fw-semobold">#24005</span>
         </div>
         <!--end::Title-->
       </div>

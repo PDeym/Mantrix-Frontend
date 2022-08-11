@@ -3,7 +3,7 @@
   <div class="card">
     <!--begin::Card header-->
     <div class="card-header">
-      <h2 class="card-title fw-bolder">Calendar</h2>
+      <h2 class="card-title fw-bold">Calendar</h2>
 
       <div class="card-toolbar">
         <button class="btn btn-flex btn-primary" @click="newEvent()">

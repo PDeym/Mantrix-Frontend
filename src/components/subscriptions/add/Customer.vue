@@ -5,7 +5,7 @@
     <div class="card-header">
       <!--begin::Card title-->
       <div class="card-title">
-        <h2 class="fw-bolder">Customer</h2>
+        <h2 class="fw-bold">Customer</h2>
       </div>
       <!--begin::Card title-->
     </div>
@@ -14,7 +14,7 @@
     <!--begin::Card body-->
     <div class="card-body pt-0">
       <!--begin::Description-->
-      <div class="text-gray-500 fw-bold fs-5 mb-5">
+      <div class="text-gray-500 fw-semobold fs-5 mb-5">
         Select or add a customer to a subscription:
       </div>
       <!--end::Description-->
@@ -30,15 +30,13 @@
         <!--begin::Info-->
         <div class="d-flex flex-column">
           <!--begin::Name-->
-          <a
-            href="#"
-            class="fs-4 fw-bolder text-gray-900 text-hover-primary me-2"
+          <a href="#" class="fs-4 fw-bold text-gray-900 text-hover-primary me-2"
             >Sean Bean</a
           >
           <!--end::Name-->
 
           <!--begin::Email-->
-          <a href="#" class="fw-bold text-gray-600 text-hover-primary"
+          <a href="#" class="fw-semobold text-gray-600 text-hover-primary"
             >sean@dellito.com</a
           >
           <!--end::Email-->
@@ -57,7 +55,7 @@
           >Select Customer</a
         >
 
-        <span class="fw-bolder text-gray-500 mx-2">or</span>
+        <span class="fw-bold text-gray-500 mx-2">or</span>
 
         <router-link
           to="/customers/list"
@@ -104,7 +102,7 @@ export default defineComponent({
   },
   setup() {
     const body = ref(
-      `Writing headlines for blog posts is much science and probably cool audience. <a href="#" class="fw-bolder">Learn more</a>.`
+      `Writing headlines for blog posts is much science and probably cool audience. <a href="#" class="fw-bold">Learn more</a>.`
     );
 
     return {

@@ -60,8 +60,8 @@
                 <!--begin::Wrapper-->
                 <div class="d-flex flex-stack flex-grow-1">
                   <!--begin::Content-->
-                  <div class="fw-bold">
-                    <h4 class="text-gray-800 fw-bolder">Warning</h4>
+                  <div class="fw-semobold">
+                    <h4 class="text-gray-800 fw-bold">Warning</h4>
                     <div class="fs-6 text-gray-600">
                       Updating address may affter to your
                       <a href="#">Tax Location</a>
@@ -78,7 +78,9 @@
                 <!--begin::Col-->
                 <div class="col-md-6 fv-row">
                   <!--begin::Label-->
-                  <label class="required fs-5 fw-bold mb-2">First name</label>
+                  <label class="required fs-5 fw-semobold mb-2"
+                    >First name</label
+                  >
                   <!--end::Label-->
 
                   <!--begin::Input-->
@@ -101,7 +103,9 @@
                 <!--begin::Col-->
                 <div class="col-md-6 fv-row">
                   <!--end::Label-->
-                  <label class="required fs-5 fw-bold mb-2">Last name</label>
+                  <label class="required fs-5 fw-semobold mb-2"
+                    >Last name</label
+                  >
                   <!--end::Label-->
 
                   <!--end::Input-->
@@ -126,7 +130,7 @@
               <!--begin::Input group-->
               <div class="d-flex flex-column mb-5 fv-row">
                 <!--begin::Label-->
-                <label class="d-flex align-items-center fs-5 fw-bold mb-2">
+                <label class="d-flex align-items-center fs-5 fw-semobold mb-2">
                   <span class="required">Country</span>
                   <i
                     class="fas fa-exclamation-circle ms-2 fs-7"
@@ -414,7 +418,9 @@
               <!--begin::Input group-->
               <div class="d-flex flex-column mb-5 fv-row">
                 <!--begin::Label-->
-                <label class="required fs-5 fw-bold mb-2">Address Line 1</label>
+                <label class="required fs-5 fw-semobold mb-2"
+                  >Address Line 1</label
+                >
                 <!--end::Label-->
 
                 <!--begin::Input-->
@@ -436,7 +442,9 @@
               <!--begin::Input group-->
               <div class="d-flex flex-column mb-5 fv-row">
                 <!--begin::Label-->
-                <label class="required fs-5 fw-bold mb-2">Address Line 2</label>
+                <label class="required fs-5 fw-semobold mb-2"
+                  >Address Line 2</label
+                >
                 <!--end::Label-->
 
                 <!--begin::Input-->
@@ -458,7 +466,7 @@
               <!--begin::Input group-->
               <div class="d-flex flex-column mb-5 fv-row">
                 <!--begin::Label-->
-                <label class="fs-5 fw-bold mb-2">Town</label>
+                <label class="fs-5 fw-semobold mb-2">Town</label>
                 <!--end::Label-->
 
                 <!--begin::Input-->
@@ -482,7 +490,7 @@
                 <!--begin::Col-->
                 <div class="col-md-6 fv-row">
                   <!--begin::Label-->
-                  <label class="fs-5 fw-bold mb-2">State / Province</label>
+                  <label class="fs-5 fw-semobold mb-2">State / Province</label>
                   <!--end::Label-->
 
                   <!--begin::Input-->
@@ -504,7 +512,7 @@
                 <!--begin::Col-->
                 <div class="col-md-6 fv-row">
                   <!--begin::Label-->
-                  <label class="fs-5 fw-bold mb-2">Post Code</label>
+                  <label class="fs-5 fw-semobold mb-2">Post Code</label>
                   <!--end::Label-->
 
                   <!--begin::Input-->
@@ -532,13 +540,13 @@
                   <!--begin::Label-->
                   <div class="me-5">
                     <!--begin::Label-->
-                    <label class="fs-5 fw-bold"
+                    <label class="fs-5 fw-semobold"
                       >Use as a billing adderess?</label
                     >
                     <!--end::Label-->
 
                     <!--begin::Input-->
-                    <div class="fs-7 fw-bold text-gray-400">
+                    <div class="fs-7 fw-semobold text-gray-400">
                       If you need more info, please check budget planning
                     </div>
                     <!--end::Input-->
@@ -565,7 +573,7 @@
                     <!--end::Input-->
 
                     <!--begin::Label-->
-                    <span class="form-check-label fw-bold text-gray-400">
+                    <span class="form-check-label fw-semobold text-gray-400">
                       Yes
                     </span>
                     <!--end::Label-->
@@ -586,7 +594,7 @@
             <button
               type="reset"
               id="kt_modal_new_address_cancel"
-              class="btn btn-white me-3"
+              class="btn btn-light me-3"
             >
               Discard
             </button>

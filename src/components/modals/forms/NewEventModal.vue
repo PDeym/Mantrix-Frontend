@@ -17,7 +17,7 @@
           ref="formRef"
         >
           <div class="modal-header">
-            <h2 class="fw-bolder">Add a New Event</h2>
+            <h2 class="fw-bold">Add a New Event</h2>
             <div
               class="btn btn-icon btn-sm btn-active-icon-primary"
               id="kt_modal_add_event_close"
@@ -34,7 +34,7 @@
             <!--begin::Input group-->
             <div class="fv-row mb-9 fv-plugins-icon-container">
               <!--begin::Label-->
-              <label class="fs-6 fw-bold required mb-2">Event Name</label>
+              <label class="fs-6 fw-semobold required mb-2">Event Name</label>
               <!--end::Label-->
               <!--begin::Input-->
               <el-form-item prop="eventName">
@@ -51,7 +51,7 @@
             <!--begin::Input group-->
             <div class="fv-row mb-9">
               <!--begin::Label-->
-              <label class="fs-6 fw-bold mb-2">Event Description</label>
+              <label class="fs-6 fw-semobold mb-2">Event Description</label>
               <!--end::Label-->
               <!--begin::Input-->
               <el-input
@@ -66,7 +66,7 @@
             <!--begin::Input group-->
             <div class="fv-row mb-9">
               <!--begin::Label-->
-              <label class="fs-6 fw-bold mb-2">Event Location</label>
+              <label class="fs-6 fw-semobold mb-2">Event Location</label>
               <!--end::Label-->
               <!--begin::Input-->
               <el-input
@@ -83,7 +83,7 @@
               <!--begin::Checkbox-->
               <label class="form-check form-check-custom form-check-solid">
                 <el-checkbox v-model="targetData.allDay" type="checkbox" />
-                <span class="form-check-label fw-bold">All Day</span>
+                <span class="form-check-label fw-semobold">All Day</span>
               </label>
               <!--end::Checkbox-->
             </div>
@@ -95,7 +95,7 @@
                   class="fv-row mb-9 fv-plugins-icon-container fv-plugins-bootstrap5-row-valid"
                 >
                   <!--begin::Label-->
-                  <label class="fs-6 fw-bold mb-2 required"
+                  <label class="fs-6 fw-semobold mb-2 required"
                     >Event Start Date</label
                   >
                   <!--end::Label-->
@@ -120,7 +120,7 @@
                   class="fv-row mb-9 fv-plugins-icon-container fv-plugins-bootstrap5-row-valid"
                 >
                   <!--begin::Label-->
-                  <label class="fs-6 fw-bold mb-2 required"
+                  <label class="fs-6 fw-semobold mb-2 required"
                     >Event End Date</label
                   >
                   <!--end::Label-->

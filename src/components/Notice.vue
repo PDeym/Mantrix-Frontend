@@ -23,8 +23,8 @@
     <!--begin::Wrapper-->
     <div class="d-flex flex-stack flex-grow-1">
       <!--begin::Content-->
-      <div v-if="body || title" :class="`fw-bold ${button}`">
-        <h4 v-if="title" class="text-gray-900 fw-bolder">{{ title }}</h4>
+      <div v-if="body || title" :class="`fw-semobold ${button}`">
+        <h4 v-if="title" class="text-gray-900 fw-bold">{{ title }}</h4>
 
         <div v-if="body" v-html="body" :class="`fs-6 text-gray-700 pe-7`"></div>
       </div>

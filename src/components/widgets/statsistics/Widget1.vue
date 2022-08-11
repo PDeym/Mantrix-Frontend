@@ -10,13 +10,13 @@
     <div class="card-body">
       <a
         href="#"
-        class="card-title fw-bolder text-muted text-hover-primary fs-4"
+        class="card-title fw-bold text-muted text-hover-primary fs-4"
         >{{ title }}</a
       >
 
-      <div class="fw-bolder text-primary my-6">{{ time }}</div>
+      <div class="fw-bold text-primary my-6">{{ time }}</div>
 
-      <p class="text-dark-75 fw-bold fs-5 m-0">
+      <p class="text-dark-75 fw-semobold fs-5 m-0">
         <span v-html="description"></span>
       </p>
     </div>

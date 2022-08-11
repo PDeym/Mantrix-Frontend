@@ -4,9 +4,9 @@
     <!--begin::Header-->
     <div class="card-header border-0 pt-5">
       <h3 class="card-title align-items-start flex-column">
-        <span class="card-label fw-bolder text-dark">Trends</span>
+        <span class="card-label fw-bold text-dark">Trends</span>
 
-        <span class="text-muted mt-1 fw-bold fs-7">Latest tech trends</span>
+        <span class="text-muted mt-1 fw-semobold fs-7">Latest tech trends</span>
       </h3>
 
       <div class="card-toolbar">
@@ -49,18 +49,16 @@
             <div class="flex-grow-1 me-2">
               <a
                 href="#"
-                class="text-gray-800 text-hover-primary fs-6 fw-bolder"
+                class="text-gray-800 text-hover-primary fs-6 fw-bold"
                 >{{ item.title }}</a
               >
 
-              <span class="text-muted fw-bold d-block fs-7">{{
+              <span class="text-muted fw-semobold d-block fs-7">{{
                 item.text
               }}</span>
             </div>
 
-            <span class="badge badge-light fw-bolder my-2">{{
-              item.badge
-            }}</span>
+            <span class="badge badge-light fw-bold my-2">{{ item.badge }}</span>
           </div>
           <!--end::Section-->
         </div>

@@ -20,7 +20,7 @@
       <!--begin::Timeline heading-->
       <div class="overflow-auto pe-3">
         <!--begin::Title-->
-        <div class="fs-5 fw-bold mb-2">
+        <div class="fs-5 fw-semobold mb-2">
           Invitation for crafting engaging designs that speak human workshop
         </div>
         <!--end::Title-->

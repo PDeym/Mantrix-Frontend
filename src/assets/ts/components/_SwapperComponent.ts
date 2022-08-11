@@ -124,8 +124,8 @@ class SwapperComponent {
     return EventHandlerUtil.one(this.element, name, handler)
   }
 
-  public off = (name: string) => {
-    return EventHandlerUtil.off(this.element, name)
+  public off = (name: string, handlerId: string) => {
+    return EventHandlerUtil.off(this.element, name, handlerId)
   }
 
   public trigger = (name: string, event: Event) => {
@@ -134,8 +134,8 @@ class SwapperComponent {
 
   // Static methods
   public static getInstance = (
-      el: HTMLElement,
-      componentName: string = defaultSwapperQueires.componentName
+    el: HTMLElement,
+    componentName: string = defaultSwapperQueires.componentName
   ): SwapperComponent | null => {
     const place = SwapperStore.get(el.id)
     if (place) {
@@ -146,9 +146,9 @@ class SwapperComponent {
   }
 
   public static createInstances = (
-      selector: string = defaultSwapperQueires.instanseQuery,
-      options: ISwapperOptions = defaultSwapperOptions,
-      queries: ISwapperQueries = defaultSwapperQueires
+    selector: string = defaultSwapperQueires.instanseQuery,
+    options: ISwapperOptions = defaultSwapperOptions,
+    queries: ISwapperQueries = defaultSwapperQueires
   ) => {
     const elements = document.body.querySelectorAll(selector)
     elements.forEach((el) => {
@@ -161,9 +161,9 @@ class SwapperComponent {
   }
 
   public static createInsance = (
-      selector: string = defaultSwapperQueires.instanseQuery,
-      options: ISwapperOptions = defaultSwapperOptions,
-      queries: ISwapperQueries = defaultSwapperQueires
+    selector: string = defaultSwapperQueires.instanseQuery,
+    options: ISwapperOptions = defaultSwapperOptions,
+    queries: ISwapperQueries = defaultSwapperQueires
   ): SwapperComponent | undefined => {
     const element = document.body.querySelector(selector)
     if (!element) {
@@ -190,18 +190,18 @@ class SwapperComponent {
 window.addEventListener('resize', function () {
   let timer
   throttle(
-      timer,
-      () => {
-        // Locate and update Offcanvas instances on window resize
-        const elements = document.querySelectorAll(defaultSwapperQueires.instanseQuery)
-        elements.forEach((el) => {
-          const place = SwapperComponent.getInstance(el as HTMLElement)
-          if (place) {
-            place.update()
-          }
-        })
-      },
-      200
+    timer,
+    () => {
+      // Locate and update Offcanvas instances on window resize
+      const elements = document.querySelectorAll(defaultSwapperQueires.instanseQuery)
+      elements.forEach((el) => {
+        const place = SwapperComponent.getInstance(el as HTMLElement)
+        if (place) {
+          place.update()
+        }
+      })
+    },
+    200
   )
 })
 

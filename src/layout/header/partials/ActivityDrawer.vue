@@ -2,7 +2,7 @@
   <!--begin::Activities drawer-->
   <div
     id="kt_activities"
-    class="bg-white"
+    class="bg-body"
     data-kt-drawer="true"
     data-kt-drawer-name="activities"
     data-kt-drawer-activate="true"
@@ -15,7 +15,7 @@
     <div class="card shadow-none">
       <!--begin::Header-->
       <div class="card-header" id="kt_activities_header">
-        <h3 class="card-title fw-bolder text-dark">Activity Logs</h3>
+        <h3 class="card-title fw-bold text-dark">Activity Logs</h3>
 
         <div class="card-toolbar">
           <button
@@ -62,7 +62,7 @@
 
       <!--begin::Footer-->
       <div class="card-footer py-5 text-center" id="kt_activities_footer">
-        <a href="#" class="btn btn-bg-white text-primary">
+        <a href="#" class="btn btn-bg-body text-primary">
           View All Activities<span class="svg-icon svg-icon-3 svg-icon-primary">
             <inline-svg src="media/icons/duotune/arrows/arr064.svg" />
           </span>
