@@ -38,6 +38,15 @@ app.use(VueFinalModal(), {
 });
 // end:Modal configuration
 
+// ADDED PLUGINS
+import dragscrollNext from "vue-dragscroll";
+app.directive('dragscroll', dragscrollNext);
+const defaultoptions = {treeName:'blocks-tree'}
+import VueBlocksTree from 'vue3-blocks-tree';
+app.use(VueBlocksTree, defaultoptions);
+import VueMaska from 'maska';
+app.use(VueMaska);
+
 app.use(i18n);
 
 app.mount("#app");

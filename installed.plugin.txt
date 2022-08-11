@@ -6,3 +6,8 @@ GLOBAL USED PLUGINS
 5. npm install lodash --save
 6. npm install jspdf --save
 7. npm install jspdf-autotable --save
+8. npm install vue-dragscroll
+9. npm install vue3-blocks-tree
+10. npm install vue3-apexcharts
+11. npm install postcss-loader@3.0.0
+12. npm isntall raw-loader@0.5.1
