@@ -1,0 +1,88 @@
+import UCSModule from '@/modules/ucs/router/index';
+import OrderAndPublicationModule from '@/modules/orderpub/router/index';
+import CMISModule from '@/modules/cmis/router/index';
+import MPISModule from '@/modules/mpis/router/index';
+import MPFModule from '@/modules/mpf/router/index';
+import DIRASModule from '@/modules/diras/router/index';
+import ModuleConfigTypes from "@/modules/pais-template/core/config/ModuleConfigTypes";
+const ModuleConfig: ModuleConfigTypes = {
+    modules: [
+        {
+            asideHeading: 'Unified Clearance',
+            topHeading: 'Unified Clerance System',
+            moduleName: 'ucs',
+            children : UCSModule,
+            route: '/unified-clearance-system',
+            fontIcon: 'las la-shield-alt'
+        },
+        {
+            asideHeading: 'Order and Publication',
+            topHeading: 'Order and publication',
+            moduleName: 'orderpub',
+            children : OrderAndPublicationModule,
+            route: '/order-and-publication',
+            svgIcon: '/media/icons/duotone/Home/Book.svg'
+        },
+        {
+            asideHeading: 'Career Management',
+            topHeading: 'Career Management Information System',
+            moduleName: 'cmis',
+            children : CMISModule,
+            route: '/career-management-information-system',
+            svgIcon: '/media/icons/duotone/Files/Folder-star.svg'
+        },
+        {
+            asideHeading: 'Military Personnel',
+            topHeading: 'Military Personnel Information System',
+            moduleName: 'mpis',
+            children : MPISModule,
+            route: '/military-personnel-information-system',
+            svgIcon: '/media/icons/duotone/Files/User-folder.svg'
+        },
+        {
+            asideHeading: 'Military Personnel File',
+            topHeading: 'Military Personnel File',
+            moduleName: 'mpf',
+            children : MPFModule,
+            route: '/military-personnel-file',
+            svgIcon: '/media/icons/duotune/communication/com005.svg'
+        },
+        {
+            asideHeading: 'Dental Information Recording and Archiving',
+            topHeading: 'Dental Information Recording and Archiving System',
+            moduleName: 'diras',
+            children : DIRASModule,
+            route: '/dental-information-recording-and-archiving',
+            fontIcon: 'las la-teeth-open'
+        },
+        {
+            asideHeading: 'Electronic Retirement Information System',
+            topHeading: 'Electronic Retirement Information System',
+            moduleName: 'eris',
+            route: '/electronic-retirement-is',
+            svgIcon: '/media/icons/duotone/Files/User-folder.svg'
+        },
+        {
+            asideHeading: 'Payroll Information System',
+            topHeading: 'Payroll Information System',
+            moduleName: 'epis',
+            route: '/electronic-payroll-is',
+            svgIcon: '/media/icons/duotone/Files/User-folder.svg'
+        },
+        {
+            asideHeading: 'Medical Information System',
+            topHeading: 'Medical Information System',
+            moduleName: 'mis',
+            route: '/electronic-payroll-is',
+            svgIcon: '/media/icons/duotone/Files/User-folder.svg'
+        }
+        // ,{
+        //     asideHeading: 'Sample module',
+        //     topHeading: 'Sample module only',
+        //     moduleName: 'sample',
+        //     route: '/s-a-m-p-l-e',
+        //     fontIcon: 'las la-vial'
+        // }
+    ]
+}
+export default ModuleConfig;
