@@ -208,9 +208,8 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted } from "vue";
+import { defineComponent } from "vue";
 import KTCard from "@/components/cards/Card1.vue";
-import { setCurrentPageBreadcrumbs } from "@/core/helpers/breadcrumb";
 
 export default defineComponent({
   name: "profile-projects",
@@ -218,10 +217,6 @@ export default defineComponent({
     KTCard,
   },
   setup() {
-    onMounted(() => {
-      setCurrentPageBreadcrumbs("Projects", ["Pages", "Profile"]);
-    });
-
     const users1 = [
       { name: "Emma Smith", src: "media/avatars/300-6.jpg" },
       { name: "Rudy Stone", src: "media/avatars/300-1.jpg" },

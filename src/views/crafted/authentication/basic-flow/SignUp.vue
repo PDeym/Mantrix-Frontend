@@ -1,6 +1,6 @@
 <template>
   <!--begin::Wrapper-->
-  <div class="bg-body rounded shadow-sm p-10 p-lg-15 mx-auto">
+  <div class="w-lg-500px p-10">
     <!--begin::Form-->
     <Form
       class="form w-100 fv-plugins-bootstrap5 fv-plugins-framework"

@@ -252,7 +252,6 @@ import { StepperComponent } from "@/assets/ts/components";
 import Swal from "sweetalert2/dist/sweetalert2.min.js";
 import * as Yup from "yup";
 import { useForm } from "vee-validate";
-import { setCurrentPageBreadcrumbs } from "@/core/helpers/breadcrumb";
 
 interface IStep1 {
   accountType: string;
@@ -319,8 +318,6 @@ export default defineComponent({
       _stepperObj.value = StepperComponent.createInsance(
         verticalWizardRef.value as HTMLElement
       );
-
-      setCurrentPageBreadcrumbs("Vertical", ["Pages", "Wizards"]);
     });
 
     const createAccountSchema = [
@@ -365,13 +362,13 @@ export default defineComponent({
       return _stepperObj.value.totatStepsNumber;
     });
 
-    resetForm({
-      values: {
-        ...formData.value,
-      },
-    });
-
     const handleStep = handleSubmit((values) => {
+      resetForm({
+        values: {
+          ...formData.value,
+        },
+      });
+
       formData.value = {
         ...formData.value,
         ...values,

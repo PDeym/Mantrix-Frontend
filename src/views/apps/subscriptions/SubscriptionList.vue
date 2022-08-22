@@ -155,9 +155,8 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref, onMounted } from "vue";
-import KTDatatable from "@/components/kt-datatable/KtdataTable.vue";
-import { setCurrentPageBreadcrumbs } from "@/core/helpers/breadcrumb";
+import { defineComponent, ref } from "vue";
+import KTDatatable from "@/components/kt-datatable/KTDatatable1.vue";
 import { Sort } from "@/components/kt-datatable/table-partials/models";
 import arraySort from "array-sort";
 
@@ -408,10 +407,6 @@ export default defineComponent({
         selectedIds.value = [...selectedIds.value, ...selectedItems];
       }
     };
-
-    onMounted(() => {
-      setCurrentPageBreadcrumbs("Subscription List", ["Apps", "Subscriptions"]);
-    });
 
     return {
       data,

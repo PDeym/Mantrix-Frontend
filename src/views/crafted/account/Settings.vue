@@ -2244,9 +2244,8 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted, ref } from "vue";
+import { defineComponent, ref } from "vue";
 import { ErrorMessage, Field, Form } from "vee-validate";
-import { setCurrentPageBreadcrumbs } from "@/core/helpers/breadcrumb";
 import Swal from "sweetalert2/dist/sweetalert2.js";
 import * as Yup from "yup";
 
@@ -2438,10 +2437,6 @@ export default defineComponent({
     const removeImage = () => {
       profileDetails.value.avatar = "media/avatars/blank.png";
     };
-
-    onMounted(() => {
-      setCurrentPageBreadcrumbs("Settings", ["Account"]);
-    });
 
     return {
       submitButton1,

@@ -23,12 +23,11 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted } from "vue";
+import { defineComponent } from "vue";
 import Details from "@/components/subscriptions/view/Details.vue";
 import Events from "@/components/subscriptions/view/Events.vue";
 import Invoices from "@/components/subscriptions/view/Invoices.vue";
 import Summary from "@/components/subscriptions/view/Summary.vue";
-import { setCurrentPageBreadcrumbs } from "@/core/helpers/breadcrumb";
 
 export default defineComponent({
   name: "kt-view-subscription",
@@ -37,11 +36,6 @@ export default defineComponent({
     Events,
     Invoices,
     Summary,
-  },
-  setup() {
-    onMounted(() => {
-      setCurrentPageBreadcrumbs("View Subscription", ["Apps", "Subscriptions"]);
-    });
   },
 });
 </script>

@@ -93,7 +93,10 @@
         </div>
         <!--end::Col-->
 
-        <ErrorMessage name="accountType"></ErrorMessage>
+        <ErrorMessage
+          name="accountType"
+          class="fv-plugins-message-container invalid-feedback"
+        ></ErrorMessage>
       </div>
       <!--end::Row-->
     </div>

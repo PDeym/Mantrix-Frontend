@@ -11,10 +11,9 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted } from "vue";
+import { defineComponent } from "vue";
 import KTModalsCard from "@/components/cards/Card.vue";
 import KTShareAndEarnModal from "@/components/modals/general/ShareAndEarnModal.vue";
-import { setCurrentPageBreadcrumbs } from "@/core/helpers/breadcrumb";
 import { getIllustrationsPath } from "@/core/helpers/assets";
 
 export default defineComponent({
@@ -24,10 +23,6 @@ export default defineComponent({
     KTShareAndEarnModal,
   },
   setup() {
-    onMounted(() => {
-      setCurrentPageBreadcrumbs("Share & Earn", ["Modals", "General"]);
-    });
-
     return {
       getIllustrationsPath,
     };

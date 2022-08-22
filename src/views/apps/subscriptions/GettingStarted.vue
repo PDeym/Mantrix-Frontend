@@ -42,21 +42,10 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted } from "vue";
-import { setCurrentPageBreadcrumbs } from "@/core/helpers/breadcrumb";
-import { getIllustrationsPath } from "@/core/helpers/assets";
+import { defineComponent } from "vue";
 
 export default defineComponent({
   name: "kt-getting-started",
   components: {},
-  setup() {
-    onMounted(() => {
-      setCurrentPageBreadcrumbs("Getting Started", ["Apps", "Subscriptions"]);
-    });
-
-    return {
-      getIllustrationsPath,
-    };
-  },
 });
 </script>

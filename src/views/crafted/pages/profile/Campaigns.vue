@@ -216,19 +216,13 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted } from "vue";
+import { defineComponent } from "vue";
 import Card2 from "@/components/cards/Card2.vue";
-import { setCurrentPageBreadcrumbs } from "@/core/helpers/breadcrumb";
 
 export default defineComponent({
   name: "profile-campaigns",
   components: {
     Card2,
-  },
-  setup() {
-    onMounted(() => {
-      setCurrentPageBreadcrumbs("Campaigns", ["Pages", "Profile"]);
-    });
   },
 });
 </script>

@@ -1,6 +1,6 @@
 import objectPath from "object-path";
 import merge from "deepmerge";
-import layoutConfig from "@/modules/pais-template/core/config/DefaultLayoutConfig";
+import layoutConfig from "@/core/config/DefaultLayoutConfig";
 import { Mutations } from "@/store/enums/StoreEnums";
 import { Mutation, Module, VuexModule } from "vuex-module-decorators";
 import LayoutConfigTypes from "@/core/config/LayoutConfigTypes";
@@ -26,8 +26,10 @@ export default class ConfigModule extends VuexModule implements StoreInfo {
   }
 
   @Mutation
-  [Mutations.SET_LAYOUT_CONFIG](payload): void {
-    this.config = payload;
+  [Mutations.SET_LAYOUT_CONFIG_PROPERTY](payload): void {
+    const { property, value } = payload;
+    objectPath.set(this.config, property, value);
+    localStorage.setItem("config", JSON.stringify(this.config));
   }
 
   @Mutation

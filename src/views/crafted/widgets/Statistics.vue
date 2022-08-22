@@ -261,14 +261,13 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted } from "vue";
+import { defineComponent } from "vue";
 import StatisticsWidget1 from "@/components/widgets/statsistics/Widget1.vue";
 import StatisticsWidget2 from "@/components/widgets/statsistics/Widget2.vue";
 import StatisticsWidget3 from "@/components/widgets/statsistics/Widget3.vue";
 import StatisticsWidget4 from "@/components/widgets/statsistics/Widget4.vue";
 import StatisticsWidget5 from "@/components/widgets/statsistics/Widget5.vue";
 import StatisticsWidget6 from "@/components/widgets/statsistics/Widget6.vue";
-import { setCurrentPageBreadcrumbs } from "@/core/helpers/breadcrumb";
 
 export default defineComponent({
   name: "widgets-statistics",
@@ -279,11 +278,6 @@ export default defineComponent({
     StatisticsWidget4,
     StatisticsWidget5,
     StatisticsWidget6,
-  },
-  setup() {
-    onMounted(() => {
-      setCurrentPageBreadcrumbs("Statistics", ["Widgets"]);
-    });
   },
 });
 </script>

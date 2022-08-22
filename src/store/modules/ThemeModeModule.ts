@@ -11,9 +11,9 @@ const themeMenuModeLSKey = "kt_theme_mode_menu";
 
 @Module
 export default class ThemeModeModule extends VuexModule implements StoreInfo {
-  mode: "light" | "dark" | "system" = localStorage.getItem(themeModeLSKey)
+  mode = localStorage.getItem(themeModeLSKey)
     ? (localStorage.getItem(themeModeLSKey) as "light" | "dark" | "system")
-    : "system";
+    : ThemeModeComponent.getSystemMode();
 
   /**
    * Get theme mode string light/dark/system
@@ -30,7 +30,6 @@ export default class ThemeModeModule extends VuexModule implements StoreInfo {
 
   @Action
   [Actions.SET_THEME_MODE_ACTION](payload) {
-    console.log(payload);
     localStorage.setItem(themeModeLSKey, payload);
     localStorage.setItem(themeMenuModeLSKey, payload);
     document.documentElement.setAttribute("data-theme", payload);

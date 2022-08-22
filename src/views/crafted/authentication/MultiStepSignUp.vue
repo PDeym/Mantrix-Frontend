@@ -1,161 +1,157 @@
 <template>
   <!--begin::Authentication - Multi-steps-->
   <div
-    class="d-flex flex-column flex-lg-row flex-column-fluid stepper stepper-pills stepper-column"
+    class="d-flex flex-column flex-lg-row flex-column-fluid stepper stepper-pills stepper-column stepper-multistep first"
     ref="wizardRef"
     id="kt_create_account_stepper"
   >
     <!--begin::Aside-->
-    <div
-      class="d-flex flex-column flex-lg-row-auto w-xl-500px bg-lighten shadow-sm"
-    >
-      <!--begin::Wrapper-->
+    <div class="d-flex flex-column flex-lg-row-auto w-lg-350px w-xl-500px">
       <div
-        class="d-flex flex-column position-xl-fixed top-0 bottom-0 w-xl-500px scroll-y"
+        class="d-flex flex-column position-lg-fixed top-0 bottom-0 w-lg-350px w-xl-500px scroll-y bgi-size-cover bgi-position-center"
+        style="background-image: url(media/misc/auth-bg.png)"
       >
         <!--begin::Header-->
-        <div
-          class="d-flex flex-row-fluid flex-column flex-center p-10 pt-lg-20"
-        >
+        <div class="d-flex flex-center py-10 py-lg-20 mt-lg-20">
           <!--begin::Logo-->
-          <router-link to="/dashboard" class="mb-10 mb-lg-20">
-            <img alt="Logo" src="media/logos/default.svg" class="h-40px" />
+          <router-link to="/">
+            <img alt="Logo" src="media/logos/custom-1.png" class="h-70px" />
           </router-link>
           <!--end::Logo-->
-
+        </div>
+        <!--end::Header-->
+        <!--begin::Body-->
+        <div class="d-flex flex-row-fluid justify-content-center p-10">
           <!--begin::Nav-->
           <div class="stepper-nav">
             <!--begin::Step 1-->
             <div class="stepper-item current" data-kt-stepper-element="nav">
-              <!--begin::Line-->
-              <div class="stepper-line w-40px"></div>
-              <!--end::Line-->
-
-              <!--begin::Icon-->
-              <div class="stepper-icon w-40px h-40px">
-                <i class="stepper-check fas fa-check"></i>
-                <span class="stepper-number">1</span>
-              </div>
-              <!--end::Icon-->
-
-              <!--begin::Label-->
-              <div class="stepper-label">
-                <h3 class="stepper-title">Account Type</h3>
-
-                <div class="stepper-desc fw-semobold">
-                  Setup Your Account Details
+              <!--begin::Wrapper-->
+              <div class="stepper-wrapper">
+                <!--begin::Icon-->
+                <div class="stepper-icon rounded-3">
+                  <i class="stepper-check fas fa-check"></i>
+                  <span class="stepper-number">1</span>
                 </div>
+                <!--end::Icon-->
+                <!--begin::Label-->
+                <div class="stepper-label">
+                  <h3 class="stepper-title fs-2">Account Type</h3>
+                  <div class="stepper-desc fw-normal">
+                    Select your account type
+                  </div>
+                </div>
+                <!--end::Label-->
               </div>
-              <!--end::Label-->
+              <!--end::Wrapper-->
+              <!--begin::Line-->
+              <div class="stepper-line h-40px"></div>
+              <!--end::Line-->
             </div>
             <!--end::Step 1-->
-
             <!--begin::Step 2-->
-            <div class="stepper-item" data-kt-stepper-element="nav">
-              <!--begin::Line-->
-              <div class="stepper-line w-40px"></div>
-              <!--end::Line-->
-
-              <!--begin::Icon-->
-              <div class="stepper-icon w-40px h-40px">
-                <i class="stepper-check fas fa-check"></i>
-                <span class="stepper-number">2</span>
-              </div>
-              <!--end::Icon-->
-
-              <!--begin::Label-->
-              <div class="stepper-label">
-                <h3 class="stepper-title">Account Settings</h3>
-                <div class="stepper-desc fw-semobold">
-                  Setup Your Account Settings
+            <div class="stepper-item pending" data-kt-stepper-element="nav">
+              <!--begin::Wrapper-->
+              <div class="stepper-wrapper">
+                <!--begin::Icon-->
+                <div class="stepper-icon rounded-3">
+                  <i class="stepper-check fas fa-check"></i>
+                  <span class="stepper-number">2</span>
                 </div>
+                <!--end::Icon-->
+                <!--begin::Label-->
+                <div class="stepper-label">
+                  <h3 class="stepper-title fs-2">Account Settings</h3>
+                  <div class="stepper-desc fw-normal">
+                    Setup your account settings
+                  </div>
+                </div>
+                <!--end::Label-->
               </div>
-              <!--end::Label-->
+              <!--end::Wrapper-->
+              <!--begin::Line-->
+              <div class="stepper-line h-40px"></div>
+              <!--end::Line-->
             </div>
             <!--end::Step 2-->
-
             <!--begin::Step 3-->
-            <div class="stepper-item" data-kt-stepper-element="nav">
-              <!--begin::Line-->
-              <div class="stepper-line w-40px"></div>
-              <!--end::Line-->
-
-              <!--begin::Icon-->
-              <div class="stepper-icon w-40px h-40px">
-                <i class="stepper-check fas fa-check"></i>
-                <span class="stepper-number">3</span>
-              </div>
-              <!--end::Icon-->
-
-              <!--begin::Label-->
-              <div class="stepper-label">
-                <h3 class="stepper-title">Business Info</h3>
-                <div class="stepper-desc fw-semobold">
-                  Your Business Related Info
+            <div class="stepper-item pending" data-kt-stepper-element="nav">
+              <!--begin::Wrapper-->
+              <div class="stepper-wrapper">
+                <!--begin::Icon-->
+                <div class="stepper-icon">
+                  <i class="stepper-check fas fa-check"></i>
+                  <span class="stepper-number">3</span>
                 </div>
+                <!--end::Icon-->
+                <!--begin::Label-->
+                <div class="stepper-label">
+                  <h3 class="stepper-title fs-2">Business Details</h3>
+                  <div class="stepper-desc fw-normal">
+                    Setup your business details
+                  </div>
+                </div>
+                <!--end::Label-->
               </div>
-              <!--end::Label-->
+              <!--end::Wrapper-->
+              <!--begin::Line-->
+              <div class="stepper-line h-40px"></div>
+              <!--end::Line-->
             </div>
             <!--end::Step 3-->
-
             <!--begin::Step 4-->
-            <div class="stepper-item" data-kt-stepper-element="nav">
-              <!--begin::Line-->
-              <div class="stepper-line w-40px"></div>
-              <!--end::Line-->
-
-              <!--begin::Icon-->
-              <div class="stepper-icon w-40px h-40px">
-                <i class="stepper-check fas fa-check"></i>
-                <span class="stepper-number">4</span>
-              </div>
-              <!--end::Icon-->
-
-              <!--begin::Label-->
-              <div class="stepper-label">
-                <h3 class="stepper-title">Billing Details</h3>
-                <div class="stepper-desc fw-semobold">
-                  Set Your Payment Methods
+            <div class="stepper-item pending" data-kt-stepper-element="nav">
+              <!--begin::Wrapper-->
+              <div class="stepper-wrapper">
+                <!--begin::Icon-->
+                <div class="stepper-icon">
+                  <i class="stepper-check fas fa-check"></i>
+                  <span class="stepper-number">4</span>
                 </div>
+                <!--end::Icon-->
+                <!--begin::Label-->
+                <div class="stepper-label">
+                  <h3 class="stepper-title">Completed</h3>
+                  <div class="stepper-desc fw-normal">
+                    Your account is created
+                  </div>
+                </div>
+                <!--end::Label-->
               </div>
-              <!--end::Label-->
+              <!--end::Wrapper-->
             </div>
             <!--end::Step 4-->
-
-            <!--begin::Step 5-->
-            <div class="stepper-item" data-kt-stepper-element="nav">
-              <!--begin::Line-->
-              <div class="stepper-line w-40px"></div>
-              <!--end::Line-->
-
-              <!--begin::Icon-->
-              <div class="stepper-icon w-40px h-40px">
-                <i class="stepper-check fas fa-check"></i>
-                <span class="stepper-number">5</span>
-              </div>
-              <!--end::Icon-->
-
-              <!--begin::Label-->
-              <div class="stepper-label">
-                <h3 class="stepper-title">Completed</h3>
-                <div class="stepper-desc fw-semobold">Woah, we are here</div>
-              </div>
-              <!--end::Label-->
-            </div>
-            <!--end::Step 5-->
           </div>
           <!--end::Nav-->
         </div>
-        <!--end::Header-->
-
-        <!--begin::Illustration-->
-        <div
-          class="d-flex flex-row-auto bgi-no-repeat bgi-position-x-center bgi-size-contain bgi-position-y-bottom min-h-150px min-h-lg-300px"
-          :style="{ backgroundImage: `url(${getIllustrationsPath('16.png')})` }"
-        ></div>
-        <!--end::Illustration-->
+        <!--end::Body-->
+        <!--begin::Footer-->
+        <div class="d-flex flex-center flex-wrap px-5 py-10">
+          <!--begin::Links-->
+          <div class="d-flex fw-normal">
+            <a
+              href="https://keenthemes.com"
+              class="text-success px-5"
+              target="_blank"
+              >Terms</a
+            >
+            <a
+              href="https://devs.keenthemes.com"
+              class="text-success px-5"
+              target="_blank"
+              >Plans</a
+            >
+            <a
+              href="https://1.envato.market/EA4JP"
+              class="text-success px-5"
+              target="_blank"
+              >Contact Us</a
+            >
+          </div>
+          <!--end::Links-->
+        </div>
+        <!--end::Footer-->
       </div>
-      <!--end::Wrapper-->
     </div>
     <!--begin::Aside-->
 
@@ -426,6 +422,12 @@ export default defineComponent({
     });
 
     const handleStep = handleSubmit((values) => {
+      resetForm({
+        values: {
+          ...formData.value,
+        },
+      });
+
       formData.value = {
         ...formData.value,
         ...values,

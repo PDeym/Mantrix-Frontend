@@ -1206,6 +1206,12 @@ export default defineComponent({
     };
 
     const handleStep = handleSubmit((values) => {
+      resetForm({
+        values: {
+          ...formData.value,
+        },
+      });
+
       for (const item in values) {
         // eslint-disable-next-line no-prototype-builtins
         if (values.hasOwnProperty(item)) {
@@ -1237,12 +1243,6 @@ export default defineComponent({
         hideModal(createAccountModalRef.value);
       });
     };
-
-    resetForm({
-      values: {
-        ...formData.value,
-      },
-    });
 
     return {
       createAccountRef,

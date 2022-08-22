@@ -285,13 +285,12 @@
 </template>
 
 <script lang="ts">
-import { computed, defineComponent, onMounted, ref } from "vue";
+import { computed, defineComponent, ref } from "vue";
 import { useRoute } from "vue-router";
 import Dropdown4 from "@/components/dropdown/Dropdown4.vue";
 import contacts from "@/core/data/contacts";
 import MessageIn from "@/components/messenger-parts/MessageIn.vue";
 import MessageOut from "@/components/messenger-parts/MessageOut.vue";
-import { setCurrentPageBreadcrumbs } from "@/core/helpers/breadcrumb";
 
 interface KTMessage {
   type: string;
@@ -403,10 +402,6 @@ export default defineComponent({
 
     const isGroupChat = computed(() => {
       return route.path.indexOf("/group-chat") !== -1;
-    });
-
-    onMounted(() => {
-      setCurrentPageBreadcrumbs("Overview", ["Chat"]);
     });
 
     return {

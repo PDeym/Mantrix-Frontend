@@ -203,19 +203,13 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted } from "vue";
+import { defineComponent } from "vue";
 import Card4 from "@/components/cards/Card4.vue";
-import { setCurrentPageBreadcrumbs } from "@/core/helpers/breadcrumb";
 
 export default defineComponent({
   name: "drawer-chat",
   components: {
     Card4,
-  },
-  setup() {
-    onMounted(() => {
-      setCurrentPageBreadcrumbs("Drawer Chat", ["Chat"]);
-    });
   },
 });
 </script>

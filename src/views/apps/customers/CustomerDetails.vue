@@ -461,8 +461,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted } from "vue";
-import { setCurrentPageBreadcrumbs } from "@/core/helpers/breadcrumb";
+import { defineComponent } from "vue";
 import Dropdown3 from "@/components/dropdown/Dropdown3.vue";
 import NewCardModal from "@/components/modals/forms/NewCardModal.vue";
 import PaymentRecords from "@/components/customers/cards/overview/PaymentRecords.vue";
@@ -489,13 +488,6 @@ export default defineComponent({
     Statement,
     Dropdown3,
     NewCardModal,
-  },
-  setup() {
-    onMounted(() => {
-      setCurrentPageBreadcrumbs("Customer Details", ["Apps", "Customers"]);
-    });
-
-    return {};
   },
 });
 </script>

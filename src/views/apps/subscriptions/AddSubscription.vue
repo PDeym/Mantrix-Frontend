@@ -34,14 +34,13 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted } from "vue";
+import { defineComponent } from "vue";
 import Customer from "@/components/subscriptions/add/Customer.vue";
 import Products from "@/components/subscriptions/add/Products.vue";
 import PaymentMethod from "@/components/subscriptions/add/PaymentMethod.vue";
 import Summary from "@/components/subscriptions/add/Summary.vue";
 import NewCardModal from "@/components/modals/forms/NewCardModal.vue";
 import CreateAccountModal from "@/components/modals/wizards/CreateAccountModal.vue";
-import { setCurrentPageBreadcrumbs } from "@/core/helpers/breadcrumb";
 
 export default defineComponent({
   name: "kt-add-subscription",
@@ -52,13 +51,6 @@ export default defineComponent({
     PaymentMethod,
     NewCardModal,
     CreateAccountModal,
-  },
-  setup() {
-    onMounted(() => {
-      setCurrentPageBreadcrumbs("Add Subscription", ["Apps", "Subscriptions"]);
-    });
-
-    return {};
   },
 });
 </script>

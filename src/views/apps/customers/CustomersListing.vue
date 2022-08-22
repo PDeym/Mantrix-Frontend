@@ -165,7 +165,7 @@
         </template>
       </Datatable>
     </div>
-  </div> 
+  </div>
 
   <ExportCustomerModal></ExportCustomerModal>
   <AddCustomerModal></AddCustomerModal>
@@ -173,11 +173,10 @@
 
 <script lang="ts">
 import { defineComponent, ref, onMounted } from "vue";
-import Datatable from "@/components/kt-datatable/KtdataTable.vue";
-import { Sort } from "@/components/kt-datatable/table-partials/models";
+import Datatable from "@/components/kt-datatable/KTDatatable1.vue";
+import { Sort } from "@/components/kt-datatable//table-partials/models";
 import ExportCustomerModal from "@/components/modals/forms/ExportCustomerModal.vue";
 import AddCustomerModal from "@/components/modals/forms/AddCustomerModal.vue";
-import { setCurrentPageBreadcrumbs } from "@/core/helpers/breadcrumb";
 import customers from "@/core/data/customers";
 import { ICustomer } from "@/core/data/customers";
 import arraySort from "array-sort";
@@ -234,7 +233,6 @@ export default defineComponent({
     const initCustomers = ref<Array<ICustomer>>([]);
 
     onMounted(() => {
-      setCurrentPageBreadcrumbs("Customers Listing", ["Apps", "Customers"]);
       initCustomers.value.splice(0, tableData.value.length, ...tableData.value);
     });
 

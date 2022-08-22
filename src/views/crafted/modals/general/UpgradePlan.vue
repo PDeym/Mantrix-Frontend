@@ -10,10 +10,9 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted } from "vue";
+import { defineComponent } from "vue";
 import KTModalCard from "@/components/cards/Card.vue";
 import KTUpgradePlanModal from "@/components/modals/general/UpgradePlanModal.vue";
-import { setCurrentPageBreadcrumbs } from "@/core/helpers/breadcrumb";
 import { getIllustrationsPath } from "@/core/helpers/assets";
 
 export default defineComponent({
@@ -23,10 +22,6 @@ export default defineComponent({
     KTUpgradePlanModal,
   },
   setup() {
-    onMounted(() => {
-      setCurrentPageBreadcrumbs("Upgrade Plan", ["Modals", "General"]);
-    });
-
     return {
       getIllustrationsPath,
     };

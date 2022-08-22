@@ -51,7 +51,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted } from "vue";
+import { defineComponent } from "vue";
 import ChartsWidget1 from "@/components/widgets/charts/Widget1.vue";
 import ChartsWidget2 from "@/components/widgets/charts/Widget2.vue";
 import ChartsWidget3 from "@/components/widgets/charts/Widget3.vue";
@@ -60,7 +60,6 @@ import ChartsWidget5 from "@/components/widgets/charts/Widget5.vue";
 import ChartsWidget6 from "@/components/widgets/charts/Widget6.vue";
 import ChartsWidget7 from "@/components/widgets/charts/Widget7.vue";
 import ChartsWidget8 from "@/components/widgets/charts/Widget8.vue";
-import { setCurrentPageBreadcrumbs } from "@/core/helpers/breadcrumb";
 
 export default defineComponent({
   name: "widgets-chart",
@@ -73,11 +72,6 @@ export default defineComponent({
     ChartsWidget6,
     ChartsWidget7,
     ChartsWidget8,
-  },
-  setup() {
-    onMounted(() => {
-      setCurrentPageBreadcrumbs("Charts", ["Widgets"]);
-    });
   },
 });
 </script>

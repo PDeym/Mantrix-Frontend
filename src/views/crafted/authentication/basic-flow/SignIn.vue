@@ -1,6 +1,6 @@
 <template>
   <!--begin::Wrapper-->
-  <div class="w-lg-500px bg-body rounded shadow-sm p-10 p-lg-15 mx-auto">
+  <div class="w-lg-500px p-10">
     <!--begin::Form-->
     <Form
       class="form w-100"
@@ -11,7 +11,7 @@
       <!--begin::Heading-->
       <div class="text-center mb-10">
         <!--begin::Title-->
-        <h1 class="text-dark mb-3">Sign In to Metronic</h1>
+        <h1 class="text-dark mb-3">Sign In</h1>
         <!--end::Title-->
 
         <!--begin::Link-->

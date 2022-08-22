@@ -11,10 +11,9 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted } from "vue";
+import { defineComponent } from "vue";
 import KTModalCard from "@/components/cards/Card.vue";
 import KTNewCardModal from "@/components/modals/forms/NewCardModal.vue";
-import { setCurrentPageBreadcrumbs } from "@/core/helpers/breadcrumb";
 import { getIllustrationsPath } from "@/core/helpers/assets";
 
 export default defineComponent({
@@ -24,10 +23,6 @@ export default defineComponent({
     KTNewCardModal,
   },
   setup() {
-    onMounted(() => {
-      setCurrentPageBreadcrumbs("New Card", ["Modals", "Forms"]);
-    });
-
     return {
       getIllustrationsPath,
     };

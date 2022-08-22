@@ -205,12 +205,11 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted } from "vue";
+import { defineComponent } from "vue";
 import KTChartWidget1 from "@/components/widgets/charts/Widget1.vue";
 import KTListWidget5 from "@/components/widgets/lists/Widget5.vue";
 import KTTableWidget5 from "@/components/widgets/tables/Widget5.vue";
 import KTListWidget1 from "@/components/widgets/lists/Widget1.vue";
-import { setCurrentPageBreadcrumbs } from "@/core/helpers/breadcrumb";
 
 export default defineComponent({
   name: "account-overview",
@@ -219,11 +218,6 @@ export default defineComponent({
     KTListWidget5,
     KTTableWidget5,
     KTListWidget1,
-  },
-  setup() {
-    onMounted(() => {
-      setCurrentPageBreadcrumbs("Overview", ["Account"]);
-    });
   },
 });
 </script>

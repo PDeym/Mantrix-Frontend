@@ -153,7 +153,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref, computed, onBeforeMount, watch } from "vue";
+import { defineComponent, ref, computed, watch, onMounted } from "vue";
 import Dropdown3 from "@/components/dropdown/Dropdown3.vue";
 import { getCSSVariableValue } from "@/assets/ts/_utils";
 import { ApexOptions } from "apexcharts";
@@ -186,8 +186,12 @@ export default defineComponent({
       return store.getters.getThemeMode;
     });
 
-    onBeforeMount(() => {
+    onMounted(() => {
       Object.assign(chart, chartOptions(props.chartColor, props.chartHeight));
+
+      setTimeout(() => {
+        refreshChart();
+      }, 200);
     });
 
     const refreshChart = () => {

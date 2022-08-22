@@ -103,21 +103,15 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted } from "vue";
+import { defineComponent } from "vue";
 import KTFolder from "@/components/files/Folder.vue";
 import KTFile from "@/components/files/File.vue";
-import { setCurrentPageBreadcrumbs } from "@/core/helpers/breadcrumb";
 
 export default defineComponent({
   name: "profile-documents",
   components: {
     KTFolder,
     KTFile,
-  },
-  setup() {
-    onMounted(() => {
-      setCurrentPageBreadcrumbs("Documents", ["Pages", "Profile"]);
-    });
   },
 });
 </script>

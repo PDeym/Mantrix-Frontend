@@ -160,19 +160,13 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted } from "vue";
+import { defineComponent } from "vue";
 import Card3 from "@/components/cards/Card3.vue";
-import { setCurrentPageBreadcrumbs } from "@/core/helpers/breadcrumb";
 
 export default defineComponent({
   name: "profile-connections",
   components: {
     Card3,
-  },
-  setup() {
-    onMounted(() => {
-      setCurrentPageBreadcrumbs("Connections", ["Pages", "Profile"]);
-    });
   },
 });
 </script>

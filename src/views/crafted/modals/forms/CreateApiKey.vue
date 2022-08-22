@@ -11,10 +11,9 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted } from "vue";
+import { defineComponent } from "vue";
 import KTModalCard from "@/components/cards/Card.vue";
 import KTCreateAPIKeyModal from "@/components/modals/forms/CreateAPIKeyModal.vue";
-import { setCurrentPageBreadcrumbs } from "@/core/helpers/breadcrumb";
 import { getIllustrationsPath } from "@/core/helpers/assets";
 
 export default defineComponent({
@@ -24,10 +23,6 @@ export default defineComponent({
     KTCreateAPIKeyModal,
   },
   setup() {
-    onMounted(() => {
-      setCurrentPageBreadcrumbs("Create API Key", ["Modals", "Forms"]);
-    });
-
     return {
       getIllustrationsPath,
     };

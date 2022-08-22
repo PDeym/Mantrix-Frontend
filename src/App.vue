@@ -5,7 +5,8 @@
 <script lang="ts">
 import { defineComponent, nextTick, onMounted } from "vue";
 import { useStore } from "vuex";
-import { Mutations } from "@/store/enums/StoreEnums";
+import { Mutations, Actions } from "@/store/enums/StoreEnums";
+import { themeMode } from "@/core/helpers/config";
 import { initializeComponents } from "@/core/plugins/keenthemes";
 
 export default defineComponent({
@@ -15,13 +16,20 @@ export default defineComponent({
 
     onMounted(() => {
       /**
-       * this is to override the layout config using saved data from localStorage
-       * remove this to use config only from static config (@/core/config/DefaultLayoutConfig.ts)
+       * Overrides the layout config using saved data from localStorage
+       * remove this to use static config (@/core/config/DefaultLayoutConfig.ts)
        */
       store.commit(Mutations.OVERRIDE_LAYOUT_CONFIG);
 
+      /**
+       *  Sets a mode from configuration
+       */
+      store.dispatch(Actions.SET_THEME_MODE_ACTION, themeMode.value);
+
       nextTick(() => {
         initializeComponents();
+
+        store.dispatch(Actions.REMOVE_BODY_CLASSNAME, "page-loading");
       });
     });
   },
@@ -46,6 +54,7 @@ export default defineComponent({
 // Main demo style scss
 @import "assets/sass/plugins";
 @import "assets/sass/style";
+
 @import "modules/pais-template/assets/sass/style";
 @import "modules/pais-template/assets/css/vue3-blocks-tree-mod.css";
 // Dark mode demo style scss
@@ -54,4 +63,8 @@ export default defineComponent({
 
 //RTL version styles
 //@import "assets/css/style.rtl.css";
+
+#app {
+  display: contents;
+}
 </style>

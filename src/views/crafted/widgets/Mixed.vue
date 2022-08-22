@@ -498,7 +498,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted } from "vue";
+import { defineComponent } from "vue";
 import MixedWidget1 from "@/components/widgets/mixed/Widget1.vue";
 import MixedWidget2 from "@/components/widgets/mixed/Widget2.vue";
 import MixedWidget3 from "@/components/widgets/mixed/Widget3.vue";
@@ -513,7 +513,6 @@ import MixedWidget11 from "@/components/widgets/mixed/Widget11.vue";
 import MixedWidget12 from "@/components/widgets/mixed/Widget12.vue";
 import MixedWidget13 from "@/components/widgets/mixed/Widget13.vue";
 import MixedWidget14 from "@/components/widgets/mixed/Widget14.vue";
-import { setCurrentPageBreadcrumbs } from "@/core/helpers/breadcrumb";
 
 export default defineComponent({
   name: "widgets-mixed",
@@ -532,11 +531,6 @@ export default defineComponent({
     MixedWidget12,
     MixedWidget13,
     MixedWidget14,
-  },
-  setup() {
-    onMounted(() => {
-      setCurrentPageBreadcrumbs("Mixed", ["Widgets"]);
-    });
   },
 });
 </script>

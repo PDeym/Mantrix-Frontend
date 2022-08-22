@@ -58,14 +58,14 @@ export default class BodyModule extends VuexModule implements StoreInfo {
 
   @Action
   [Actions.ADD_BODY_ATTRIBUTE](payload) {
-    const { qulifiedName, value } = payload;
-    document.body.setAttribute(qulifiedName, value);
+    const { qualifiedName, value } = payload;
+    document.body.setAttribute(qualifiedName, value);
   }
 
   @Action
   [Actions.REMOVE_BODY_ATTRIBUTE](payload) {
-    const { qulifiedName } = payload;
-    document.body.removeAttribute(qulifiedName);
+    const { qualifiedName } = payload;
+    document.body.removeAttribute(qualifiedName);
   }
 
   @Action

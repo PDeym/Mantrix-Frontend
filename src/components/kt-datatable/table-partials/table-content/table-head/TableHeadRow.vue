@@ -25,7 +25,7 @@
             cursor: column.sortEnabled ? 'pointer' : 'auto',
           }"
         >
-          {{ column.columnLabel }}
+          {{ column.columnName }}
           <span
             v-if="
               columnLabelAndOrder.label === column.columnLabel &&

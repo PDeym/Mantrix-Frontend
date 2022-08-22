@@ -208,7 +208,7 @@
 
 <script lang="ts">
 import { defineComponent, ref } from "vue";
-import Datatable from "@/components/kt-datatable/KtdataTable.vue";
+import Datatable from "@/components/kt-datatable/KTDatatable1.vue";
 
 export default defineComponent({
   name: "statement-card",
