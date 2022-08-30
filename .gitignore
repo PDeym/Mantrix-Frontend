@@ -31,3 +31,4 @@ src/modules/Store.ts
 
 yarn.lock
 package-lock.json
+access-rights/~*.xlsx

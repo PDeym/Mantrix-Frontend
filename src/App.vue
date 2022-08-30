@@ -64,7 +64,8 @@ export default defineComponent({
 //RTL version styles
 //@import "assets/css/style.rtl.css";
 
-#app {
-  display: contents;
-}
+// Disable this display content to view the scrollbar nicely
+// #app {
+//   display: contents;
+// }
 </style>
