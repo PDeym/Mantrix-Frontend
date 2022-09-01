@@ -10,29 +10,29 @@ import { themeMode } from "@/core/helpers/config";
 import { initializeComponents } from "@/core/plugins/keenthemes";
 
 export default defineComponent({
-  name: "app",
-  setup() {
-    const store = useStore();
+    name: "app",
+    setup() {
+        const store = useStore();
 
-    onMounted(() => {
-      /**
-       * Overrides the layout config using saved data from localStorage
-       * remove this to use static config (@/core/config/DefaultLayoutConfig.ts)
-       */
-      store.commit(Mutations.OVERRIDE_LAYOUT_CONFIG);
+        onMounted(() => {
+            /**
+             * Overrides the layout config using saved data from localStorage
+             * remove this to use static config (@/core/config/DefaultLayoutConfig.ts)
+             */
+            store.commit(Mutations.OVERRIDE_LAYOUT_CONFIG);
 
-      /**
-       *  Sets a mode from configuration
-       */
-      store.dispatch(Actions.SET_THEME_MODE_ACTION, themeMode.value);
+            /**
+             *  Sets a mode from configuration
+             */
+            store.dispatch(Actions.SET_THEME_MODE_ACTION, themeMode.value);
 
-      nextTick(() => {
-        initializeComponents();
+            nextTick(() => {
+                initializeComponents();
 
-        store.dispatch(Actions.REMOVE_BODY_CLASSNAME, "page-loading");
-      });
-    });
-  },
+                store.dispatch(Actions.REMOVE_BODY_CLASSNAME, "page-loading");
+            });
+        });
+    },
 });
 </script>
 
@@ -64,8 +64,11 @@ export default defineComponent({
 //RTL version styles
 //@import "assets/css/style.rtl.css";
 
-// Disable this display content to view the scrollbar nicely
-// #app {
-//   display: contents;
-// }
+.bg-body {
+    &.app-page-auth {
+        #app {
+            display: contents;
+        }
+    }
+}
 </style>

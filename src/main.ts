@@ -46,6 +46,26 @@ import VueBlocksTree from 'vue3-blocks-tree';
 app.use(VueBlocksTree, defaultoptions);
 import VueMaska from 'maska';
 app.use(VueMaska);
+import { createAcl, defineAclRules } from './modules/pais-template/components/acl';
+import { Actions as ActionPais } from "@/modules/pais-template/store/enums/StoreEnums";
+// const user = {
+//     permisssions: ['henry1', 'hahaha']
+// };
+const user = () => {
+    ApiService.setHeader();
+    return store.dispatch(ActionPais.CURRENT_USER).then((response) => response.data);
+}
+const rules = () => defineAclRules<typeof user>((setRule) => {
+    setRule('super-access', (user) => user.account_type === 'superadmin');
+    setRule('developer-access', (user) => user.account_type === 'developer');
+})
+const simpleAcl = createAcl({
+    user,
+    rules,
+    router,
+    // other optional vue-simple-acl options here ...
+});
+app.use(simpleAcl);
 
 app.use(i18n);
 
