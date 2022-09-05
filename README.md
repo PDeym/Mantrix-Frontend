@@ -36,3 +36,14 @@ please contact @baniagaeugene @henrillics @c0smic for approval
 **you can also see the references of current configuration of submodules on :**
 4. .gitmodules = location: gitmodules/[projectsample].gitmodules
 
+## Starting mock API ##
+1. Run the mock api by this command => "npm run mock"
+
+Sample structure
+[root folder]
+> mock(folder)
+    > transaction(folder)
+        > list.js(file)
+
+Routes should be 
+localhost:3000/mockApi/toe/transaction-list

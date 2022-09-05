@@ -11,3 +11,5 @@ GLOBAL USED PLUGINS
 10. npm install vue3-apexcharts
 11. npm install postcss-loader@3.0.0
 12. npm isntall raw-loader@0.5.1
+13. npm install json-server
+14. npm install --save-dev nodemon
