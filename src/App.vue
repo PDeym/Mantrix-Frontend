@@ -57,6 +57,7 @@ export default defineComponent({
 
 @import "modules/pais-template/assets/sass/style";
 @import "modules/pais-template/assets/css/vue3-blocks-tree-mod.css";
+@import 'element-plus/theme-chalk/dark/css-vars.css';
 // Dark mode demo style scss
 //@import "assets/sass/plugins.dark";
 //@import "assets/sass/style.dark";

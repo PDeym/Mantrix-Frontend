@@ -46,4 +46,4 @@ Sample structure
         > list.js(file)
 
 Routes should be 
-localhost:3000/mockApi/toe/transaction-list
+localhost:3000/mockApi/[module]/[folder]-[folder]-[file].js

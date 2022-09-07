@@ -7,7 +7,7 @@
 3. src\store\modules\ConfigModule.ts
     a. change layoutConfig path to: "@/modules/pais-template/core/config/DefaultLayoutConfig";
 4. src\store\index.ts
-    a
+    a. change ThemeModeModule path from "@/store/modules/ThemeModeModule"; to: 
 
 
 
