@@ -15,10 +15,12 @@ pnpm-debug.log*
 
 # Core files
 .env
-src/modules/Module.ts
-src/modules/Store.ts
 .gitmodules
 /keys
+
+src/modules/*
+!/src/modules/Module.ts.sample
+!/src/modules/Store.ts.sample
 
 # Editor directories and files
 .idea
