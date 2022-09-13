@@ -8,6 +8,8 @@
     a. change layoutConfig path to: "@/modules/pais-template/core/config/DefaultLayoutConfig";
 4. src\store\index.ts
     a. change ThemeModeModule path from "@/store/modules/ThemeModeModule"; to: 
+4. src\assets\sass\layout\_variables.custom.scss
+    a. change $app-footer-height: 60px; to $app-footer-height: 40px;
 
 
 
