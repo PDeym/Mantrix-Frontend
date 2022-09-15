@@ -41,11 +41,12 @@ export default defineComponent({
       required: false,
       default: true,
     },
+    currentPage: { type: Number, required: false, default: 1 },
   },
   emits: ["update:itemsPerPage", "page-change"],
   setup(props, { emit }) {
-    const page = ref(1);
-    const inputItemsPerPage = ref(5);
+    const page = ref(props.currentPage);
+    const inputItemsPerPage = ref(props.itemsPerPage);
 
     watch(
       () => props.count,

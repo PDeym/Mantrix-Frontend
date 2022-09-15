@@ -76,14 +76,14 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import Item1 from "@/layouts/main-layout/drawers/activity-timeline/partials/Item1.vue";
-import Item2 from "@/layouts/main-layout/drawers/activity-timeline/partials/Item2.vue";
-import Item3 from "@/layouts/main-layout/drawers/activity-timeline/partials/Item3.vue";
-import Item4 from "@/layouts/main-layout/drawers/activity-timeline/partials/Item4.vue";
-import Item5 from "@/layouts/main-layout/drawers/activity-timeline/partials/Item5.vue";
-import Item6 from "@/layouts/main-layout/drawers/activity-timeline/partials/Item6.vue";
-import Item7 from "@/layouts/main-layout/drawers/activity-timeline/partials/Item7.vue";
-import Item8 from "@/layouts/main-layout/drawers/activity-timeline/partials/Item8.vue";
+import Item1 from "@/components/activity-timeline-items/Item1.vue";
+import Item2 from "@/components/activity-timeline-items/Item2.vue";
+import Item3 from "@/components/activity-timeline-items/Item3.vue";
+import Item4 from "@/components/activity-timeline-items/Item4.vue";
+import Item5 from "@/components/activity-timeline-items/Item5.vue";
+import Item6 from "@/components/activity-timeline-items/Item6.vue";
+import Item7 from "@/components/activity-timeline-items/Item7.vue";
+import Item8 from "@/components/activity-timeline-items/Item8.vue";
 
 export default defineComponent({
   name: "kt-activity-drawer",

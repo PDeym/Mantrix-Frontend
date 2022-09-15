@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import { defineComponent, onMounted, onUnmounted } from "vue";
+import { defineComponent, onMounted } from "vue";
 import { useStore } from "vuex";
 import { Actions } from "@/store/enums/StoreEnums";
 
@@ -18,19 +18,13 @@ export default defineComponent({
     const store = useStore();
 
     onMounted(() => {
+      store.dispatch(Actions.ADD_BODY_CLASSNAME, "app-blank");
+
       store.dispatch(Actions.ADD_BODY_CLASSNAME, "bgi-size-cover");
 
       store.dispatch(Actions.ADD_BODY_CLASSNAME, "bgi-position-center");
 
       store.dispatch(Actions.ADD_BODY_CLASSNAME, "bgi-no-repeat");
-    });
-
-    onUnmounted(() => {
-      store.dispatch(Actions.REMOVE_BODY_CLASSNAME, "bgi-size-cover");
-
-      store.dispatch(Actions.REMOVE_BODY_CLASSNAME, "bgi-position-center");
-
-      store.dispatch(Actions.REMOVE_BODY_CLASSNAME, "bgi-no-repeat");
     });
   },
 });

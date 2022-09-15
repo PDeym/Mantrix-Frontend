@@ -92,7 +92,8 @@
 </template>
 
 <script>
-import { defineComponent, onMounted, onUnmounted } from "vue";
+import { defineComponent, onMounted } from "vue";
+import LayoutService from "@/core/services/LayoutService";
 import { useStore } from "vuex";
 import { Actions } from "@/store/enums/StoreEnums";
 
@@ -103,11 +104,11 @@ export default defineComponent({
     const store = useStore();
 
     onMounted(() => {
-      store.dispatch(Actions.ADD_BODY_CLASSNAME, "bg-body");
-    });
+      LayoutService.emptyElementClassesAndAttributes(document.body);
 
-    onUnmounted(() => {
-      store.dispatch(Actions.REMOVE_BODY_CLASSNAME, "bg-body");
+      store.dispatch(Actions.ADD_BODY_CLASSNAME, "app-blank");
+
+      store.dispatch(Actions.ADD_BODY_CLASSNAME, "bg-body");
     });
   },
 });

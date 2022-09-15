@@ -52,15 +52,13 @@ export default defineComponent({
 @import "~element-plus/dist/index.css";
 
 // Main demo style scss
+@import "assets/sass/element-ui.dark";
 @import "assets/sass/plugins";
 @import "assets/sass/style";
 
+// Custom style scss and plugin scss/css
 @import "modules/pais-template/assets/sass/style";
 @import "modules/pais-template/assets/css/vue3-blocks-tree-mod.css";
-@import 'element-plus/theme-chalk/dark/css-vars.css';
-// Dark mode demo style scss
-//@import "assets/sass/plugins.dark";
-//@import "assets/sass/style.dark";
 
 //RTL version styles
 //@import "assets/css/style.rtl.css";

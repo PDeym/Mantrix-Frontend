@@ -173,7 +173,7 @@
 
 <script lang="ts">
 import { defineComponent, ref, onMounted } from "vue";
-import Datatable from "@/components/kt-datatable/KTDatatable1.vue";
+import Datatable from "@/components/kt-datatable/KTDataTable.vue";
 import { Sort } from "@/components/kt-datatable//table-partials/models";
 import ExportCustomerModal from "@/components/modals/forms/ExportCustomerModal.vue";
 import AddCustomerModal from "@/components/modals/forms/AddCustomerModal.vue";
@@ -283,11 +283,7 @@ export default defineComponent({
       }
     };
     const onItemSelect = (selectedItems: Array<number>) => {
-      if (selectedItems.length === 0) {
-        selectedIds.value = [];
-      } else {
-        selectedIds.value = [...selectedIds.value, ...selectedItems];
-      }
+      selectedIds.value = selectedItems;
     };
 
     return {

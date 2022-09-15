@@ -43,7 +43,8 @@
 </template>
 
 <script lang="ts">
-import { computed, defineComponent, onMounted, onUnmounted } from "vue";
+import { computed, defineComponent, onMounted } from "vue";
+import LayoutService from "@/core/services/LayoutService";
 import { useStore } from "vuex";
 import { Actions } from "@/store/enums/StoreEnums";
 import { getIllustrationsPath } from "@/core/helpers/assets";
@@ -59,15 +60,9 @@ export default defineComponent({
     const bgImage = themeMode.value !== "dark" ? "bg1.jpg" : "bg1-dark.jpg";
 
     onMounted(() => {
-      store.dispatch(Actions.ADD_BODY_CLASSNAME, "bg-body");
-      store.dispatch(Actions.ADD_BODY_ATTRIBUTE, {
-        qualifiedName: "style",
-        value: `background-image: url("media/auth/${bgImage}")`,
-      });
-    });
+      LayoutService.emptyElementClassesAndAttributes(document.body);
 
-    onUnmounted(() => {
-      store.dispatch(Actions.REMOVE_BODY_CLASSNAME, "bg-body");
+      store.dispatch(Actions.ADD_BODY_CLASSNAME, "bg-body");
       store.dispatch(Actions.ADD_BODY_ATTRIBUTE, {
         qualifiedName: "style",
         value: `background-image: url("media/auth/${bgImage}")`,

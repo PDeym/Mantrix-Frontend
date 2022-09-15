@@ -18,6 +18,7 @@
     </TableContent>
     <TableFooter
       @page-change="pageChange"
+      :current-page="currentPage"
       v-model:itemsPerPage="itemsInTable"
       :count="totalItems"
       :items-per-page-dropdown-enabled="itemsPerPageDropdownEnabled"
@@ -53,6 +54,7 @@ export default defineComponent({
       default: "asc",
     },
     emptyTableText: { type: String, required: false, default: "No data found" },
+    currentPage: { type: Number, required: false, default: 1 },
   },
   emits: [
     "page-change",
@@ -65,7 +67,7 @@ export default defineComponent({
     TableFooter,
   },
   setup(props, { emit }) {
-    const currentPage = ref(1);
+    const currentPage = ref(props.currentPage);
     const itemsInTable = ref<number>(props.itemsPerPage);
 
     watch(

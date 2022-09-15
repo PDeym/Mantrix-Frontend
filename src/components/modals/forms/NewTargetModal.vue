@@ -111,23 +111,14 @@
 
                 <!--begin::Input-->
                 <div class="position-relative align-items-center">
-                  <!--begin::Icon-->
-                  <div class="symbol symbol-20px me-4 position-absolute ms-4">
-                    <span class="symbol-label bg-secondary">
-                      <span class="svg-icon">
-                        <inline-svg
-                          src="media/icons/duotune/general/gen025.svg"
-                        />
-                      </span>
-                    </span>
-                  </div>
-                  <!--end::Icon-->
-
                   <!--begin::Datepicker-->
                   <el-form-item prop="dueDate">
                     <el-date-picker
                       v-model="targetData.dueDate"
+                      type="date"
                       placeholder="Select a date"
+                      :teleported="false"
+                      popper-class="override-styles"
                       name="dueDate"
                     />
                   </el-form-item>
@@ -179,9 +170,9 @@
                 >
                   <el-option label="Important" value="important"> </el-option>
                   <el-option label="Urgent" value="urgent"> </el-option>
-                  <el-option label="high" value="high"> </el-option>
-                  <el-option label="low" value="low"> </el-option>
-                  <el-option label="medium" value="medium"> </el-option>
+                  <el-option label="High" value="high"> </el-option>
+                  <el-option label="Low" value="low"> </el-option>
+                  <el-option label="Medium" value="medium"> </el-option>
                 </el-select>
               </el-form-item>
             </div>
@@ -435,3 +426,10 @@ export default defineComponent({
   },
 });
 </script>
+
+<style lang="scss">
+.override-styles {
+  z-index: 99999 !important;
+  pointer-events: initial;
+}
+</style>

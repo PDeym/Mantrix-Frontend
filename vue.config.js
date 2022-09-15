@@ -18,11 +18,7 @@ module.exports = {
     //     }
     // },
     chainWebpack: config => {
-        config
-            .plugin('html')
-            .tap(args => {
-                args[0].sitename = process.env.VUE_APP_SITENAME;
-                return args;
-            })
+        config.plugin('html').tap(args => { args[0].sitename = process.env.VUE_APP_SITENAME; return args; });
+        config.resolve.alias.set("vue-i18n", "vue-i18n/dist/vue-i18n.cjs.js");
     }
 };

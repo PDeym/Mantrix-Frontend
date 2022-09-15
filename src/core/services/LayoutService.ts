@@ -23,7 +23,6 @@ class LayoutService {
     LayoutService.initSidebarPanel();
     LayoutService.initHeader();
     LayoutService.initFooter();
-    LayoutService.initContent();
   }
 
   // Init Layout settings
@@ -488,9 +487,6 @@ class LayoutService {
       });
     }
   }
-
-  // eslint-disable-next-line @typescript-eslint/no-empty-function
-  public static initContent(): void {}
 
   public static emptyElementClassesAndAttributes(element: HTMLElement): void {
     element.className = "";

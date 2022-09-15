@@ -156,7 +156,7 @@
 
 <script lang="ts">
 import { defineComponent, ref } from "vue";
-import KTDatatable from "@/components/kt-datatable/KTDatatable1.vue";
+import KTDatatable from "@/components/kt-datatable/KTDataTable.vue";
 import { Sort } from "@/components/kt-datatable/table-partials/models";
 import arraySort from "array-sort";
 
@@ -401,11 +401,7 @@ export default defineComponent({
       }
     };
     const onItemSelect = (selectedItems: Array<number>) => {
-      if (selectedItems.length === 0) {
-        selectedIds.value = [];
-      } else {
-        selectedIds.value = [...selectedIds.value, ...selectedItems];
-      }
+      selectedIds.value = selectedItems;
     };
 
     return {

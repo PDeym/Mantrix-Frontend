@@ -282,7 +282,8 @@
 </template>
 
 <script lang="ts">
-import { computed, defineComponent, onMounted, onUnmounted, ref } from "vue";
+import { computed, defineComponent, onMounted, ref } from "vue";
+import LayoutService from "@/core/services/LayoutService";
 import { getIllustrationsPath } from "@/core/helpers/assets";
 import Step1 from "@/components/wizard/steps/Step1.vue";
 import Step2 from "@/components/wizard/steps/Step2.vue";
@@ -290,7 +291,6 @@ import Step3 from "@/components/wizard/steps/Step3.vue";
 import Step4 from "@/components/wizard/steps/Step4.vue";
 import Step5 from "@/components/wizard/steps/Step5.vue";
 import { StepperComponent } from "@/assets/ts/components";
-import { setCurrentPageBreadcrumbs } from "@/core/helpers/breadcrumb";
 import * as Yup from "yup";
 import { useForm } from "vee-validate";
 import Swal from "sweetalert2/dist/sweetalert2.min.js";
@@ -364,13 +364,11 @@ export default defineComponent({
         wizardRef.value as HTMLElement
       );
 
+      LayoutService.emptyElementClassesAndAttributes(document.body);
+
+      store.dispatch(Actions.ADD_BODY_CLASSNAME, "app-blank");
+
       store.dispatch(Actions.ADD_BODY_CLASSNAME, "bg-body");
-
-      setCurrentPageBreadcrumbs("Horizontal", ["Pages", "Wizards"]);
-    });
-
-    onUnmounted(() => {
-      store.dispatch(Actions.REMOVE_BODY_CLASSNAME, "bg-body");
     });
 
     const createAccountSchema = [

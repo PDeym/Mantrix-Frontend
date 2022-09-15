@@ -102,7 +102,8 @@
                   <!--begin::Input-->
                   <el-date-picker
                     v-model="targetData.eventStartDate"
-                    type="text"
+                    type="date"
+                    :teleported="false"
                     name="eventStartDate"
                   />
                   <!--end::Input-->
@@ -127,7 +128,8 @@
                   <!--begin::Input-->
                   <el-date-picker
                     v-model="targetData.eventEndDate"
-                    type="text"
+                    type="date"
+                    :teleported="false"
                     name="eventName"
                   />
                   <!--end::Input-->

@@ -163,14 +163,14 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import KTActivityItem1 from "@/layouts/main-layout/drawers/activity-timeline/partials/Item1.vue";
-import KTActivityItem2 from "@/layouts/main-layout/drawers/activity-timeline/partials/Item2.vue";
-import KTActivityItem3 from "@/layouts/main-layout/drawers/activity-timeline/partials/Item3.vue";
-import KTActivityItem4 from "@/layouts/main-layout/drawers/activity-timeline/partials/Item4.vue";
-import KTActivityItem5 from "@/layouts/main-layout/drawers/activity-timeline/partials/Item5.vue";
-import KTActivityItem6 from "@/layouts/main-layout/drawers/activity-timeline/partials/Item6.vue";
-import KTActivityItem7 from "@/layouts/main-layout/drawers/activity-timeline/partials/Item7.vue";
-import KTActivityItem8 from "@/layouts/main-layout/drawers/activity-timeline/partials/Item8.vue";
+import KTActivityItem1 from "@/components/activity-timeline-items/Item1.vue";
+import KTActivityItem2 from "@/components/activity-timeline-items/Item2.vue";
+import KTActivityItem3 from "@/components/activity-timeline-items/Item3.vue";
+import KTActivityItem4 from "@/components/activity-timeline-items/Item4.vue";
+import KTActivityItem5 from "@/components/activity-timeline-items/Item5.vue";
+import KTActivityItem6 from "@/components/activity-timeline-items/Item6.vue";
+import KTActivityItem7 from "@/components/activity-timeline-items/Item7.vue";
+import KTActivityItem8 from "@/components/activity-timeline-items/Item8.vue";
 
 export default defineComponent({
   name: "profile-activity",

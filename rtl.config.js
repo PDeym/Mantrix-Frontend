@@ -1,14 +1,10 @@
 /**
  * Main file of webpack config for RTL.
- * Please do not modified unless you know what to do
+ * Please do not modify unless you know what to do
  */
-// eslint-disable-next-line @typescript-eslint/no-var-requires
 const path = require("path");
-// eslint-disable-next-line @typescript-eslint/no-var-requires
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-// eslint-disable-next-line @typescript-eslint/no-var-requires
 const del = require("del");
-// eslint-disable-next-line @typescript-eslint/no-var-requires
 const RtlCssPlugin = require("rtlcss-webpack-plugin");
 
 // global variables
