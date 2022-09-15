@@ -20,19 +20,87 @@
       id="kt_app_header_menu"
       data-kt-menu="true"
     >
-      <router-link to="/" v-if="inModule() && ModuleConfig && ModuleConfig.modules && ModuleConfig.modules.length > 1" class="menu-item p-3">
-            <i class="las la-undo fs-2qx"><span></span></i>        
-        </router-link>
-        <div v-if="inModule()" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-start" class="menu-item menu-lg-down-accordion me-lg-1">
-            <span class="py-3">
-                <span class="h1">{{inModule().topHeading}}</span>
-            </span>
+      <KTMenuPages></KTMenuPages>
+
+      <div
+        data-kt-menu-trigger="{default: 'click', lg: 'hover'}"
+        data-kt-menu-placement="bottom-start"
+        class="menu-item menu-lg-down-accordion menu-sub-lg-down-indention me-0 me-lg-2"
+      >
+        <!--begin:Menu link-->
+        <span class="menu-link">
+          <span class="menu-title">Help</span>
+          <span class="menu-arrow d-lg-none"></span>
+        </span>
+        <!--end:Menu link-->
+        <!--begin:Menu sub-->
+        <div
+          class="menu-sub menu-sub-lg-down-accordion menu-sub-lg-dropdown px-lg-2 py-lg-4 w-lg-200px"
+        >
+          <!--begin:Menu item-->
+          <div class="menu-item">
+            <!--begin:Menu link-->
+            <a
+              class="menu-link"
+              href="?page=documentation/base/utilities"
+              title="Check out over 200 in-house components, plugins and ready for use solutions"
+              data-bs-toggle="tooltip"
+              data-bs-trigger="hover"
+              data-bs-dismiss="click"
+              data-bs-placement="right"
+            >
+              <span class="menu-icon">
+                <span class="svg-icon svg-icon-3">
+                  <inline-svg src="media/icons/duotune/general/gen002.svg" />
+                </span>
+              </span>
+              <span class="menu-title">Components</span>
+            </a>
+            <!--end:Menu link-->
+          </div>
+          <!--end:Menu item-->
+          <!--begin:Menu item-->
+          <div class="menu-item">
+            <!--begin:Menu link-->
+            <a
+              class="menu-link"
+              href="?page=documentation/getting-started"
+              title="Check out the complete documentation"
+              data-bs-toggle="tooltip"
+              data-bs-trigger="hover"
+              data-bs-dismiss="click"
+              data-bs-placement="right"
+            >
+              <span class="menu-icon">
+                <span class="svg-icon svg-icon-3">
+                  <inline-svg src="media/icons/duotune/abstract/abs027.svg" />
+                </span>
+              </span>
+              <span class="menu-title">Documentation</span>
+            </a>
+            <!--end:Menu link-->
+          </div>
+          <!--end:Menu item-->
+          <!--begin:Menu item-->
+          <div class="menu-item">
+            <!--begin:Menu link-->
+            <a
+              class="menu-link"
+              href="https://preview.keenthemes.com/metronic8/vue/docs/#/changelog"
+            >
+              <span class="menu-icon">
+                <span class="svg-icon svg-icon-3">
+                  <inline-svg src="media/icons/duotune/coding/cod003.svg" />
+                </span>
+              </span>
+              <span class="menu-title">Changelog v{{ version }}</span>
+            </a>
+            <!--end:Menu link-->
+          </div>
+          <!--end:Menu item-->
         </div>
-        <div v-else data-kt-menu-trigger="click" data-kt-menu-placement="bottom-start" class="menu-item menu-lg-down-accordion me-lg-1">
-            <span class="py-3">
-                <span class="h1">{{sitenamefull}}</span>
-            </span>
-        </div>
+        <!--end:Menu sub-->
+      </div>
       <!--end:Menu item-->
     </div>
     <!--end::Menu-->
@@ -43,38 +111,20 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
+import KTMenuPages from "@/layouts/main-layout/header/menu/MenuPages.vue";
 import { version } from "@/core/helpers/documentation";
 import { headerMenuDisplay } from "@/core/helpers/config";
-import ModuleConfig from '@/modules/Module';
-import { useRoute } from "vue-router";
+
 export default defineComponent({
-    name: "header-menu",
-    components: {
-    },
-    setup() {
-        const route = useRoute();
-        const sitenamefull = process.env.VUE_APP_SITENAME_FULL;
-
-        const hasActiveChildren = (match) => {
-            return route.path.indexOf(match) !== -1;
-        };
-
-        const inModule = () => {
-            let r;
-            ModuleConfig.modules.forEach((v) => {
-                if (hasActiveChildren(v.route)) {
-                r = v;          
-                }
-            });
-            return r;
-        }
-
-        return {
-            version,
-            headerMenuDisplay,
-            inModule, hasActiveChildren, 
-            sitenamefull
-        };
-    },
+  name: "header-menu",
+  components: {
+    KTMenuPages,
+  },
+  setup() {
+    return {
+      version,
+      headerMenuDisplay,
+    };
+  },
 });
 </script>
