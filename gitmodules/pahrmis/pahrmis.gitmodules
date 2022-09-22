@@ -1,25 +1,12 @@
 [submodule "src/modules/pais-template"]
 	path = src/modules/pais-template
-	url = url = http://10.50.4.9:8001/PAIS/vue-frontend.git
-	branch = main
-[submodule "src/modules/ucs"]
-	path = src/modules/ucs
-	url = https://github.com/WebAppDevTech/PAUCSv2.git
+	url = http://10.50.4.9:8001/PAIS/vue-frontend.git
 	branch = main
 [submodule "src/modules/orderpub"]
 	path = src/modules/orderpub
-	url = https://github.com/WebAppDevTech/PAHRMIS-OrderPubv2.git
+	url = http://10.50.4.9:8001/PAHRMISV2/frontend/opis.git
 	branch = develop
-[submodule "src/modules/cmis"]
-	path = src/modules/cmis
-	url = https://github.com/WebAppDevTech/PAHRMIS-CMISv2.git
-	branch = main
-[submodule "src/modules/mpis"]
-	path = src/modules/mpis
-	url = https://github.com/WebAppDevTech/PAHRMIS-MPISv2.git
-[submodule "src/modules/mpf"]
-	path = src/modules/mpf
-	url = https://github.com/WebAppDevTech/PAHRMIS-MPFv2.git
-[submodule "src/modules/diras"]
-	path = src/modules/diras
-	url = https://github.com/WebAppDevTech/DIRAS.git
+[submodule "src/modules/dental"]
+	path = src/modules/dental
+	url = http://10.50.4.9:8001/PAHRMISV2/frontend/dental.git
+	branch = develop
