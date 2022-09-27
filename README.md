@@ -9,7 +9,7 @@
     1. Create file .gitmodules on the root directory.
     2. Inside the .gitmodules add your submodule details. Example below.
         <details>
-            <summary markdown="span"> EXAMPLE OF ADDING SUBMODULES ON .gitmodules </summary>
+            <summary markdown="span"> <b>EXAMPLE OF ADDING SUBMODULES ON .gitmodules</b> </summary>
             <b>[submodule "src/modules/pais-template"]</b><br>
     	    <b>path = src/modules/pais-template</b><br>
     	    <b>url = http://10.50.4.9:8001/PAIS/vue-frontend.git</b><br><br>
@@ -24,6 +24,7 @@
             <b>branch = develop</b>
     	
         </details>
+    >
     3. Clone the module that you have added in the file .gitmodules. Example below.<br>
         **COMMAND: git clone http://10.50.4.9:8001/PAIS/vue-frontend.git src/modules/pais-template<br>**
 4. Rename **src->modules->Module.ts.sample to Module.ts** and modify based on your added modules
