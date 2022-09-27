@@ -8,6 +8,7 @@
     **Don't forget to pais-template**
     1. Create file .gitmodules on the root directory.
     2. Inside the .gitmodules add your submodule details. Example below.<br>
+        [root folder]
         >	[submodule "src/modules/pais-template"]<br>
 	    >	path = src/modules/pais-template<br>
 	    >	url = http://10.50.4.9:8001/PAIS/vue-frontend.git<br>
