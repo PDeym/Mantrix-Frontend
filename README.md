@@ -8,12 +8,11 @@
     **Don't forget to pais-template**
     1. Create file .gitmodules on the root directory.
     2. Inside the .gitmodules add your submodule details. Example below.<br>
-        [root folder]
-        >	[submodule "src/modules/pais-template"]<br>
-	    >	path = src/modules/pais-template<br>
-	    >	url = http://10.50.4.9:8001/PAIS/vue-frontend.git<br>
+        **[submodule "src/modules/pais-template"]<br>**
+	    **path = src/modules/pais-template<br>**
+	    **url = http://10.50.4.9:8001/PAIS/vue-frontend.git<br>**
     3. Clone the module that you have added in the file .gitmodules. Example below.<br>
-        >	COMMAND: git clone http://10.50.4.9:8001/PAIS/vue-frontend.git src/modules/pais-template<br>
+        **COMMAND: git clone http://10.50.4.9:8001/PAIS/vue-frontend.git src/modules/pais-template<br>**
 4. Rename **src->modules->Module.ts.sample to Module.ts** and modify based on your added modules
 5. Rename **src->modules->Store.ts.sample to Store.ts** and modify based on your added modules
 6. makesure all repos are checkout as main or develop
