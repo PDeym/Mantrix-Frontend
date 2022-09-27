@@ -4,7 +4,7 @@
 
 1. clone metronic-template here http://10.50.4.9:8001/metronic-template/vue.git
 2. npm install
-3. ** ADDING SUBMODULES ** <br>
+3. ** ADDING SUBMODULES **
     **Don't forget to pais-template**
     1. Create file .gitmodules on the root directory.
     2. Inside the .gitmodules add your submodule details. Example below.
