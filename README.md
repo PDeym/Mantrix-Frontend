@@ -7,21 +7,21 @@
 3. ** ADDING SUBMODULES ** <br>
     **Don't forget to pais-template**
     1. Create file .gitmodules on the root directory.
-    2. Inside the .gitmodules add your submodule details. Example below.<br>
+    2. Inside the .gitmodules add your submodule details. Example below.
         <details>
             <summary markdown="span"> EXAMPLE OF ADDING SUBMODULES ON .gitmodules </summary>
-            **[submodule "src/modules/pais-template"]<br>**
-    	    **path = src/modules/pais-template<br>**
-    	    **url = http://10.50.4.9:8001/PAIS/vue-frontend.git<br><br>**
+            <b>[submodule "src/modules/pais-template"]</b><br>
+    	    <b>path = src/modules/pais-template</b><br>
+    	    <b>url = http://10.50.4.9:8001/PAIS/vue-frontend.git</b><br><br>
     
-            **[submodule "src/modules/cmis"]<br>**
-            **path = src/modules/cmis<br>**
-            **url = http://10.50.4.9:8001/PAHRMISV2/frontend/cmis.git<br>**
-            **branch = main<br><br>**
-            **[submodule "src/modules/orderpub"]<br>**
-            **path = src/modules/orderpub<br>**
-            **url = http://10.50.4.9:8001/PAHRMISV2/frontend/opis.git<br>**
-            **branch = develop**
+            <b>[submodule "src/modules/cmis"]</b><br>
+            <b>path = src/modules/cmis</b><br>
+            <b>url = http://10.50.4.9:8001/PAHRMISV2/frontend/cmis.git</b><br>
+            <b>branch = main</b><br><br>
+            <b>[submodule "src/modules/orderpub"]</b><br>
+            <b>path = src/modules/orderpub</b><br>
+            <b>url = http://10.50.4.9:8001/PAHRMISV2/frontend/opis.git</b><br>
+            <b>branch = develop</b>
     	
         </details>
     3. Clone the module that you have added in the file .gitmodules. Example below.<br>
