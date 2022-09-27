@@ -4,37 +4,88 @@
 
 1. clone metronic-template here http://10.50.4.9:8001/metronic-template/vue.git
 2. npm install
-AFTER THIS STEP, PLEASE SEE ./install.txt to install submodules
-3. makesure all repos are checkout as main
-4. npm run serve
-5. eat your favorite junkfood and wait while building
+3. ## ADDING SUBMODULES ##
+    **Don't forget to the pais-template**
+    1. Create file .gitmodules on the root directory.
+    2. Inside the .gitmodules add your submodule details. Example below.
+        >	[submodule "src/modules/pais-template"]
+	    >	path = src/modules/pais-template
+	    >	url = http://10.50.4.9:8001/PAIS/vue-frontend.git
+    3. Clone the module that you have added in the file .gitmodules. Example below.
+        >	COMMAND: git clone http://10.50.4.9:8001/PAIS/vue-frontend.git src/modules/pais-template
+4. Rename **src->modules->Module.ts.sample to Module.ts** and modify based on your added modules
+5. Rename **src->modules->Store.ts.sample to Store.ts** and modify based on your added modules
+6. makesure all repos are checkout as main or develop
+7. npm run serve
+8. eat your favorite junkfood and wait while building
 
 **Submodules is not automatically added**
-## ADDING SUBMODULES ##
-**Clone and Init Submodule**
-- COMMAND: git clone http://10.50.4.9:8001/PAIS/vue-frontend.git src/modules/pais-template
-- COMMAND: git submodule init
 
-**After initializing submodule then add to [rootDirectory]/.gitmodules**
+<details>
+  <summary markdown="span"> ##SUBMODULES DETAILS## </summary>
+    <details>
+        <summary markdown="span"> PAIS-TEMPLATE </summary>
+        [submodule "src/modules/pais-template"]
+    	path = src/modules/pais-template
+    	url = http://10.50.4.9:8001/PAIS/vue-frontend.git
+    	branch = main 
+	</details>
+	
+    <details>
+        <summary markdown="span"> CMIS </summary>
+        [submodule "src/modules/cmis"]
+    	path = src/modules/cmis
+    	url = http://10.50.4.9:8001/PAHRMISV2/frontend/cmis.git
+    	branch = develop 
+	</details>
+	
+    <details>
+        <summary markdown="span"> PAPIS </summary>
+        [submodule "src/modules/papis"]
+    	path = src/modules/papis
+    	url = http://10.50.4.9:8001/PAHRMISV2/frontend/papis.git
+    	branch = develop 
+	</details>
+	
+    <details>
+        <summary markdown="span"> Retirment IS </summary>
+        [submodule "src/modules/ris"]
+    	path = src/modules/ris
+    	url = http://10.50.4.9:8001/PAHRMISV2/frontend/retirement-is.git
+    	branch = main 
+	</details>
+	
+    <details>
+        <summary markdown="span"> ORDER PUB </summary>
+        [submodule "src/modules/opis"]
+    	path = src/modules/opis
+    	url = http://10.50.4.9:8001/PAHRMISV2/frontend/opis.git
+    	branch = develop 
+	</details>
+	
+    <details>
+        <summary markdown="span"> MPF </summary>
+        [submodule "src/modules/mpf"]
+    	path = src/modules/mpf
+    	url = http://10.50.4.9:8001/PAHRMISV2/frontend/mpf.git
+    	branch = develop 
+	</details>
+	
+    <details>
+        <summary markdown="span"> DIRS </summary>
+        [submodule "src/modules/diras"]
+    	path = src/modules/diras
+    	url = http://10.50.4.9:8001/PAHRMISV2/frontend/dental.git
+    	branch = main 
+	</details>
+	
+</details>
 
-> ex: [submodule "src/modules/pais-template"]<br>
->	path = src/modules/pais-template <br>
->	url = http://10.50.4.9:8001/PAIS/vue-frontend.git <br> 
->	branch = master <br>
 
 
 ## NOTE
 Before adding plugins and thirdparties
 please contact @baniagaeugene @henrillics @c0smic for approval
-
-## IMPORTANT: Create your own copy of files, please see the example [filename].example.[filetype]
-1. .env = location: rootFolder
-2. Module.ts = location: src->modules->pais-template
-3. Store.ts = location: src->modules->pais-template
-
-**If you have submodules other than pais-template,**<br>
-**you can also see the references of current configuration of submodules on :**
-4. .gitmodules = location: gitmodules/[projectsample].gitmodules
 
 ## Starting mock API ##
 1. Run the mock api by this command => "npm run mock"
