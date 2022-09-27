@@ -20,9 +20,8 @@
 8. eat your favorite junkfood and wait while building
 
 **Submodules is not automatically added**
-
 <details>
-  <summary markdown="span"> ##SUBMODULES DETAILS## </summary>
+  <summary markdown="span"> DEFAULT SUBMODULES DETAILS </summary>
     <details>
         <summary markdown="span"> PAIS-TEMPLATE </summary>
         [submodule "src/modules/pais-template"]<br>
