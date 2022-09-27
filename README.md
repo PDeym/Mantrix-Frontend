@@ -4,7 +4,7 @@
 
 1. clone metronic-template here http://10.50.4.9:8001/metronic-template/vue.git
 2. npm install
-3. ## ADDING SUBMODULES ##
+3. ** ADDING SUBMODULES ** <br>
     **Don't forget to the pais-template**
     1. Create file .gitmodules on the root directory.
     2. Inside the .gitmodules add your submodule details. Example below.
@@ -25,57 +25,57 @@
   <summary markdown="span"> ##SUBMODULES DETAILS## </summary>
     <details>
         <summary markdown="span"> PAIS-TEMPLATE </summary>
-        [submodule "src/modules/pais-template"]
-    	path = src/modules/pais-template
-    	url = http://10.50.4.9:8001/PAIS/vue-frontend.git
+        [submodule "src/modules/pais-template"]<br>
+    	path = src/modules/pais-template<br>
+    	url = http://10.50.4.9:8001/PAIS/vue-frontend.git<br>
     	branch = main 
 	</details>
 	
     <details>
         <summary markdown="span"> CMIS </summary>
-        [submodule "src/modules/cmis"]
-    	path = src/modules/cmis
-    	url = http://10.50.4.9:8001/PAHRMISV2/frontend/cmis.git
+        [submodule "src/modules/cmis"]<br>
+    	path = src/modules/cmis<br>
+    	url = http://10.50.4.9:8001/PAHRMISV2/frontend/cmis.git<br>
     	branch = develop 
 	</details>
 	
     <details>
         <summary markdown="span"> PAPIS </summary>
-        [submodule "src/modules/papis"]
-    	path = src/modules/papis
-    	url = http://10.50.4.9:8001/PAHRMISV2/frontend/papis.git
+        [submodule "src/modules/papis"]<br>
+    	path = src/modules/papis<br>
+    	url = http://10.50.4.9:8001/PAHRMISV2/frontend/papis.git<br>
     	branch = develop 
 	</details>
 	
     <details>
         <summary markdown="span"> Retirment IS </summary>
-        [submodule "src/modules/ris"]
-    	path = src/modules/ris
-    	url = http://10.50.4.9:8001/PAHRMISV2/frontend/retirement-is.git
+        [submodule "src/modules/ris"]<br>
+    	path = src/modules/ris<br>
+    	url = http://10.50.4.9:8001/PAHRMISV2/frontend/retirement-is.git<br>
     	branch = main 
 	</details>
 	
     <details>
         <summary markdown="span"> ORDER PUB </summary>
-        [submodule "src/modules/opis"]
-    	path = src/modules/opis
-    	url = http://10.50.4.9:8001/PAHRMISV2/frontend/opis.git
+        [submodule "src/modules/opis"]<br>
+    	path = src/modules/opis<br>
+    	url = http://10.50.4.9:8001/PAHRMISV2/frontend/opis.git<br>
     	branch = develop 
 	</details>
 	
     <details>
         <summary markdown="span"> MPF </summary>
-        [submodule "src/modules/mpf"]
-    	path = src/modules/mpf
-    	url = http://10.50.4.9:8001/PAHRMISV2/frontend/mpf.git
+        [submodule "src/modules/mpf"]<br>
+    	path = src/modules/mpf<br>
+    	url = http://10.50.4.9:8001/PAHRMISV2/frontend/mpf.git<br>
     	branch = develop 
 	</details>
 	
     <details>
         <summary markdown="span"> DIRS </summary>
-        [submodule "src/modules/diras"]
-    	path = src/modules/diras
-    	url = http://10.50.4.9:8001/PAHRMISV2/frontend/dental.git
+        [submodule "src/modules/diras"]<br>
+    	path = src/modules/diras<br>
+    	url = http://10.50.4.9:8001/PAHRMISV2/frontend/dental.git<br>
     	branch = main 
 	</details>
 	
