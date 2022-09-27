@@ -25,12 +25,12 @@
   <summary markdown="span"> ##SUBMODULES DETAILS## </summary>
     <details>
         <summary markdown="span"> PAIS-TEMPLATE </summary>
-        ```ts
+        
         [submodule "src/modules/pais-template"]<br>
     	path = src/modules/pais-template<br>
     	url = http://10.50.4.9:8001/PAIS/vue-frontend.git<br>
     	branch = main 
-    	```
+    	
 	</details>
 	
     <details>
