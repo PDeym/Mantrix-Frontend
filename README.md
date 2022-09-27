@@ -24,6 +24,7 @@
 <details>
   <summary markdown="span"> ##SUBMODULES DETAILS## </summary>
     <details>
+    [root folder]
         <summary markdown="span"> PAIS-TEMPLATE </summary>
         
         [submodule "src/modules/pais-template"]<br>
