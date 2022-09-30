@@ -67,6 +67,10 @@ const rules = () => defineAclRules<typeof user>((setRule) => {
     setRule('developer-access', (user) => user.account_type === 'developer');
 });
 
+// CKEditor
+import CKEditor from '@ckeditor/ckeditor5-vue';
+app.use(CKEditor);
+
 const simpleAcl = createAcl({
     user,
     rules,

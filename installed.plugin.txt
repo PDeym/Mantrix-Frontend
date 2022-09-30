@@ -13,3 +13,14 @@ GLOBAL USED PLUGINS
 12. npm isntall raw-loader@0.5.1
 13. npm install json-server
 14. npm install --save-dev nodemon
+
+
+
+** begin::FOR ckeditor ***
+https://ckeditor.com/docs/ckeditor5/latest/builds/guides/integration/frameworks/vuejs-v3.html
+npm install --save @ckeditor/ckeditor5-vue @ckeditor/ckeditor5-dev-webpack-plugin @ckeditor/ckeditor5-dev-utils postcss-loader@4 raw-loader@4
+npm install --save @ckeditor/ckeditor5-editor-classic @ckeditor/ckeditor5-editor-inline @ckeditor/ckeditor5-essentials @ckeditor/ckeditor5-basic-styles @ckeditor/ckeditor5-link @ckeditor/ckeditor5-paragraph @ckeditor/ckeditor5-theme-lark
+npm install --save @ckeditor/ckeditor5-list
+npm install --save @ckeditor/ckeditor5-font
+npm install --save @ckeditor/ckeditor5-heading
+npm install --save @ckeditor/ckeditor5-alignment
