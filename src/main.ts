@@ -47,24 +47,18 @@ app.use(VueBlocksTree, defaultoptions);
 import VueMaska from 'maska';
 app.use(VueMaska);
 import { createAcl, defineAclRules } from './modules/pais-template/components/acl';
-import { Actions as ActionPais } from "@/modules/pais-template/store/enums/StoreEnums";
-import JwtService from "./modules/pais-template/core/services/JwtService";
 
 
 const user = () => {
-    // console.log('get current user');
-    // console.log(store.getters.appCurrentUser);
-    // return store.getters.appCurrentUser;
-
-    // ApiService.setHeader();
-    // return store.dispatch(ActionPais.CURRENT_USER).then((response) => response.data);
     return store.getters.appCurrentUser;
 }
 //const user = store.getters.appCurrentUser;
 
 const rules = () => defineAclRules<typeof user>((setRule) => {
-    setRule('super-access', (user) => user.account_type === 'superadmin');
+    setRule('super-access', (user) => { return user.account_type === 'superadmin' });
     setRule('developer-access', (user) => user.account_type === 'developer');
+    // This access will identify if the user is superadmin or developer access
+    setRule('higher-access', (user) => ['superadmin', 'developer'].indexOf(user.account_type) !==-1 ? true : false)
 });
 
 // CKEditor
