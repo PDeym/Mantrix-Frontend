@@ -28,10 +28,10 @@ initInlineSvg(app);
 initVeeValidate();
 
 // start:Modal configuration
-import VueFinalModal from 'vue-final-modal';
+import { vfmPlugin } from 'vue-final-modal';
 import modal from '@/modules/pais-template/core/plugins/modal/index';
 app.use(modal)
-app.use(VueFinalModal(), {
+app.use(vfmPlugin(), {
     componentName: 'VueFinalModal',
     key: '$vfm',    
     dynamicContainerName: 'ModalsContainer'
