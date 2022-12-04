@@ -4,37 +4,98 @@
 
 1. clone metronic-template here http://10.50.4.9:8001/metronic-template/vue.git
 2. npm install
-AFTER THIS STEP, PLEASE SEE ./install.txt to install submodules
-3. makesure all repos are checkout as main
-4. npm run serve
-5. eat your favorite junkfood and wait while building
+3. ADDING SUBMODULES ( **Don't forget to add pais-template** )
+    1. Create file .gitmodules on the root directory.
+    2. Inside the .gitmodules add your submodule details. Example below.
+        <details>
+            <summary markdown="span"> <b>EXAMPLE OF ADDING SUBMODULES ON .gitmodules</b> </summary>
+            <b>[submodule "src/modules/pais-template"]</b><br>
+    	    <b>path = src/modules/pais-template</b><br>
+    	    <b>url = http://10.50.4.9:8001/PAIS/vue-frontend.git</b><br><br>
+    
+            <b>[submodule "src/modules/cmis"]</b><br>
+            <b>path = src/modules/cmis</b><br>
+            <b>url = http://10.50.4.9:8001/PAHRMISV2/frontend/cmis.git</b><br>
+            <b>branch = main</b><br><br>
+            <b>[submodule "src/modules/orderpub"]</b><br>
+            <b>path = src/modules/orderpub</b><br>
+            <b>url = http://10.50.4.9:8001/PAHRMISV2/frontend/opis.git</b><br>
+            <b>branch = develop</b>
+    	
+        </details>
+    
+    3. Clone the module that you have added in the file .gitmodules. Example below.<br>
+        **COMMAND: git clone http://10.50.4.9:8001/PAIS/vue-frontend.git src/modules/pais-template<br>**
+4. Rename **src->modules->Module.ts.sample to Module.ts** and modify based on your added modules
+5. Rename **src->modules->Store.ts.sample to Store.ts** and modify based on your added modules
+6. makesure all repos are checkout as main or develop
+7. npm run serve
+8. eat your favorite junkfood and wait while building
 
 **Submodules is not automatically added**
-## ADDING SUBMODULES ##
-**Clone and Init Submodule**
-- COMMAND: git clone http://10.50.4.9:8001/PAIS/vue-frontend.git src/modules/pais-template
-- COMMAND: git submodule init
-
-**After initializing submodule then add to [rootDirectory]/.gitmodules**
-
-> ex: [submodule "src/modules/pais-template"]<br>
->	path = src/modules/pais-template <br>
->	url = http://10.50.4.9:8001/PAIS/vue-frontend.git <br> 
->	branch = master <br>
-
+<details>
+  <summary markdown="span"> DEFAULT SUBMODULES DETAILS </summary>
+    <details>
+        <summary markdown="span"> PAIS-TEMPLATE </summary>
+        [submodule "src/modules/pais-template"]<br>
+    	path = src/modules/pais-template<br>
+    	url = http://10.50.4.9:8001/PAIS/vue-frontend.git<br>
+    	branch = main 
+	</details>
+	
+    <details>
+        <summary markdown="span"> CMIS </summary>
+        [submodule "src/modules/cmis"]<br>
+    	path = src/modules/cmis<br>
+    	url = http://10.50.4.9:8001/PAHRMISV2/frontend/cmis.git<br>
+    	branch = develop 
+	</details>
+	
+    <details>
+        <summary markdown="span"> PAPIS </summary>
+        [submodule "src/modules/papis"]<br>
+    	path = src/modules/papis<br>
+    	url = http://10.50.4.9:8001/PAHRMISV2/frontend/papis.git<br>
+    	branch = develop 
+	</details>
+	
+    <details>
+        <summary markdown="span"> Retirment IS </summary>
+        [submodule "src/modules/ris"]<br>
+    	path = src/modules/ris<br>
+    	url = http://10.50.4.9:8001/PAHRMISV2/frontend/retirement-is.git<br>
+    	branch = main 
+	</details>
+	
+    <details>
+        <summary markdown="span"> ORDER PUB </summary>
+        [submodule "src/modules/opis"]<br>
+    	path = src/modules/opis<br>
+    	url = http://10.50.4.9:8001/PAHRMISV2/frontend/opis.git<br>
+    	branch = develop 
+	</details>
+	
+    <details>
+        <summary markdown="span"> MPF </summary>
+        [submodule "src/modules/mpf"]<br>
+    	path = src/modules/mpf<br>
+    	url = http://10.50.4.9:8001/PAHRMISV2/frontend/mpf.git<br>
+    	branch = develop 
+	</details>
+	
+    <details>
+        <summary markdown="span"> DIRS </summary>
+        [submodule "src/modules/diras"]<br>
+    	path = src/modules/diras<br>
+    	url = http://10.50.4.9:8001/PAHRMISV2/frontend/dental.git<br>
+    	branch = main 
+	</details>
+	
+</details>
 
 ## NOTE
 Before adding plugins and thirdparties
 please contact @baniagaeugene @henrillics @c0smic for approval
-
-## IMPORTANT: Create your own copy of files, please see the example [filename].example.[filetype]
-1. .env = location: rootFolder
-2. Module.ts = location: src->modules->pais-template
-3. Store.ts = location: src->modules->pais-template
-
-**If you have submodules other than pais-template,**<br>
-**you can also see the references of current configuration of submodules on :**
-4. .gitmodules = location: gitmodules/[projectsample].gitmodules
 
 ## Starting mock API ##
 1. Run the mock api by this command => "npm run mock"
