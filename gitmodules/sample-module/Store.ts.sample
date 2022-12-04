@@ -1,0 +1,9 @@
+// Modules store
+/******* begin:: INCLUDE STORE HERE ********/
+import PaisStore from '@/modules/pais-template/store/index';
+
+export default {
+    ...PaisStore,
+    // IMPORT FOLLOWING HERE.,
+}
+/******* end:: INCLUDE STORE HERE ********/

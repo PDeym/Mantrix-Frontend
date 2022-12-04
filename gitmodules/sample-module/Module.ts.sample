@@ -1,0 +1,15 @@
+import ModuleConfigTypes from "@/modules/pais-template/core/config/ModuleConfigTypes";
+import sampleModule from "@/modules/sample-sub-module/router/index";
+const ModuleConfig: ModuleConfigTypes = {
+    modules: [
+        {
+            asideHeading: 'submodule',
+            topHeading: 'sub',
+            moduleName: 'sample-sub-module',
+            children : sampleModule,
+            route: '/sample-sub-module',
+            svgIcon: '/media/icons/duotone/Home/Book.svg'
+        },
+    ]
+}
+export default ModuleConfig;
