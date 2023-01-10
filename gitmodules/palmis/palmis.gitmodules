@@ -5,4 +5,4 @@
 [submodule "src/modules/sumis"]
 	path = src/modules/sumis
 	url = http://10.50.4.9:8001/PALMISV2/sumis/vue-frontend.git
-	branch = master
+	branch = develop
