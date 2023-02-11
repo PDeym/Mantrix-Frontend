@@ -1,4 +1,4 @@
-GLOBAL USED PLUGINS
+GLOBAL USED PLUGINS WITH VERSION
 1. npm install vue-final-modal@next
 2. npm install moment --save
 3. npm install --save moment-range
@@ -13,6 +13,7 @@ GLOBAL USED PLUGINS
 12. npm isntall raw-loader@0.5.1
 13. npm install json-server
 14. npm install --save-dev nodemon
+15 npm install --save-dev vue-drawing-canvas / "^1.0.14"
 
 
 
