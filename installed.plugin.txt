@@ -14,7 +14,7 @@ GLOBAL USED PLUGINS WITH VERSION
 13. npm install json-server
 14. npm install --save-dev nodemon
 15 npm install --save-dev vue-drawing-canvas / "^1.0.14"
-
+16 npm install fslightbox-vue
 
 
 ** begin::FOR ckeditor ***
