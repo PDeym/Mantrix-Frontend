@@ -41,7 +41,7 @@ app.use(vfmPlugin(), {
 // ADDED PLUGINS
 import dragscrollNext from "vue-dragscroll";
 app.directive('dragscroll', dragscrollNext);
-const defaultoptions = {treeName:'blocks-tree'}
+const defaultoptions = {treeName:'blocks-tree',nodeName:'blocks-node'}
 import VueBlocksTree from 'vue3-blocks-tree';
 app.use(VueBlocksTree, defaultoptions);
 import VueMaska from 'maska';
