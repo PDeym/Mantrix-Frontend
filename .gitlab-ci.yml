@@ -46,7 +46,7 @@ pull-modules:
     - echo "Installing git..."
     - git --version
     - echo "Git installed."
-    - git submodule add http://10.50.6.154:8001/pahrmis/core/pais-template.git src/modules/pais-template
+    - git submodule add -f http://10.50.6.154:8001/pahrmis/core/pais-template.git src/modules/pais-template
     - cat .gitmodules
     - git status
     - git diff --submodule
