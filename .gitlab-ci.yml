@@ -21,9 +21,6 @@ stages:          # List of stages for jobs, and their order of execution
   - test
   - deploy
 
-variables:
-  GIT_CLEAN_FLAGS: none
-
 run-setup:       # This job runs in the build stage, which runs first.
   stage: build
   script:
@@ -43,6 +40,8 @@ run-setup:       # This job runs in the build stage, which runs first.
 pull-modules:
   image: bitnami/git:latest
   stage: build
+  variables:
+    GIT_CLEAN_FLAGS: none
   script:
     - echo "Installing git..."
     - git --version
