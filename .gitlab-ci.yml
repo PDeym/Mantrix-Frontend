@@ -47,6 +47,8 @@ pull-modules:
     - git --version
     - echo "Git installed."
     - git submodule add -f http://oauth2:$PAIS_TEMPLATE_TOKEN@10.50.6.154:8001/pahrmis/core/pais-template.git src/modules/pais-template
+    - git submodule add -f http://oauth2:$PAPIS_ACCESS_TOKEN@10.50.6.154:8001/pahrmis/frontend/papis.git src/modules/papis
+    - git submodule add -f http://oauth2:$OPIS_ACCESS_TOKEN@10.50.6.154:8001/pahrmis/frontend/opis.git src/modules/orderpub
     - cat .gitmodules
     - git status
     - git diff --submodule
