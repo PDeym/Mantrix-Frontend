@@ -48,7 +48,7 @@ pull-modules:
     - echo "Git installed."
     - git config --global credential.helper store
     - echo "http://gitlab-ci-token:${CI_JOB_TOKEN}@10.50.6.154:8001" > ~/.git-credentials
-    - git submodule add -f http://10.50.6.154:8001/pahrmis/core/pais-template.git src/modules/pais-template
+    - git submodule add -f http://gitlab-ci-token:${CI_JOB_TOKEN}@10.50.6.154:8001/pahrmis/core/pais-template.git src/modules/pais-template
     - cat .gitmodules
     - git status
     - git diff --submodule
