@@ -18,7 +18,7 @@ pnpm-debug.log*
 .gitmodules
 /keys
 
-# src/modules/*
+src/modules/*
 !/src/modules/Module.ts.sample
 !/src/modules/Store.ts.sample
 
