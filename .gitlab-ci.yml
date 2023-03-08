@@ -46,15 +46,7 @@ pull-modules:
     - git --version
     - echo "Git installed."
     - cat .gitmodules
-    - git submodule init
-    - git submodule update
-    - git submodule sync --recursive
-    - git submodule update --init --force --remote
     - git status
-    - find .
-    - cd src/modules
-    - ls -a
-
 
 # build-job:       # This job runs in the build stage, which runs first.
 #   image: node:lts-alpine
