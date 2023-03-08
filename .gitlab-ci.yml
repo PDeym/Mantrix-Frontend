@@ -28,7 +28,9 @@ run-setup:       # This job runs in the build stage, which runs first.
     - echo "$ENV" >> .env
     - echo "$MODULE_CONFIG" >> src/modules/Modules.ts
     - echo "$STORE_CONFIG" >> src/modules/Store.ts
-    - find
+    - find . -name ".env"
+    - find src/modules/ -name "Module.ts"
+    - find src/modules/ -name "Store.ts"
     - echo "Dependency complete."
 
 # build-job:       # This job runs in the build stage, which runs first.
