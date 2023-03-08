@@ -40,8 +40,7 @@ pull-modules:
   image: bitnami/git:latest
   stage: build
   variables:
-    # GIT_CLEAN_FLAGS: none
-    GIT_SUBMODULE_STRATEGY: recursive
+    GIT_CLEAN_FLAGS: none
   script:
     - echo "Installing git..."
     - git --version
