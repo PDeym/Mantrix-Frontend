@@ -48,6 +48,7 @@ pull-modules:
     - echo "Git installed."
     - cat .gitmodules
     - git status
+    - git diff --submodule
     - find src/modules
 
 # build-job:       # This job runs in the build stage, which runs first.
