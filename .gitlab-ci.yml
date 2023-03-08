@@ -26,7 +26,7 @@ run-setup:       # This job runs in the build stage, which runs first.
   script:
     - echo "Preparing dependencies..."
     - echo "$ENV" >> .env
-    - echo "$GIT_MODULES" >> .gitmodules
+    # - echo "$GIT_MODULES" >> .gitmodules
     - echo "$MODULE_CONFIG" >> src/modules/Module.ts
     - echo "$STORE_CONFIG" >> src/modules/Store.ts
     - cat .env
@@ -46,6 +46,7 @@ pull-modules:
     - echo "Installing git..."
     - git --version
     - echo "Git installed."
+    - git submodule add http://10.50.6.154:8001/pahrmis/core/pais-template.git src/modules/pais-template
     - cat .gitmodules
     - git status
     - git diff --submodule
