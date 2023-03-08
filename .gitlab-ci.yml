@@ -41,10 +41,12 @@ pull-modules:
   stage: build
   variables:
     GIT_CLEAN_FLAGS: none
+    GIT_SUBMODULE_STRATEGY: recursive
   script:
     - echo "Installing git..."
     - git --version
     - echo "Git installed."
+    - cat .gitmodules
     - git submodule sync --recursive
     - git submodule update --init --recursive
     - git status
