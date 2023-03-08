@@ -43,8 +43,8 @@ pull-modules:
     - echo "Installing git..."
     - git --version
     - echo "Git installed."
-    - find src/modules
     - git submodule update --recursive --remote
+    - find src/modules
 
 build-job:       # This job runs in the build stage, which runs first.
   image: node:lts-alpine
