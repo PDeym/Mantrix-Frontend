@@ -27,7 +27,7 @@ run-setup:       # This job runs in the build stage, which runs first.
     - echo "Preparing dependencies..."
     - echo "$ENV" >> .env
     - echo "$GIT_MODULES" >> .gitmodules
-    - echo "$MODULE_CONFIG" >> src/modules/Modules.ts
+    - echo "$MODULE_CONFIG" >> src/modules/Module.ts
     - echo "$STORE_CONFIG" >> src/modules/Store.ts
     - cat .env
     - cat .gitmodules
