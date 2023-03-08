@@ -40,7 +40,7 @@ pull-modules:
   image: bitnami/git:latest
   stage: build
   variables:
-    GIT_CLEAN_FLAGS: none
+    # GIT_CLEAN_FLAGS: none
     GIT_SUBMODULE_STRATEGY: recursive
   script:
     - echo "Installing git..."
@@ -54,7 +54,6 @@ pull-modules:
     - git status
     - cd src/modules
     - ls -a
-    - find src/modules
 
 
 # build-job:       # This job runs in the build stage, which runs first.
