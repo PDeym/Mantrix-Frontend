@@ -39,6 +39,8 @@ run-setup:       # This job runs in the build stage, which runs first.
 pull-modules:
   image: bitnami/git:latest
   stage: build
+  variables:
+    GIT_CLEAN_FLAGS: none
   script:
     - echo "Installing git..."
     - git --version
@@ -49,6 +51,8 @@ pull-modules:
 build-job:       # This job runs in the build stage, which runs first.
   image: node:lts-alpine
   stage: build
+  variables:
+    GIT_CLEAN_FLAGS: none
   script:
     - echo "Compiling the code..."
     - npm install
