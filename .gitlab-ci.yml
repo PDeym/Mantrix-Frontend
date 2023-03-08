@@ -46,6 +46,7 @@ pull-modules:
     - echo "Installing git..."
     - git --version
     - echo "Git installed."
+    - rm -rf src/modules
     - cat .gitmodules
     - git submodule sync --recursive
     - git submodule update --init --force --remote
