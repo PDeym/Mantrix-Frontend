@@ -36,6 +36,12 @@ run-setup:       # This job runs in the build stage, which runs first.
     - git submodule update --recursive --remote
     - echo "Dependency complete."
 
+pull-modules:
+  image: bitnami/git:latest
+  stage: build
+  script:
+    - git --version
+
 # build-job:       # This job runs in the build stage, which runs first.
 #   stage: build
 #   script:
