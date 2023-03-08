@@ -40,6 +40,7 @@ pull-modules:
   stage: build
   script:
     - git --version
+    - git submodule update --recursive --remote
 
 # build-job:       # This job runs in the build stage, which runs first.
 #   stage: build
