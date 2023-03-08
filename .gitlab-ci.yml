@@ -51,6 +51,7 @@ pull-modules:
     - git submodule sync --recursive
     - git submodule update --init --force --remote
     - git status
+    - find .
     - cd src/modules
     - ls -a
 
