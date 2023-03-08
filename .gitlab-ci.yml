@@ -31,7 +31,6 @@ run-setup:       # This job runs in the build stage, which runs first.
     - echo "$STORE_CONFIG" >> src/modules/Store.ts
     - cat .env
     - cat .gitmodules
-    - rm -rf src/modules/*
     - cat src/modules/Module.ts
     - cat src/modules/Store.ts
     - find src/modules
