@@ -33,6 +33,7 @@ run-setup:       # This job runs in the build stage, which runs first.
     - cat .gitmodules
     - cat src/modules/Module.ts
     - cat src/modules/Store.ts
+    - git submodule update --recursive --remote
     - echo "Dependency complete."
 
 # build-job:       # This job runs in the build stage, which runs first.
