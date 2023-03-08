@@ -25,7 +25,7 @@ run-setup:       # This job runs in the build stage, which runs first.
   stage: build
   script:
     - echo "Preparing dependencies..."
-    - pwd
+    - find
     # - echo "$ENV" >> .env
     # - echo "$MODULE_CONFIG" >> src/modules/Modules.ts
     # - echo "$STORE_CONFIG" >> src/modules/Store.ts
