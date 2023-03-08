@@ -46,7 +46,7 @@ pull-modules:
     - echo "Installing git..."
     - git --version
     - echo "Git installed."
-    - git submodule add -f http://gitlab-ci-token:${CI_JOB_TOKEN}@10.50.6.154:8001/pahrmis/core/pais-template.git src/modules/pais-template
+    - git submodule add -f http://oauth2:glpat-iKsbBmjrPivhdz8pvc8E@10.50.6.154:8001/pahrmis/core/pais-template.git src/modules/pais-template
     - cat .gitmodules
     - git status
     - git diff --submodule
