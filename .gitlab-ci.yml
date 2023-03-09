@@ -28,7 +28,9 @@ run-setup:       # This job runs in the build stage, which runs first.
   stage: build
   script:
     - echo "Preparing dependencies..."
-    - rm -rf src/modules/*
+    - rm -rf src/modules/pais-template
+    - rm -rf src/modules/orderpub
+    - rm -rf src/modules/mpis
     - echo "$ENV" > .env
     - echo "$GIT_MODULES" > .gitmodules
     - echo "$MODULE_CONFIG" > src/modules/Module.ts
