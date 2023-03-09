@@ -31,11 +31,11 @@ run-setup:       # This job runs in the build stage, which runs first.
   script:
     - echo "Preparing dependencies..."
     - echo "$ENV" > .env
-    # - echo "$GIT_MODULES" > .gitmodules
+    - rm -rf src/modules/pais-template
+    - find src/modules
     - echo "$MODULE_CONFIG" > src/modules/Module.ts
     - echo "$STORE_CONFIG" > src/modules/Store.ts
     - cat .env
-    # - cat .gitmodules
     - cat src/modules/Module.ts
     - cat src/modules/Store.ts
     - find src/modules
@@ -50,8 +50,6 @@ pull-modules:
     - echo "Installing git..."
     - git --version
     - echo "Git installed."
-    - rm -rf src/modules/pais-template
-    - find src/modules
     - git submodule add -f -b master http://oauth2:$PAIS_TEMPLATE_ACCESS_TOKEN@10.50.6.154:8001/pahrmis/core/pais-template.git src/modules/pais-template
     - git submodule add -f -b main http://oauth2:$PAPIS_ACCESS_TOKEN@10.50.6.154:8001/pahrmis/frontend/papis.git src/modules/mpis
     - git submodule add -f -b develop http://oauth2:$OPIS_ACCESS_TOKEN@10.50.6.154:8001/pahrmis/frontend/opis.git src/modules/orderpub
