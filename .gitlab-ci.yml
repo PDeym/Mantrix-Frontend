@@ -50,6 +50,7 @@ pull-modules:
     - git submodule add -f -b master http://oauth2:$PAIS_TEMPLATE_ACCESS_TOKEN@10.50.6.154:8001/pahrmis/core/pais-template.git src/modules/pais-template
     - git submodule add -f -b main http://oauth2:$PAPIS_ACCESS_TOKEN@10.50.6.154:8001/pahrmis/frontend/papis.git src/modules/mpis
     - git submodule add -f -b develop http://oauth2:$OPIS_ACCESS_TOKEN@10.50.6.154:8001/pahrmis/frontend/opis.git src/modules/orderpub
+    - git pull --recurse-submodules
     - cat .gitmodules
     - git status
     - git diff --submodule
@@ -60,9 +61,6 @@ build-job:       # This job runs in the build stage, which runs first.
   stage: build
   script:
     - echo "Compiling the code..."
-    - rm -rf node_modules
-    - npm install -g typescript
-    - npm link typescript
     - npm install
     - npm run serve
     - echo "Compile complete."
