@@ -58,10 +58,10 @@ pull-modules:
     - find src/modules
 
 build-job:
-  image: docker
+  # image: docker
   stage: build
-  services:
-    - docker:dind
+  # services:
+  #   - docker:dind
   script:
     # - echo $CI_REGISTRY_PASSWORD | docker login -u $CI_REGISTRY_USER $CI_REGISTRY --password=stdin
     - docker build -t pahrmis/app .
