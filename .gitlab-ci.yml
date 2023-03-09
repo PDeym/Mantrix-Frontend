@@ -26,13 +26,10 @@ variables:
 
 run-setup:       # This job runs in the build stage, which runs first.
   stage: build
-  variables:
-    GIT_CLEAN_FLAGS: -ffdx -e cache/
   script:
     - echo "Preparing dependencies..."
     - echo "$ENV" > .env
-    - rm -rf src/modules/pais-template
-    - find src/modules
+    - rm -rf .gitmodules
     - echo "$MODULE_CONFIG" > src/modules/Module.ts
     - echo "$STORE_CONFIG" > src/modules/Store.ts
     - cat .env
