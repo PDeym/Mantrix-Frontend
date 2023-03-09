@@ -55,9 +55,10 @@ build-job:
   tags:
     - shell
   script:
+    - find src/modules
     # - echo $CI_REGISTRY_PASSWORD | docker login -u $CI_REGISTRY_USER $CI_REGISTRY --password=stdin
-    - docker build -t pahrmis/app .
-    - docker run -it -p 8080:80 --rm --name pahrmis-app pahrmis/app
+    # - docker build -t pahrmis/app .
+    # - docker run -it -p 8080:80 --rm --name pahrmis-app pahrmis/app
 
 # build-job:       # This job runs in the build stage, which runs first.
 #   image: node:lts
