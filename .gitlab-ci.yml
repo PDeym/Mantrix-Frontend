@@ -56,21 +56,22 @@ build-job:
   tags:
     - shell
   needs: ['pull-modules']
-  before_script:
-    - 'command -v ssh-agent >/dev/null || ( apk add --update openssh )' 
-    - eval $(ssh-agent -s)
-    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
-    - mkdir -p ~/.ssh
-    - chmod 700 ~/.ssh
-    - ssh-keyscan $SERVER_ADDRESS >> ~/.ssh/known_hosts
-    - chmod 644 ~/.ssh/known_hosts
+  # before_script:
+  #   - 'command -v ssh-agent >/dev/null || ( apk add --update openssh )' 
+  #   - eval $(ssh-agent -s)
+  #   - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
+  #   - mkdir -p ~/.ssh
+  #   - chmod 700 ~/.ssh
+  #   - ssh-keyscan $SERVER_ADDRESS >> ~/.ssh/known_hosts
+  #   - chmod 644 ~/.ssh/known_hosts
   script:
     - find src/modules
-    - ssh -o StrictHostKeyChecking=no runner@$10.50.6.155 "
-      mkdir -p ~/app/deploy/pahrmis"
-    - rsync -av --delete . runner@$10.50.6.155:~/app/deploy/pahrmis
-    - ssh -o StrictHostKeyChecking=no runner@$10.50.6.155 "
-      find ~/app/deploy/pahrmis"
+    - npm run serve
+    # - ssh -o StrictHostKeyChecking=no runner@$10.50.6.155 "
+    #   mkdir -p ~/app/deploy/pahrmis"
+    # - rsync -av --delete . runner@$10.50.6.155:~/app/deploy/pahrmis
+    # - ssh -o StrictHostKeyChecking=no runner@$10.50.6.155 "
+    #   find ~/app/deploy/pahrmis"
     # - echo $CI_REGISTRY_PASSWORD | docker login -u $CI_REGISTRY_USER $CI_REGISTRY --password=stdin
     # - docker build -t pahrmis/app .
     # - docker run -d -p 8080:8080 my-app
