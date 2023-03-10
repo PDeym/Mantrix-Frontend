@@ -64,8 +64,7 @@ build-job:
     # - chmod 700 ~/.ssh
     # - ssh-keyscan 10.50.6.155 >> ~/.ssh/known_hosts
     # - chmod 644 ~/.ssh/known_hosts
-    - apt-get update -qq
-    - apt-get install -qq git
+    
     # Setup SSH deploy keys
     - 'which ssh-agent || ( apt-get install -qq openssh-client )'
     - eval $(ssh-agent -s)
