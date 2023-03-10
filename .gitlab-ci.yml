@@ -66,10 +66,10 @@ build-job:
     - chmod 644 ~/.ssh/known_hosts
   script:
     - find src/modules
-    - ssh -o StrictHostKeyChecking=no runner@$10.50.6.155 "
+    - ssh -o StrictHostKeyChecking=no runner@10.50.6.155 "
       mkdir -p ~/app/deploy/pahrmis"
-    - rsync -av --delete . runner@$10.50.6.155:~/app/deploy/pahrmis
-    - ssh -o StrictHostKeyChecking=no runner@$10.50.6.155 "
+    - rsync -av --delete . runner@10.50.6.155:~/app/deploy/pahrmis
+    - ssh -o StrictHostKeyChecking=no runner@10.50.6.155 "
       find ~/app/deploy/pahrmis"
     # - echo $CI_REGISTRY_PASSWORD | docker login -u $CI_REGISTRY_USER $CI_REGISTRY --password=stdin
     # - docker build -t pahrmis/app .
