@@ -57,20 +57,13 @@ build-job:
     - shell
   needs: ['pull-modules']
   before_script:
-    # - 'command -v ssh-agent >/dev/null || ( apk add --update openssh )' 
-    # - eval $(ssh-agent -s)
-    # - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
-    # - mkdir -p ~/.ssh
-    # - chmod 700 ~/.ssh
-    # - ssh-keyscan 10.50.6.155 >> ~/.ssh/known_hosts
-    # - chmod 644 ~/.ssh/known_hosts
-    
-    # Setup SSH deploy keys
-    - 'which ssh-agent || ( apt-get install -qq openssh-client )'
+    - 'command -v ssh-agent >/dev/null || ( apk add --update openssh )' 
     - eval $(ssh-agent -s)
-    - ssh-add <(echo "$SSH_PRIVATE_KEY")
+    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
     - mkdir -p ~/.ssh
-    - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+    - chmod 700 ~/.ssh
+    - ssh-keyscan 10.50.6.155 >> ~/.ssh/known_hosts
+    - chmod 644 ~/.ssh/known_hosts
   script:
     - find src/modules
     - ssh -o StrictHostKeyChecking=no runner@10.50.6.155 "
