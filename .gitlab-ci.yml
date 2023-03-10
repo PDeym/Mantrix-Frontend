@@ -66,6 +66,7 @@ build-job:
   #   - chmod 644 ~/.ssh/known_hosts
   script:
     - find src/modules
+    - vue --version
     - npm run serve
     # - ssh -o StrictHostKeyChecking=no runner@$10.50.6.155 "
     #   mkdir -p ~/app/deploy/pahrmis"
