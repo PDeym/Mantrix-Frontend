@@ -39,13 +39,14 @@ pull-modules:
   stage: build
   # variables:
   #   GIT_SUBMODULE_STRATEGY: recursive
+  before_script:
+    - rm -rf src/modules/pais-template
+    - rm -rf src/modules/orderpub
+    - rm -rf src/modules/mpis
   script:
     - echo "Installing git..."
     - git --version
     - echo "Git installed."
-    - rm -rf src/modules/pais-template
-    - rm -rf src/modules/orderpub
-    - rm -rf src/modules/mpis
     - git clone -b master http://gitlab-ci-token:$CI_JOB_TOKEN@10.50.6.154:8001/pahrmis/core/pais-template.git src/modules/pais-template
     - git clone -b develop http://gitlab-ci-token:$CI_JOB_TOKEN@10.50.6.154:8001/pahrmis/frontend/papis.git src/modules/mpis
     - git clone -b develop http://gitlab-ci-token:$CI_JOB_TOKEN@10.50.6.154:8001/pahrmis/frontend/opis.git src/modules/orderpub
