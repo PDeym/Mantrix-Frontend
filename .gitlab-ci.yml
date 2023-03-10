@@ -39,6 +39,10 @@ pull-modules:
   stage: build
   # variables:
   #   GIT_SUBMODULE_STRATEGY: recursive
+  before_script:
+    - rm -rf src/modules/pais-template
+    - rm -rf src/modules/orderpub
+    - rm -rf src/modules/mpis
   script:
     - echo "Installing git..."
     - git --version
