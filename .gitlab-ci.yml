@@ -70,7 +70,7 @@ build-job:
       mkdir -p ~/app/deploy/pahrmis"
     - rsync -av --delete . runner@10.50.6.155:~/app/deploy/pahrmis
     - ssh -o StrictHostKeyChecking=no runner@10.50.6.155 "
-      find ~/app/deploy/pahrmis"
+      npm install && npm run serve"
     # - echo $CI_REGISTRY_PASSWORD | docker login -u $CI_REGISTRY_USER $CI_REGISTRY --password=stdin
     # - docker build -t pahrmis/app .
     # - docker run -d -p 8080:8080 my-app
