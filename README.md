@@ -2,7 +2,7 @@
 
 ## Installation
 
-1. clone metronic-template here http://10.50.4.9:8001/metronic-template/vue.git
+1. clone metronic-template here http://10.50.6.154:8001/pahrmis/core/metronic-template.git
 2. npm install
 3. ADDING SUBMODULES ( **Don't forget to add pais-template** )
     1. Create file .gitmodules on the root directory.
@@ -11,7 +11,7 @@
             <summary markdown="span"> <b>EXAMPLE OF ADDING SUBMODULES ON .gitmodules</b> </summary>
             <b>[submodule "src/modules/pais-template"]</b><br>
     	    <b>path = src/modules/pais-template</b><br>
-    	    <b>url = http://10.50.4.9:8001/PAIS/vue-frontend.git</b><br><br>
+    	    <b>url = http://10.50.6.154:8001/pahrmis/core/pais-template.git</b><br><br>
     
             <b>[submodule "src/modules/cmis"]</b><br>
             <b>path = src/modules/cmis</b><br>
@@ -31,6 +31,10 @@
 6. makesure all repos are checkout as main or develop
 7. npm run serve
 8. eat your favorite junkfood and wait while building
+
+You might what also to include the pais-components on your project.
+- http://10.50.6.154:8001/components/pais-components.git
+ex: git clone http://10.50.6.154:8001/components/pais-components.git src/modules/pais-components
 
 **Submodules is not automatically added**
 <details>
