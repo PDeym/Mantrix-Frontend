@@ -15,6 +15,7 @@ const { styles } = require( '@ckeditor/ckeditor5-dev-utils' );
  */
 
 module.exports = {
+    outputDir: "C:/xampp/htdocs/frontend/dist",
     publicPath: process.env.NODE_ENV === "production" ? "/metronic8/vue/demo1/" : "/",
     transpileDependencies: [
         /ckeditor5-[^/\\]+[/\\]src[/\\].+\.js$/,
