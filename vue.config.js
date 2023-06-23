@@ -30,7 +30,21 @@ module.exports = {
                 // Append translations to the file matching the `app` name.
                 translationsOutputFile: /app/
             } )
-        ]
+        ],
+        devServer: {
+            allowedHosts: [
+                'padiras.army.mil.ph'
+            ],		
+            host: 'padiras.army.mil.ph',
+            compress:true,	
+            port: 443,
+            https: {
+                key:fs.readFileSync('./keys/server.key'),
+                cert:fs.readFileSync('./keys/server.crt')
+            }
+            // for secured connection
+            //port: '443', https: true
+        }
     },
     // configureWebpack: {
     //     devServer: {
