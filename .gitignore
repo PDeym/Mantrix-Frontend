@@ -34,3 +34,4 @@ src/modules/*
 yarn.lock
 package-lock.json
 access-rights/~*.xlsx
+vue.config.js
