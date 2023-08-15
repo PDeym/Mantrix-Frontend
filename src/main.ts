@@ -43,11 +43,14 @@ import dragscrollNext from "vue-dragscroll";
 app.directive('dragscroll', dragscrollNext);
 const defaultoptions = {treeName:'blocks-tree',nodeName:'blocks-node'}
 import VueBlocksTree from 'vue3-blocks-tree';
+// import 'vue3-blocks-tree/dist/vue3-blocks-tree.css';
 app.use(VueBlocksTree, defaultoptions);
 import VueMaska from 'maska';
 app.use(VueMaska);
 import { createAcl, defineAclRules } from './modules/pais-template/components/acl';
-
+// import vue-panzoom
+import panZoom from '@/modules/pauis/packages/vue-panzoom';
+app.use(panZoom);
 
 const user = () => {
     return store.getters.appCurrentUser;
