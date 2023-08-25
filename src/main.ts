@@ -48,9 +48,6 @@ app.use(VueBlocksTree, defaultoptions);
 import VueMaska from 'maska';
 app.use(VueMaska);
 import { createAcl, defineAclRules } from './modules/pais-template/components/acl';
-// import vue-panzoom
-import panZoom from '@/modules/pauis/packages/vue-panzoom';
-app.use(panZoom);
 
 const user = () => {
     return store.getters.appCurrentUser;
