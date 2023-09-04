@@ -1,12 +1,32 @@
 [submodule "src/modules/pais-template"]
 	path = src/modules/pais-template
-	url = http://10.50.4.9:8001/PAIS/vue-frontend.git
+	url = http://10.50.6.154:8001/pais-template/frontend/pais-template.git
 	branch = master
+[submodule "src/modules/pais-components"]
+	path = src/modules/pais-components
+	url = http://10.50.6.154:8001/pais-template/frontend/pais-components.git
+	branch = main
 [submodule "src/modules/orderpub"]
 	path = src/modules/orderpub
-	url = http://10.50.4.9:8001/PAHRMISV2/frontend/opis.git
+	url = http://10.50.6.154:8001/pahrmis/frontend/opis.git
 	branch = develop
-[submodule "src/modules/dental"]
-	path = src/modules/dental
-	url = http://10.50.4.9:8001/PAHRMISV2/frontend/dental.git
+[submodule "src/modules/mpis"]
+	path = src/modules/mpis
+	url = http://10.50.6.154:8001/pahrmis/frontend/papis.git
+	branch = develop
+[submodule "src/modules/cmis"]
+	path = src/modules/cmis
+	url = http://10.50.6.154:8001/pahrmis/frontend/cmis.git
+	branch = develop
+[submodule "src/modules/eris"]
+	path = src/modules/eris
+	url = http://10.50.6.154:8001/pahrmis/frontend/retirement-is.git
+	branch = develop
+[submodule "src/modules/mpfv2"]
+	path = src/modules/mpfv2
+	url = http://10.50.6.154:8001/pahrmis/frontend/mpf-v2.git
+	branch = develop
+[submodule "src/modules/finance"]
+	path = src/modules/finance
+	url = http://10.50.6.154:8001/pahrmis/frontend/finance.git
 	branch = develop
