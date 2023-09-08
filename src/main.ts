@@ -39,6 +39,8 @@ app.use(vfmPlugin(), {
 // end:Modal configuration
 
 // ADDED PLUGINS
+import panZoom from '@/modules/pauis/packages/vue-panzoom';
+app.use(panZoom)
 import dragscrollNext from "vue-dragscroll";
 app.directive('dragscroll', dragscrollNext);
 const defaultoptions = {treeName:'blocks-tree',nodeName:'blocks-node'}
