@@ -8,11 +8,11 @@ Use below html tag for RTL version
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">    
+    <!-- <link rel="icon" href="<%= BASE_URL %>favicon.ico">     -->
     <link href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700|Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="<%= BASE_URL %>fonticon/fonticon.css">
     <link rel="stylesheet" href="<%= BASE_URL %>splash-screen.css">
-    <title><%= htmlWebpackPlugin.options.sitename %> | Philippine Army</title>
+    <title>Mantrix | Information System</title>
 </head>
 <!-- add class="dark-mode" to enable dark mode  -->
 <body class="page-loading">
@@ -43,9 +43,33 @@ Use below html tag for RTL version
     <!-- built files will be auto injected -->
     <!--begin::Loading markup-->
     <div id="splash-screen" class="splash-screen">
-        <img src="/modules/pais-template/icons/logo320x320.png" />
-        <span>Loading ...</span>
+        <img src="/modules/pais-template/icons/mantrix-logo.png" />
+        <span></span>
     </div>
     <!--end::Loading markup-->
 </body>
 </html>
+<style>
+.splash-screen {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.splash-screen::after {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  border-top-color: transparent;
+  animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+</style>
